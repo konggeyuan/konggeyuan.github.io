@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>个人技术博客</title>
+  <title>技术博客</title>
   
-  
+  <subtitle>技术笔记&amp;项目信息</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
