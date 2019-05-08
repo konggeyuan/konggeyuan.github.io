@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://konggeyuan.github.io/"/>
+  <link href="http://blog.all-soon.com/"/>
   <updated>2019-05-08T11:07:54.213Z</updated>
-  <id>http://konggeyuan.github.io/</id>
+  <id>http://blog.all-soon.com/</id>
   
   <author>
     <name>Space Yuan</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>test_page</title>
-    <link href="http://konggeyuan.github.io/2019/05/08/test-page/"/>
-    <id>http://konggeyuan.github.io/2019/05/08/test-page/</id>
+    <link href="http://blog.all-soon.com/2019/05/08/test-page/"/>
+    <id>http://blog.all-soon.com/2019/05/08/test-page/</id>
     <published>2019-05-08T10:04:03.000Z</published>
     <updated>2019-05-08T11:07:54.213Z</updated>
     
