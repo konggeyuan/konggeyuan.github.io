@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2019-05-09T14:55:37.952Z</updated>
+  <updated>2019-05-09T15:16:34.797Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>对于学习目前的一些想法-想到什么说什么。</title>
+    <link href="http://konggeyuan.github.io/2019/05/09/%E5%AF%B9%E4%BA%8E%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%89%8D%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/"/>
+    <id>http://konggeyuan.github.io/2019/05/09/对于学习目前的一些想法/</id>
+    <published>2019-05-09T14:57:07.000Z</published>
+    <updated>2019-05-09T15:16:34.797Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;学习都是从碎片开始，目前学的语言都是从主干部分，现在学，慢慢再丰富枝干部分。边学边做，以完成任务的为学习目的，然后再基于主干的知识，根据手册资料，慢慢扩展。&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>promise用法</title>
     <link href="http://konggeyuan.github.io/2019/05/09/promise%E7%94%A8%E6%B3%95/"/>
     <id>http://konggeyuan.github.io/2019/05/09/promise用法/</id>
     <published>2019-05-09T14:50:00.000Z</published>
-    <updated>2019-05-09T14:55:37.952Z</updated>
+    <updated>2019-05-09T15:16:56.590Z</updated>
     
     <summary type="html">
     
@@ -45,8 +68,8 @@
     <title>npm 使用</title>
     <link href="http://konggeyuan.github.io/2019/05/09/npm-%E5%AE%89%E8%A3%85%E5%BA%93/"/>
     <id>http://konggeyuan.github.io/2019/05/09/npm-安装库/</id>
-    <published>2019-05-09T12:54:25.000Z</published>
-    <updated>2019-05-09T13:10:30.114Z</updated>
+    <published>2019-05-09T12:54:00.000Z</published>
+    <updated>2019-05-09T15:17:45.862Z</updated>
     
     <summary type="html">
     
@@ -61,14 +84,16 @@
     </summary>
     
     
+      <category term="nodejs" scheme="http://konggeyuan.github.io/tags/nodejs/"/>
+    
   </entry>
   
   <entry>
     <title>我的nodejs配置</title>
     <link href="http://konggeyuan.github.io/2019/05/09/%E6%88%91%E7%9A%84nodejs%E9%85%8D%E7%BD%AE/"/>
     <id>http://konggeyuan.github.io/2019/05/09/我的nodejs配置/</id>
-    <published>2019-05-09T04:54:47.000Z</published>
-    <updated>2019-05-09T05:36:21.184Z</updated>
+    <published>2019-05-09T04:54:00.000Z</published>
+    <updated>2019-05-09T15:18:35.643Z</updated>
     
     <summary type="html">
     
@@ -82,6 +107,8 @@
     
     </summary>
     
+    
+      <category term="nodejs" scheme="http://konggeyuan.github.io/tags/nodejs/"/>
     
   </entry>
   

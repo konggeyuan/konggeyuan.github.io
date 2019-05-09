@@ -96,20 +96,19 @@
 
 
 
-  <meta name="description" content="https://www.npmjs.com/中搜索  安装一些第三方库  123456789101112//本地安装，安装到项目目录下，不在package.json中写入依赖npm install packageName//全局安装，安装在Node安装目录下的node_modules下npm install packageName -g//安装到项目目录下，并在package.json文件的dep">
+  <meta name="description" content="https://www.npmjs.com/中搜索  安装一些第三方库  1234567891011//本地安装，安装到项目目录下，不在package.json中写入依赖npm install packageName//全局安装，安装在Node安装目录下的node_modules下npm install packageName -g//安装到项目目录下，并在package.json文件的depen">
+<meta name="keywords" content="nodejs">
 <meta property="og:type" content="article">
 <meta property="og:title" content="npm 使用">
 <meta property="og:url" content="http://konggeyuan.github.io/2019/05/09/npm-安装库/index.html">
 <meta property="og:site_name" content="技术博客">
-<meta property="og:description" content="https://www.npmjs.com/中搜索  安装一些第三方库  123456789101112//本地安装，安装到项目目录下，不在package.json中写入依赖npm install packageName//全局安装，安装在Node安装目录下的node_modules下npm install packageName -g//安装到项目目录下，并在package.json文件的dep">
+<meta property="og:description" content="https://www.npmjs.com/中搜索  安装一些第三方库  1234567891011//本地安装，安装到项目目录下，不在package.json中写入依赖npm install packageName//全局安装，安装在Node安装目录下的node_modules下npm install packageName -g//安装到项目目录下，并在package.json文件的depen">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-09T13:10:30.114Z">
+<meta property="og:updated_time" content="2019-05-09T15:17:45.862Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="npm 使用">
-<meta name="twitter:description" content="https://www.npmjs.com/中搜索  安装一些第三方库  123456789101112//本地安装，安装到项目目录下，不在package.json中写入依赖npm install packageName//全局安装，安装在Node安装目录下的node_modules下npm install packageName -g//安装到项目目录下，并在package.json文件的dep">
+<meta name="twitter:description" content="https://www.npmjs.com/中搜索  安装一些第三方库  1234567891011//本地安装，安装到项目目录下，不在package.json中写入依赖npm install packageName//全局安装，安装在Node安装目录下的node_modules下npm install packageName -g//安装到项目目录下，并在package.json文件的depen">
 
-
-  
 
 
   <link rel="alternate" href="/atom.xml" title="技术博客" type="application/atom+xml">
@@ -340,7 +339,7 @@
                 
               
 
-              <time title="Created: 2019-05-09 20:54:25 / Modified: 21:10:30" itemprop="dateCreated datePublished" datetime="2019-05-09T20:54:25+08:00">2019-05-09</time>
+              <time title="Created: 2019-05-09 20:54:00 / Modified: 23:17:45" itemprop="dateCreated datePublished" datetime="2019-05-09T20:54:00+08:00">2019-05-09</time>
             
 
             
@@ -383,7 +382,7 @@
 <ol>
 <li>安装一些第三方库</li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//本地安装，安装到项目目录下，不在package.json中写入依赖</span><br><span class="line">npm install packageName</span><br><span class="line"></span><br><span class="line">//全局安装，安装在Node安装目录下的node_modules下</span><br><span class="line">npm install packageName -g</span><br><span class="line"></span><br><span class="line">//安装到项目目录下，并在package.json文件的dependencies中写入依赖，简写为-S</span><br><span class="line">npm install packageName --save</span><br><span class="line"></span><br><span class="line">//安装到项目目录下，并在package.json文件的devDependencies中写入依赖，简写为-D</span><br><span class="line">npm install packageName --save-dev</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//本地安装，安装到项目目录下，不在package.json中写入依赖</span><br><span class="line">npm install packageName</span><br><span class="line"></span><br><span class="line">//全局安装，安装在Node安装目录下的node_modules下</span><br><span class="line">npm install packageName -g</span><br><span class="line"></span><br><span class="line">//安装到项目目录下，并在package.json文件的dependencies中写入依赖，简写为-S</span><br><span class="line">npm install packageName --save</span><br><span class="line"></span><br><span class="line">//安装到项目目录下，并在package.json文件的devDependencies中写入依赖，简写为-D</span><br><span class="line">npm install packageName --save-dev</span><br></pre></td></tr></table></figure>
 <p>目前一般只是用 –save版本</p>
 <ol start="2">
 <li>安装后引入</li>
@@ -408,6 +407,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/nodejs/" rel="tag"># nodejs</a>
+          
+        </div>
       
 
       
@@ -490,7 +495,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -507,7 +512,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">tags</span>
                   
                 </div>
