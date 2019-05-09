@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2019-05-09T04:52:16.802Z</updated>
+  <updated>2019-05-09T05:36:21.184Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的nodejs配置</title>
+    <link href="http://konggeyuan.github.io/2019/05/09/%E6%88%91%E7%9A%84nodejs%E9%85%8D%E7%BD%AE/"/>
+    <id>http://konggeyuan.github.io/2019/05/09/我的nodejs配置/</id>
+    <published>2019-05-09T04:54:47.000Z</published>
+    <updated>2019-05-09T05:36:21.184Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h6 id=&quot;涵盖了基本安装-sublime的配置&quot;&gt;&lt;a href=&quot;#涵盖了基本安装-sublime的配置&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>从这里开始</title>
