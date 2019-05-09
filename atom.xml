@@ -44,7 +44,7 @@
     <link href="http://konggeyuan.github.io/2019/05/09/promise%E7%94%A8%E6%B3%95/"/>
     <id>http://konggeyuan.github.io/2019/05/09/promise用法/</id>
     <published>2019-05-09T14:50:00.000Z</published>
-    <updated>2019-05-09T15:16:56.590Z</updated>
+    <updated>2019-05-09T16:17:10.226Z</updated>
     
     <summary type="html">
     
@@ -59,6 +59,8 @@
     
     </summary>
     
+      <category term="学习笔记" scheme="http://konggeyuan.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
     
       <category term="es6" scheme="http://konggeyuan.github.io/tags/es6/"/>
     
@@ -69,7 +71,7 @@
     <link href="http://konggeyuan.github.io/2019/05/09/npm-%E5%AE%89%E8%A3%85%E5%BA%93/"/>
     <id>http://konggeyuan.github.io/2019/05/09/npm-安装库/</id>
     <published>2019-05-09T12:54:00.000Z</published>
-    <updated>2019-05-09T15:17:45.862Z</updated>
+    <updated>2019-05-09T16:17:54.084Z</updated>
     
     <summary type="html">
     
@@ -83,6 +85,8 @@
     
     </summary>
     
+      <category term="学习笔记" scheme="http://konggeyuan.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
     
       <category term="nodejs" scheme="http://konggeyuan.github.io/tags/nodejs/"/>
     
@@ -93,7 +97,7 @@
     <link href="http://konggeyuan.github.io/2019/05/09/%E6%88%91%E7%9A%84nodejs%E9%85%8D%E7%BD%AE/"/>
     <id>http://konggeyuan.github.io/2019/05/09/我的nodejs配置/</id>
     <published>2019-05-09T04:54:00.000Z</published>
-    <updated>2019-05-09T15:18:35.643Z</updated>
+    <updated>2019-05-09T16:19:17.867Z</updated>
     
     <summary type="html">
     
@@ -106,6 +110,8 @@
       
     
     </summary>
+    
+      <category term="学习笔记" scheme="http://konggeyuan.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
       <category term="nodejs" scheme="http://konggeyuan.github.io/tags/nodejs/"/>
