@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2019-05-09T15:19:51.187Z</updated>
+  <updated>2019-05-10T11:10:37.816Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Generator的一些想法</title>
+    <link href="http://konggeyuan.github.io/2019/05/10/Generator%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95/"/>
+    <id>http://konggeyuan.github.io/2019/05/10/Generator的一些想法/</id>
+    <published>2019-05-10T10:57:00.000Z</published>
+    <updated>2019-05-10T11:10:37.816Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Generator 看了一下午，想明白了就是一个能存储当前某一刹那状态的函数&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://konggeyuan.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="异步执行" scheme="http://konggeyuan.github.io/tags/%E5%BC%82%E6%AD%A5%E6%89%A7%E8%A1%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>对于学习目前的一些想法-想到什么说什么。</title>
