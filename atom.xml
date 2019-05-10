@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2019-05-10T11:10:37.816Z</updated>
+  <updated>2019-05-10T17:30:33.825Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo安装过程</title>
+    <link href="http://konggeyuan.github.io/2019/05/11/Hexo%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B/"/>
+    <id>http://konggeyuan.github.io/2019/05/11/Hexo安装过程/</id>
+    <published>2019-05-10T17:06:06.000Z</published>
+    <updated>2019-05-10T17:30:33.825Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;这里做个记录，基础部分参考网络上，theme部分按照个人的所找的theme配置吧。但一些基本的皮肤配置文件还是相同。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;本地部分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Generator的一些想法</title>
