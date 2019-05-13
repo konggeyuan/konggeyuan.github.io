@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2019-05-13T03:10:10.244Z</updated>
+  <updated>2019-05-13T08:05:46.934Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一些学习JS的资料地址</title>
+    <link href="http://konggeyuan.github.io/2019/05/13/%E4%B8%80%E4%BA%9B%E5%AD%A6%E4%B9%A0JS%E7%9A%84%E8%B5%84%E6%96%99%E5%9C%B0%E5%9D%80/"/>
+    <id>http://konggeyuan.github.io/2019/05/13/一些学习JS的资料地址/</id>
+    <published>2019-05-13T07:45:55.000Z</published>
+    <updated>2019-05-13T08:05:46.934Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://es6.ruanyifeng.com&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hexo安装过程</title>
