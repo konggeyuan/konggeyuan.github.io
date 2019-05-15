@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2019-05-13T08:12:37.501Z</updated>
+  <updated>2019-05-15T14:53:36.357Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>hexo二级菜单修改</title>
+    <link href="http://konggeyuan.github.io/2019/05/15/hexo%E4%BA%8C%E7%BA%A7%E8%8F%9C%E5%8D%95%E4%BF%AE%E6%94%B9/"/>
+    <id>http://konggeyuan.github.io/2019/05/15/hexo二级菜单修改/</id>
+    <published>2019-05-15T14:32:00.000Z</published>
+    <updated>2019-05-15T14:53:36.357Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;next主题是我目前常用的主题,&lt;a href=&quot;https://theme-next.org/docs/getting-started/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Hexo修改笔记" scheme="http://konggeyuan.github.io/categories/Hexo%E4%BF%AE%E6%94%B9%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="hexo" scheme="http://konggeyuan.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>git教程资料</title>
     <link href="http://konggeyuan.github.io/2019/05/13/git%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B/"/>
     <id>http://konggeyuan.github.io/2019/05/13/git工作流程/</id>
     <published>2019-05-13T08:10:00.000Z</published>
-    <updated>2019-05-13T08:12:37.501Z</updated>
+    <updated>2019-05-15T13:48:19.829Z</updated>
     
     <summary type="html">
     
@@ -34,6 +60,8 @@
       
     
     </summary>
+    
+      <category term="学习笔记" scheme="http://konggeyuan.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
