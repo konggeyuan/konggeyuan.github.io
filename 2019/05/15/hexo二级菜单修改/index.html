@@ -106,7 +106,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://konggeyuan.github.io/images/pasted-6.png">
 <meta property="og:image" content="http://konggeyuan.github.io/images/pasted-7.png">
-<meta property="og:updated_time" content="2019-05-15T14:53:36.357Z">
+<meta property="og:updated_time" content="2019-05-15T15:10:45.543Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo二级菜单修改">
 <meta name="twitter:description" content="next主题是我目前常用的主题,官方文档只是说了一级目录，但是二级怎么改似乎文档中没有提及。 next主题整体目录结构比较多，改页面结构只是用到layout目录中的对应文件 12cd blog/vim themes/next/layout/_macro/menu/menu-item.swig 在改之前先确认一个概念，hexo中我认为所谓的分类，其实就是二级目录，所以是否是分类就通过目录层级判断，以">
@@ -483,7 +483,7 @@
                 
               
 
-              <time title="创建时间：2019-05-15 22:32:00 / 修改时间：22:53:36" itemprop="dateCreated datePublished" datetime="2019-05-15T22:32:00+08:00">2019-05-15</time>
+              <time title="创建时间：2019-05-15 22:32:00 / 修改时间：23:10:45" itemprop="dateCreated datePublished" datetime="2019-05-15T22:32:00+08:00">2019-05-15</time>
             
 
             
@@ -559,9 +559,10 @@
 <li><p>修改主题配置文件 </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">vim theme/next/_config.yml</span><br><span class="line"></span><br><span class="line"><span class="comment"># 寻找menu部分,增加二级菜单</span></span><br><span class="line"></span><br><span class="line">menu:</span><br><span class="line">	home: / || home</span><br><span class="line">	about: /about/ || user</span><br><span class="line">	tags: /tags/ || tags</span><br><span class="line">	categories: /categories/ || th</span><br><span class="line">	学习笔记: /categories/学习笔记/ || book <span class="comment">#二级菜单</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>完成后就是目前本站的效果了，可以试试看。</p>
+<li><p>完成后记得重新生成静态文件，否则自定义css文件不会被合并入main.css的主题css文件中</p>
 </li>
 </ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
 
       
     </div>
