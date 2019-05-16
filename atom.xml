@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2019-05-15T15:10:45.543Z</updated>
+  <updated>2019-05-16T10:56:23.731Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo搜索安装</title>
+    <link href="http://konggeyuan.github.io/2019/05/16/hexo%E6%90%9C%E7%B4%A2%E5%AE%89%E8%A3%85/"/>
+    <id>http://konggeyuan.github.io/2019/05/16/hexo搜索安装/</id>
+    <published>2019-05-16T10:51:00.000Z</published>
+    <updated>2019-05-16T10:56:23.731Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;安装分为2个部分&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;hexo搜索插件安装，没有使用第三方的平台，而是使用一个local search的方式，正好主题也支持这么搜索&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>hexo二级菜单修改</title>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[hexo搜索安装]]></title>
+    <url>%2F2019%2F05%2F16%2Fhexo%E6%90%9C%E7%B4%A2%E5%AE%89%E8%A3%85%2F</url>
+    <content type="text"><![CDATA[安装分为2个部分 hexo搜索插件安装，没有使用第三方的平台，而是使用一个local search的方式，正好主题也支持这么搜索 123456789101112cd blog/npm install hexo-generator-searchdb --save# 编辑hexo的_config.ymlvim _config.xml# 在结尾处增加如下配置,其实就是搜索xml的js方式。(- -)search: path: search.xml field: post format: html limit: 10000 主题部分开启搜索 1234cd blog/theme/next/vim _config.xml搜索local_search关键字，将enable改为true 完成]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[hexo二级菜单修改]]></title>
+    <url>%2F2019%2F05%2F15%2Fhexo%E4%BA%8C%E7%BA%A7%E8%8F%9C%E5%8D%95%E4%BF%AE%E6%94%B9%2F</url>
+    <content type="text"><![CDATA[next主题是我目前常用的主题,官方文档只是说了一级目录，但是二级怎么改似乎文档中没有提及。 next主题整体目录结构比较多，改页面结构只是用到layout目录中的对应文件 12cd blog/vim themes/next/layout/_macro/menu/menu-item.swig 在改之前先确认一个概念，hexo中我认为所谓的分类，其实就是二级目录，所以是否是分类就通过目录层级判断，以这个为核心概念，只要判断目录层级就好。 修改后： 123456789101112131415161718192021222324252627282930313233&#123;% macro render(name, value) %&#125;&#123;% import 'menu-badge.swig' as menu_badge %&#125; &#123;% set itemURL = value.split('||')[0] | trim %&#125; &#123;% if itemURL.indexOf('http') != 0 %&#125; &#123;% set itemURL = itemURL | replace('//', '/', 'g') %&#125; &#123;% endif %&#125; &lt;li class="menu-item menu-item-&#123;&#123; itemName | replace(' ', '-', 'g') &#125;&#125;&#123;&#123; item_active(itemURL, 'menu-item-active') &#125;&#125;"&gt; &#123;% set menuText = __('menu.' + name) | replace('menu.', '') %&#125; &#123;% set menuURL = itemURL %&#125; &#123;% if theme.menu_settings.icons %&#125; &#123;% set menuIcon = '&lt;i class="menu-item-icon fa fa-fw fa-' + value.split('||')[1] | trim | default('question-circle') + '"&gt;&lt;/i&gt; &lt;br/&gt;' %&#125; &#123;% endif %&#125; &#123;% if theme.menu_settings.badges %&#125; &#123;% set menuBadge = menu_badge.render(name) | trim %&#125; &#123;% endif %&#125; &lt;!-- 判断是否为二级目录,增加自定义css --&gt; &#123;% set tmp = menuURL.split('/')[2] %&#125; &#123;% if tmp.length&gt;1 %&#125; &#123;&#123; next_url(menuURL, menuIcon + menuText + menuBadge, &#123;rel: 'section','class':'submenu-item'&#125;) &#125;&#125; &#123;% else %&#125; &#123;&#123; next_url(menuURL, menuIcon + menuText + menuBadge, &#123;rel: 'section'&#125;) &#125;&#125; &#123;% endif %&#125; &lt;!-- 判断是否为二级目录,增加自定义css --&gt; &lt;/li&gt;&#123;% endmacro %&#125; 我们在判断层级目录是二级后，在next_url的样式参数中增加了一个自定义样式参数 增加自定义css 123456vim themes/next/source/css/_custom/custom.style# 修改增加新的css样式.submenu-item &#123; margin-left: 10%;&#125; 修改主题配置文件 12345678910vim theme/next/_config.yml# 寻找menu部分,增加二级菜单menu: home: / || home about: /about/ || user tags: /tags/ || tags categories: /categories/ || th 学习笔记: /categories/学习笔记/ || book #二级菜单 完成后记得重新生成静态文件，否则自定义css文件不会被合并入main.css的主题css文件中 12hexo cleanhexo g -d]]></content>
+      <categories>
+        <category>Hexo修改笔记</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git教程资料]]></title>
+    <url>%2F2019%2F05%2F13%2Fgit%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[git工作流程 多人协作，做产品用的上 github markdown语法 总容易忘记弄个备查]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[一些学习JS的资料地址]]></title>
+    <url>%2F2019%2F05%2F13%2F%E4%B8%80%E4%BA%9B%E5%AD%A6%E4%B9%A0JS%E7%9A%84%E8%B5%84%E6%96%99%E5%9C%B0%E5%9D%80%2F</url>
+    <content type="text"><![CDATA[ES6语法入门教程 es6的入门教程，涵盖了语言的大部分方面，都是一些入门知识，要更深入。只能将知识点一个个搜索更细节的东西，光入门是够了。 javascript全栈教程 感觉这本更泛，作为走马观花不错，可以了解各个知识点。 拥抱Generator，告别异步回调 更详细的说明generator 更強大的非同步模式：從Generator到Async Await 学了es6的generator、promise，够用，但是async要学总要知道为啥。这个能说明为什么 深入掌握 ECMAScript 6 异步编程 异步编程众所纷纭，总是太多名词，这篇相对简单，先从弄清楚名词说起 深入理解ES6异步编程 相对更简单的说明 小议async/await和coroutine js异步协程开发的几种常见方式的说明]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo安装过程]]></title>
+    <url>%2F2019%2F05%2F11%2FHexo%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[这里做个记录，安装&amp;github配置部分内容参考网络上，theme部分按照个人的所找的theme配置吧。但一些基本的皮肤配置文件还是相同。 安装hexo github设置 常用设置 常用命令 扩展包配置 主题安装 安装hexo 12345678910111213141516171819# 全局安装hexo命令行包npm install -g hexo-cli# 建立hexo博客项目，会从远程获取一份hexo的代码并建立一个设定的目录，hexo init blogcd blog/npm init --yes 建立package.json为了后面安装扩展包准备npm install hexo-deployer-git --save #安装推送命令#此时本地已经有一个blog目录,标准的结构├── _config.yml #配置文件├── node_modules├── package-lock.json├── package.json├── scaffolds├── source #生成的markdown文件,域名映射文件，自定义目录配置└── themes #主题 github配置1. 登录到GitHub,如果没有GitHub帐号，使用你的邮箱注册GitHub帐号，点击GitHub中的New repository创建新仓库，仓库名应该为：注册用户名.github.io 这个用户名使用你的GitHub帐号名称代替，这是固定写法。因为只有这样才能确保 注册用户名.github.io 访问到对应的仓库.例如本日志的仓库配置2. 增加自己的域名别名（非必须）不是每个人都想用github.io后缀，这年代大家都想个性化，用自己的域名，比如我就用blog.all-soon.com.github也支持这样的配置。如图，在仓库的这部分增加别名的配置配置后，请去自己的域名的dns配置中，将该域名指向 注册用户名.github.io 这个域名，这样才能确保生效.hexo常用设置 做完github配置后，对应的二级域名也已经出现，现在可以对hexo做常规的配置 12345678910111213141516171819202122# 基础配置,将本地与github链接# 编辑_config.yml # 修改下面这些信息title: 博客名subtitle: 子标题description: #seo所用部分keywords:author: language: zh-CN #默认语言timezone: Asia/Shanghai #所在时区url: http://注册用户名.github.io #对应github上的配置# 推送（我这里用的ssh方式，你也可以用http方式deploy: type: git repo: git@github.com:注册用户名/blog.git branch: master hexo常用命令 123456hexo g == hexo generate #生成hexo s == hexo server #启动服务预览hexo d == hexo deploy #部署hexo clean #清除缓存#hexo s 启动后，我们可以通过http://localhost:4000这个地址访问网页 扩展包配置 RSS配置通过rss，可以让别人轻松收藏你的站点，并定时更新更新站点内容，而不是每次都要用游览器访问。在资讯泛滥的年代，我们越来越受到来自网络噪音，而订阅rss则是个不错的方式，关注自己想要的，而不是被动的接受推送。 12#进入hexo安装目录npm install hexo-generator-feed --save 内容发布后台hexo通过命令生成文件，按照md语法编写文件，推送仓库这个方式来发布内容。每次都是通过命令行总是太乏味。安装内容发布后台就是个不错的方式。 1npm install hexo-admin --save 安装后通过hexo s 启动本地预览博客后，就可以在http://localhost:4000/admin 路径下获得内容管理。 主题安装 hexo官方有非常多的主题可以使用。 hexo目录中有个theme目录，安装主题通过git主题的仓库中的代码同步到本地theme目录下。 安装举例 1234567git clone https://github.com/theme-next/hexo-theme-next themes/next#修改本地配置文件，将主题设置vim _config.ymltheme: next]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Generator的一些想法]]></title>
+    <url>%2F2019%2F05%2F10%2FGenerator%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[Generator 看了一下午，想明白了就是一个能存储当前某一刹那状态的函数 12345678910111213141516//特殊的函数用*标记function* fn5()&#123; var x=1; while(x) &#123; yield(x++); &#125;&#125;//定义后，每次next()会再yield之前运行停止,下一次调用就从yield后运行至下一个yield之前var c = fn5();console.log(c.next().value); // 1console.log(c.next().value); // 2console.log(c.next().value); // 3 可以用这种暂停作为异步的执行，当异步执行时候暂停，等到异步停止后，用next()继续执行 结合之前的Promise，可以在异步中这样执行。 建立一个Promise，并设定resolve和reject函数 yield停在Promise实例对象前 实例化yield相关的函数，执行next，然后value中返回的实例化的promise中执行操作 具体代码: 123456789101112131415161718192021222324252627282930/** * Generator+ Promise组合 */var url = "'http://httpbin.org/get'";var test = url=&gt; &#123; return new Promise(function(resolve,reject)&#123; request( url, function(err, response, body)&#123; if(!err &amp;&amp; response.statusCode == 200) &#123; resolve(body); &#125;else &#123; reject(err); &#125; &#125; ); &#125;);&#125;var fh7 = function* () &#123; let result = yield test('http://httpbin.org/get');&#125;var e = fh7();var p = e.next().value;p.then((data)=&gt;&#123; console.log(data);&#125;);]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>异步执行</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[对于学习目前的一些想法-想到什么说什么。]]></title>
+    <url>%2F2019%2F05%2F09%2F%E5%AF%B9%E4%BA%8E%E5%AD%A6%E4%B9%A0%E7%9B%AE%E5%89%8D%E7%9A%84%E4%B8%80%E4%BA%9B%E6%83%B3%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[学习都是从碎片开始，目前学的语言都是从主干部分，现在学，慢慢再丰富枝干部分。边学边做，以完成任务的为学习目的，然后再基于主干的知识，根据手册资料，慢慢扩展。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[promise用法]]></title>
+    <url>%2F2019%2F05%2F09%2Fpromise%E7%94%A8%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[原本层层嵌套改为多个then和catch连写的方式 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263var request = require('request');var url = "'http://httpbin.org/get'";function test(url) &#123; // 语法检查 "use strict"; return new Promise(function(resolve,reject)&#123; request( url, function(err, response, body)&#123; if(!err &amp;&amp; response.statusCode == 200) &#123; resolve(body); &#125;else &#123; reject(err); &#125; &#125; ); &#125;);&#125;test('http://httpbin.org/get') .then(function(value)&#123; return value; &#125;) .then(function(value)&#123; // console.log(22222); // console.log(value); &#125;) .catch(function(value)&#123; &#125;);//语法糖方式var prom = Promise.resolve( //返回的是promise对象，这里远程get方式无法调用 request(url,function(err, response, body)&#123;&#125;));prom.then(function(value)&#123; // console.log(value.uri);&#125;);// 只要抛错误就直接调用catchfunction task1() &#123; console.log('task1'); throw new Error('error test');&#125;function task2() &#123; console.log('task2');&#125;function err() &#123; console.log('err');&#125;var prom = Promise.resolve('aaaaa');// prom.then(task1).then(task2).catch(err);]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>es6</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[npm 使用]]></title>
+    <url>%2F2019%2F05%2F09%2Fnpm-%E5%AE%89%E8%A3%85%E5%BA%93%2F</url>
+    <content type="text"><![CDATA[https://www.npmjs.com/中搜索 安装一些第三方库 1234567891011//本地安装，安装到项目目录下，不在package.json中写入依赖npm install packageName//全局安装，安装在Node安装目录下的node_modules下npm install packageName -g//安装到项目目录下，并在package.json文件的dependencies中写入依赖，简写为-Snpm install packageName --save//安装到项目目录下，并在package.json文件的devDependencies中写入依赖，简写为-Dnpm install packageName --save-dev 目前一般只是用 –save版本 安装后引入 12var 变量名称 = require('类库名称');]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>nodejs</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[我的nodejs配置]]></title>
+    <url>%2F2019%2F05%2F09%2F%E6%88%91%E7%9A%84nodejs%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[涵盖了基本安装+sublime的配置 nvm、npm、node环境安装 基本都是老生常谈的内容，主要还是用cnpm、cnvm等，用国内的阿里的源安装。之前尝试了brew安装方式。但发现nvm默认是没有安装，再弄也比较麻烦。正好有需要学习一下，就uninstall完直接安装了。 1234567891011121314151617# 官网直接安装curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash\n# 切换国内源vim ~/.zshrc# 增加npm源export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node# 增加npm别名，当然也可以用阿里源的直接安装alias cnpm="npm --registry=https://registry.npm.taobao.org \ --cache=$HOME/.npm/.cache/cnpm \ --disturl=https://npm.taobao.org/dist \ --userconfig=$HOME/.cnpmrc" sublime 配置 主要用到的Nodejs、JSHint Gutter 2个插件。Nodejs用来build代码，也就是command+b用到那个。JSHint则用来语法的校验。 nodejs build 安装 command+shift+p,搜索nodejs安装 package setting-&gt;settings-User 设置node和npm的位置，如果不知道那个位置可以用which npm来确认 1234&#123; &quot;node_command&quot;: &quot;/Users/mini/.nvm/versions/node/v12.2.0/bin/node&quot;, &quot;npm_command&quot;: &quot;/Users/mini/.nvm/versions/node/v12.2.0/bin/npm&quot;&#125; jshint插件 jshint 有点像python的中的书写规范，通过修改配置可以设定不同的书写规范并加以校验 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950# 安装npm install -g jshintcommand+shift+p,搜索jshint gutter安装# 配置package setting-&gt;setting-options&#123; "node_path": &#123; "windows": "C:/Program Files/nodejs/node.exe", "linux": "/usr/bin/nodejs", "osx": "/Users/mini/.nvm/versions/node/v12.2.0/bin/node" &#125;, "lint_on_edit": false, "lint_on_edit_timeout": 1, "lint_on_load": false, // 保存时检测 "lint_on_save": true, //高亮选中的部分 "highlight_selected_regions": true, // 通过`.jshintrc`.配置 "print_diagnostics": true&#125;package setting-&gt;line-code# 我改的不多几乎是用默认的，也是懒得折腾那么多。毕竟这个可以通过之后的学习在逐步理解。&#123; "browser": true, "esnext": true, "globals": &#123;&#125;, "strict": "global", "undef": true, "unused": true, //增加对es5的支持 "es5": true, "node": true,&#125; 刚开始学我也不想枝节上扯太多，还是重点在语言本身，感觉和小程序的写法有相似的地方，不过也是，不都是js嘛 –!]]></content>
+      <categories>
+        <category>学习笔记</category>
+      </categories>
+      <tags>
+        <tag>nodejs</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[从这里开始]]></title>
+    <url>%2F2019%2F05%2F08%2Ftest-page%2F</url>
+    <content type="text"><![CDATA[刚开始写希望有不错的开始，不太想用evernote的版本。如果不被墙，基本就选择这里。]]></content>
+  </entry>
+</search>
