@@ -462,6 +462,204 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://konggeyuan.github.io/2019/05/24/virtualbox-开发机器-搭建群晖开发环境/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Space Yuan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/4988185??v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="技术博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/24/virtualbox-开发机器-搭建群晖开发环境/" class="post-title-link" itemprop="url">virtualbox Linux下搭建黑群晖开发环境</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-05-24 14:22:00 / 修改时间：17:05:38" itemprop="dateCreated datePublished" datetime="2019-05-24T14:22:00+08:00">2019-05-24</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li><a href="#env">环境安装</a><ul>
+<li><a href="#init">vbox虚拟机配置</a></li>
+<li><a href="#img_install">黑群晖的磁盘镜像安装</a></li>
+<li><a href="#sys_install">安装群晖系统</a></li>
+</ul>
+</li>
+<li><a href="#linux">ubuntu部署vbox虚拟机</a><ul>
+<li><a href="#linux_install">安装linux版vbox</a></li>
+<li><a href="#regist">注册虚拟机</a></li>
+<li><a href="#vbox_modify">虚拟机环境信息更改</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="软件环境"><a href="#软件环境" class="headerlink" title="软件环境"></a>软件环境</h3><p>运行virtualbox(简称vbox)环境主机 Ubuntu linux 16.04</p>
+<p>群晖开发环境搭建机 osx</p>
+<h3 id="环境安装"><a href="#环境安装" class="headerlink" title="环境安装"></a><h9 id="env">环境安装</h9></h3><ol>
+<li><h4 id="vbox虚拟机配置"><a href="#vbox虚拟机配置" class="headerlink" title="vbox虚拟机配置"></a><h9 id="init">vbox虚拟机配置</h9></h4><p> osx本地建立vbox虚拟机，建立4个磁盘<br> 1个ide用来装ubuntu<br> 1个scsci用来装群晖系统    /dev/sdb<br> 2个scsi用来装群晖数据盘 </p>
+</li>
+<li><h4 id="黑群晖的磁盘镜像安装"><a href="#黑群晖的磁盘镜像安装" class="headerlink" title="黑群晖的磁盘镜像安装"></a><h9 id="img_install">黑群晖的磁盘镜像安装</h9></h4></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#下载镜像</span></span><br><span class="line">wget http://down.nas2x.com/synology/dsm/6.2/6.2.0/ds3617_6.2/synoboot.img</span><br><span class="line"></span><br><span class="line"><span class="comment">#vbox中dd镜像到群晖系统盘</span></span><br><span class="line">dd <span class="keyword">if</span>=synoboot.img of=/dev/sdb</span><br></pre></td></tr></table></figure>
+
+
+<p>重启系统，并用群晖系统盘启动</p>
+<p><img src="/images/pasted-8.png" alt="upload successful"></p>
+<p>此时选择第一项即可，当出现下面这样的图片表示系统启动成功</p>
+<p><img src="/images/pasted-9.png" alt="upload successful"></p>
+<ol start="3">
+<li><h4 id="安装群晖系统"><a href="#安装群晖系统" class="headerlink" title="安装群晖系统"></a><h9 id="sys_install">安装群晖系统</h9></h4> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#下载系统文件</span></span><br><span class="line">wget http://down.nas2x.com/synology/dsm/6.2/6.2.0/ds3617_6.2/DSM_DS3617xs_23739.pat</span><br><span class="line"></span><br><span class="line"><span class="comment">#下载群晖工具（Synology Assistant）</span></span><br><span class="line">https://www.synology.cn/zh-cn/support/download/DS3617xs<span class="comment">#utilities</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<p>修改发现的虚拟机mac地址<br><img src="/images/pasted-10.png" alt="upload successful"><br><img src="/images/pasted-11.png" alt="upload successful"></p>
+<p>重启该虚拟机，再次用群晖助手搜索<br><img src="/images/pasted-12.png" alt="upload successful"></p>
+<p>登陆网页版安装<br><img src="/images/pasted-13.png" alt="upload successful"></p>
+<p>安装过程会格式化所有的虚拟磁盘，安装完后会自动重启<br><img src="/images/pasted-14.png" alt="upload successful"></p>
+<h3 id="ubuntu部署vbox虚拟机"><a href="#ubuntu部署vbox虚拟机" class="headerlink" title="ubuntu部署vbox虚拟机 "></a><h9 id="linux">ubuntu部署vbox虚拟机 </h9></h3><h4 id="安装linux版vbox"><a href="#安装linux版vbox" class="headerlink" title="安装linux版vbox"></a><h9 id="linux_install">安装linux版vbox</h9></h4><pre><code><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">   sudo sh -c <span class="string">'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" &gt;&gt; /etc/apt/sources.list.d/virtualbox.list'</span></span><br><span class="line">   </span><br><span class="line">   wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -</span><br><span class="line">   </span><br><span class="line">   wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -</span><br><span class="line">   </span><br><span class="line">   apt-get install virtualbox-6.0</span><br><span class="line">   </span><br><span class="line">   <span class="comment">#安装扩展包</span></span><br><span class="line">wget http://download.virtualbox.org/virtualbox/6.0.8/Oracle_VM_VirtualBox_Extension_Pack-6.0.8-130520.vbox-extpack</span><br><span class="line">   </span><br><span class="line">   VBoxManage expack install ./Oracle_VM_VirtualBox_Extension_Pack-6.0.8-130520.vbox-extpack</span><br></pre></td></tr></table></figure></code></pre><h4 id="注册虚拟机"><a href="#注册虚拟机" class="headerlink" title="注册虚拟机"></a><h9 id="regist">注册虚拟机</h9></h4><pre><code><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vboxmanage registervm /vms/syno/syno.vbox</span><br></pre></td></tr></table></figure></code></pre><h4 id="修改数据磁盘大小容量"><a href="#修改数据磁盘大小容量" class="headerlink" title="修改数据磁盘大小容量"></a><h9 id="vbox_modify">修改数据磁盘大小容量</h9></h4><pre><code><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">vboxmanage modifyhd a81abcee-823e-4bd1-9964-e8de3460d7dd --resize 10248</span><br><span class="line"></span><br><span class="line"><span class="comment">#修改网卡信息</span></span><br><span class="line"><span class="comment">#不同的机器的对应网卡是不同，需要修改</span></span><br><span class="line">VBoxManage modifyvm syno --nic1 bridged --nictype1 82540EM --cableconnected1 on --bridgeadapter1 p2p1</span><br><span class="line"></span><br><span class="line"><span class="comment">#无界面启动虚拟机</span></span><br><span class="line">vboxmanage  startvm syno --<span class="built_in">type</span>=headless</span><br></pre></td></tr></table></figure></code></pre>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://konggeyuan.github.io/2019/05/16/hexo搜索安装/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -723,10 +921,12 @@
             <p>next主题是我目前常用的主题,<a href="https://theme-next.org/docs/getting-started/" target="_blank" rel="noopener">官方文档</a>只是说了一级目录，但是二级怎么改似乎文档中没有提及。</p>
 <p>next主题整体目录结构比较多，改页面结构只是用到layout目录中的对应文件</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog/</span><br><span class="line">vim themes/next/layout/_macro/menu/menu-item.swig</span><br></pre></td></tr></table></figure>
+
 <p>在改之前先确认一个概念，hexo中我认为所谓的分类，其实就是二级目录，所以是否是分类就通过目录层级判断，以这个为核心概念，只要判断目录层级就好。</p>
 <p><img src="/images/pasted-6.png" alt="upload successful"></p>
 <p>修改后：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#123;% macro render(name, value) %&#125;</span><br><span class="line">&#123;% <span class="keyword">import</span> <span class="string">'menu-badge.swig'</span> <span class="keyword">as</span> menu_badge %&#125;</span><br><span class="line"></span><br><span class="line">  &#123;% <span class="keyword">set</span> itemURL = value.split('||')[0] | trim %&#125;</span><br><span class="line">  &#123;% <span class="keyword">if</span> itemURL.indexOf(<span class="string">'http'</span>) != <span class="number">0</span> %&#125;</span><br><span class="line">    &#123;% <span class="keyword">set</span> itemURL = itemURL | replace('//', '/', 'g') %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">  &lt;li <span class="class"><span class="keyword">class</span></span>=<span class="string">"menu-item menu-item-&#123;&#123; itemName | replace(' ', '-', 'g') &#125;&#125;&#123;&#123; item_active(itemURL, 'menu-item-active') &#125;&#125;"</span>&gt;</span><br><span class="line"></span><br><span class="line">    &#123;% <span class="keyword">set</span> menuText = __('menu.' + name) | replace('menu.', '') %&#125;</span><br><span class="line">    &#123;% <span class="keyword">set</span> menuURL = itemURL %&#125;</span><br><span class="line">    &#123;% <span class="keyword">if</span> theme.menu_settings.icons %&#125;</span><br><span class="line">      &#123;% <span class="keyword">set</span> menuIcon = '&lt;i class="menu-item-icon fa fa-fw fa-' + value.split('||')[1] | trim | default('question-circle') + '"&gt;&lt;/i&gt; &lt;br/&gt;' %&#125;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">    &#123;% <span class="keyword">if</span> theme.menu_settings.badges %&#125;</span><br><span class="line">      &#123;% <span class="keyword">set</span> menuBadge = menu_badge.render(name) | trim %&#125;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">     &lt;!-- 判断是否为二级目录,增加自定义css --&gt;</span><br><span class="line">    &#123;% <span class="keyword">set</span> tmp = menuURL.split('/')[2] %&#125;</span><br><span class="line">    &#123;% <span class="keyword">if</span> tmp.length&gt;<span class="number">1</span> %&#125;</span><br><span class="line">        &#123;&#123; next_url(menuURL, menuIcon + menuText + menuBadge, &#123;<span class="attr">rel</span>: <span class="string">'section'</span>,<span class="string">'class'</span>:<span class="string">'submenu-item'</span>&#125;) &#125;&#125;</span><br><span class="line">    &#123;% <span class="keyword">else</span> %&#125;</span><br><span class="line">        &#123;&#123; next_url(menuURL, menuIcon + menuText + menuBadge, &#123;<span class="attr">rel</span>: <span class="string">'section'</span>&#125;) &#125;&#125;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line">	&lt;!-- 判断是否为二级目录,增加自定义css --&gt;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    &lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&#123;% endmacro %&#125;</span></span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>我们在判断层级目录是二级后，在next_url的样式参数中增加了一个自定义样式参数</li>
 </ul>
@@ -735,6 +935,7 @@
 <li>增加自定义css</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">vim themes/next/<span class="built_in">source</span>/css/_custom/custom.style</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改增加新的css样式</span></span><br><span class="line">.submenu-item &#123;</span><br><span class="line">  margin-left: 10%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li><p>修改主题配置文件 </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">vim theme/next/_config.yml</span><br><span class="line"></span><br><span class="line"><span class="comment"># 寻找menu部分,增加二级菜单</span></span><br><span class="line"></span><br><span class="line">menu:</span><br><span class="line">	home: / || home</span><br><span class="line">	about: /about/ || user</span><br><span class="line">	tags: /tags/ || tags</span><br><span class="line">	categories: /categories/ || th</span><br><span class="line">	学习笔记: /categories/学习笔记/ || book <span class="comment">#二级菜单</span></span><br></pre></td></tr></table></figure>
@@ -743,6 +944,7 @@
 </li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
 
           
         
@@ -1288,35 +1490,48 @@
 <li><a href="#ext_setup">扩展包配置</a></li>
 <li><a href="#theme">主题安装</a></li>
 </ul>
-<h9 id="local">安装hexo</h9>
-
+<p><h9 id="local">安装hexo</h9></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 全局安装hexo命令行包</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"></span><br><span class="line"><span class="comment"># 建立hexo博客项目，会从远程获取一份hexo的代码并建立一个设定的目录，</span></span><br><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog/</span><br><span class="line">npm init --yes 建立package.json为了后面安装扩展包准备</span><br><span class="line">npm install hexo-deployer-git --save <span class="comment">#安装推送命令</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#此时本地已经有一个blog目录,标准的结构</span></span><br><span class="line"></span><br><span class="line">├── _config.yml 			<span class="comment">#配置文件</span></span><br><span class="line">├── node_modules</span><br><span class="line">├── package-lock.json</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── <span class="built_in">source</span>					<span class="comment">#生成的markdown文件,域名映射文件，自定义目录配置</span></span><br><span class="line">└── themes					<span class="comment">#主题</span></span><br></pre></td></tr></table></figure>
-<h9 id="github">github配置<br><br><br>1. 登录到GitHub,如果没有GitHub帐号，使用你的邮箱注册<a href="https://github.com/" target="_blank" rel="noopener">GitHub帐号</a>，点击GitHub中的New repository创建新仓库，仓库名应该为：注册用户名.github.io 这个用户名使用你的GitHub帐号名称代替，这是固定写法。因为只有这样才能确保 注册用户名.github.io 访问到对应的仓库.<br><br>例如本日志的仓库配置<br><br><br><img src="/images/pasted-2.png" alt="upload successful"><br><br><br>2. 增加自己的域名别名（非必须）<br><br>不是每个人都想用github.io后缀，这年代大家都想个性化，用自己的域名，比如我就用<a href="http://blog.all-soon.com" target="_blank" rel="noopener">blog.all-soon.com</a>.github也支持这样的配置。<br><br>如图，在仓库的这部分增加别名的配置<br><br><img src="/images/pasted-3.png" alt="upload successful"><br><br><br>配置后，请去自己的域名的dns配置中，将该域名指向 注册用户名.github.io 这个域名，这样才能确保生效.<br><br><img src="/images/pasted-4.png" alt="upload successful"><br><br><br><br><h9 id="normal_setup">hexo常用设置</h9>
 
+<p><h9 id="github">github配置</h9></p>
+<ol>
+<li>登录到GitHub,如果没有GitHub帐号，使用你的邮箱注册<a href="https://github.com/" target="_blank" rel="noopener">GitHub帐号</a>，点击GitHub中的New repository创建新仓库，仓库名应该为：注册用户名.github.io 这个用户名使用你的GitHub帐号名称代替，这是固定写法。因为只有这样才能确保 注册用户名.github.io 访问到对应的仓库.</li>
+</ol>
+<p>例如本日志的仓库配置</p>
+<p><img src="/images/pasted-2.png" alt="upload successful"></p>
+<ol start="2">
+<li>增加自己的域名别名（非必须）</li>
+</ol>
+<p>不是每个人都想用github.io后缀，这年代大家都想个性化，用自己的域名，比如我就用<a href="http://blog.all-soon.com" target="_blank" rel="noopener">blog.all-soon.com</a>.github也支持这样的配置。</p>
+<p>如图，在仓库的这部分增加别名的配置</p>
+<p><img src="/images/pasted-3.png" alt="upload successful"></p>
+<p>配置后，请去自己的域名的dns配置中，将该域名指向 注册用户名.github.io 这个域名，这样才能确保生效.</p>
+<p><img src="/images/pasted-4.png" alt="upload successful"></p>
+<p><h9 id="normal_setup">hexo常用设置</h9></p>
 <p>做完github配置后，对应的二级域名也已经出现，现在可以对hexo做常规的配置</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 基础配置,将本地与github链接</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 编辑_config.yml </span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改下面这些信息</span></span><br><span class="line"></span><br><span class="line">title: 博客名</span><br><span class="line">subtitle: 子标题</span><br><span class="line">description:				<span class="comment">#seo所用部分</span></span><br><span class="line">keywords:</span><br><span class="line">author: </span><br><span class="line">language: zh-CN				<span class="comment">#默认语言</span></span><br><span class="line">timezone: Asia/Shanghai 	<span class="comment">#所在时区</span></span><br><span class="line">url: http://注册用户名.github.io	<span class="comment">#对应github上的配置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送（我这里用的ssh方式，你也可以用http方式</span></span><br><span class="line"></span><br><span class="line">deploy:</span><br><span class="line"> <span class="built_in">type</span>: git</span><br><span class="line"> repo: git@github.com:注册用户名/blog.git</span><br><span class="line"> branch: master</span><br></pre></td></tr></table></figure>
-<h9 id="normal_command">hexo常用命令</h9>
 
-
+<p><h9 id="normal_command">hexo常用命令</h9></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">hexo g == hexo generate <span class="comment">#生成</span></span><br><span class="line">hexo s == hexo server <span class="comment">#启动服务预览</span></span><br><span class="line">hexo d == hexo deploy <span class="comment">#部署</span></span><br><span class="line">hexo clean <span class="comment">#清除缓存</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#hexo s 启动后，我们可以通过http://localhost:4000这个地址访问网页</span></span><br></pre></td></tr></table></figure>
-<h9 id="ext_setup">扩展包配置</h9>
 
+<p><h9 id="ext_setup">扩展包配置</h9></p>
 <ol>
 <li>RSS配置<br>通过rss，可以让别人轻松收藏你的站点，并定时更新更新站点内容，而不是每次都要用游览器访问。在资讯泛滥的年代，我们越来越受到来自网络噪音，而订阅rss则是个不错的方式，关注自己想要的，而不是被动的接受推送。</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#进入hexo安装目录</span></span><br><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+
 <ol start="2">
 <li>内容发布后台<br>hexo通过命令生成文件，按照md语法编写文件，推送仓库这个方式来发布内容。每次都是通过命令行总是太乏味。安装内容发布后台就是个不错的方式。</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-admin --save</span><br></pre></td></tr></table></figure>
+
 <p>安装后通过hexo s 启动本地预览博客后，就可以在<a href="http://localhost:4000/admin" target="_blank" rel="noopener">http://localhost:4000/admin</a> 路径下获得内容管理。</p>
 <p><img src="/images/pasted-5.png" alt="upload successful"></p>
-<h9 id="theme">主题安装</h9>
-
+<p><h9 id="theme">主题安装</h9></p>
 <p>hexo官方有非常多的<a href="https://hexo.io/themes/" target="_blank" rel="noopener">主题</a>可以使用。</p>
 <p>hexo目录中有个theme目录，安装主题通过git主题的仓库中的代码同步到本地theme目录下。</p>
 <p>安装举例</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next</span><br><span class="line"></span><br><span class="line"><span class="comment">#修改本地配置文件，将主题设置</span></span><br><span class="line"></span><br><span class="line">vim _config.yml</span><br><span class="line"></span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure></h9>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next</span><br><span class="line"></span><br><span class="line"><span class="comment">#修改本地配置文件，将主题设置</span></span><br><span class="line"></span><br><span class="line">vim _config.yml</span><br><span class="line"></span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
           
         
       
@@ -1478,6 +1693,7 @@
           
             <p>Generator 看了一下午，想明白了就是一个能存储当前某一刹那状态的函数</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//特殊的函数用*标记</span></span><br><span class="line"><span class="function"><span class="keyword">function</span>* <span class="title">fn5</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> x=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(x) &#123;</span><br><span class="line">        <span class="keyword">yield</span>(x++);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//定义后，每次next()会再yield之前运行停止,下一次调用就从yield后运行至下一个yield之前</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> c = fn5();</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(c.next().value);	<span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(c.next().value);	<span class="comment">// 2</span></span><br><span class="line"><span class="built_in">console</span>.log(c.next().value);	<span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+
 <p>可以用这种暂停作为异步的执行，当异步执行时候暂停，等到异步停止后，用next()继续执行</p>
 <p>结合之前的Promise，可以在异步中这样执行。</p>
 <ol>
@@ -1979,203 +2195,12 @@
 <li>安装一些第三方库</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//本地安装，安装到项目目录下，不在package.json中写入依赖</span><br><span class="line">npm install packageName</span><br><span class="line"></span><br><span class="line">//全局安装，安装在Node安装目录下的node_modules下</span><br><span class="line">npm install packageName -g</span><br><span class="line"></span><br><span class="line">//安装到项目目录下，并在package.json文件的dependencies中写入依赖，简写为-S</span><br><span class="line">npm install packageName --save</span><br><span class="line"></span><br><span class="line">//安装到项目目录下，并在package.json文件的devDependencies中写入依赖，简写为-D</span><br><span class="line">npm install packageName --save-dev</span><br></pre></td></tr></table></figure>
+
 <p>目前一般只是用 –save版本</p>
 <ol start="2">
 <li>安装后引入</li>
 </ol>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">var</span> 变量名称 = <span class="built_in">require</span>(<span class="string">'类库名称'</span>);</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://konggeyuan.github.io/2019/05/09/我的nodejs配置/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Space Yuan">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/4988185??v=3&s=460">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="技术博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/05/09/我的nodejs配置/" class="post-title-link" itemprop="url">我的nodejs配置</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-05-09 12:54:00" itemprop="dateCreated datePublished" datetime="2019-05-09T12:54:00+08:00">2019-05-09</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-05-10 00:19:17" itemprop="dateModified" datetime="2019-05-10T00:19:17+08:00">2019-05-10</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h6 id="涵盖了基本安装-sublime的配置"><a href="#涵盖了基本安装-sublime的配置" class="headerlink" title="涵盖了基本安装+sublime的配置"></a>涵盖了基本安装+sublime的配置</h6><ol>
-<li>nvm、npm、node环境安装</li>
-</ol>
-<p>基本都是老生常谈的内容，主要还是用cnpm、cnvm等，用国内的阿里的源安装。之前尝试了brew安装方式。但发现nvm默认是没有安装，再弄也比较麻烦。正好有需要学习一下，就uninstall完直接安装了。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 官网直接安装</span></span><br><span class="line">curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash\n</span><br><span class="line"></span><br><span class="line"><span class="comment"># 切换国内源</span></span><br><span class="line"></span><br><span class="line">vim ~/.zshrc</span><br><span class="line"></span><br><span class="line"><span class="comment"># 增加npm源</span></span><br><span class="line"><span class="built_in">export</span> NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node</span><br><span class="line"></span><br><span class="line"><span class="comment"># 增加npm别名，当然也可以用阿里源的直接安装</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">alias</span> cnpm=<span class="string">"npm --registry=https://registry.npm.taobao.org \</span></span><br><span class="line"><span class="string">  --cache=<span class="variable">$HOME</span>/.npm/.cache/cnpm \</span></span><br><span class="line"><span class="string">  --disturl=https://npm.taobao.org/dist \</span></span><br><span class="line"><span class="string">  --userconfig=<span class="variable">$HOME</span>/.cnpmrc"</span></span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>sublime 配置</li>
-</ol>
-<p>主要用到的Nodejs、JSHint Gutter 2个插件。Nodejs用来build代码，也就是command+b用到那个。JSHint则用来语法的校验。</p>
-<p> nodejs build 安装</p>
-<ul>
-<li>command+shift+p,搜索nodejs安装</li>
-<li>package setting-&gt;settings-User</li>
-<li>设置node和npm的位置，如果不知道那个位置可以用which npm来确认</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	&quot;node_command&quot;: &quot;/Users/mini/.nvm/versions/node/v12.2.0/bin/node&quot;,</span><br><span class="line">	&quot;npm_command&quot;: &quot;/Users/mini/.nvm/versions/node/v12.2.0/bin/npm&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>jshint插件</p>
-<p>jshint 有点像python的中的书写规范，通过修改配置可以设定不同的书写规范并加以校验</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 安装</span></span><br><span class="line"></span><br><span class="line">npm install -g jshint</span><br><span class="line"><span class="built_in">command</span>+<span class="built_in">shift</span>+p,搜索jshint gutter安装</span><br><span class="line"></span><br><span class="line"><span class="comment"># 配置</span></span><br><span class="line"></span><br><span class="line">package setting-&gt;setting-options</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">  </span><br><span class="line">  <span class="string">"node_path"</span>: &#123;</span><br><span class="line">    <span class="string">"windows"</span>: <span class="string">"C:/Program Files/nodejs/node.exe"</span>,</span><br><span class="line">    <span class="string">"linux"</span>: <span class="string">"/usr/bin/nodejs"</span>,</span><br><span class="line">    <span class="string">"osx"</span>: <span class="string">"/Users/mini/.nvm/versions/node/v12.2.0/bin/node"</span></span><br><span class="line">  &#125;,</span><br><span class="line"></span><br><span class="line">  <span class="string">"lint_on_edit"</span>: <span class="literal">false</span>,</span><br><span class="line"></span><br><span class="line">  <span class="string">"lint_on_edit_timeout"</span>: 1,</span><br><span class="line"></span><br><span class="line">  <span class="string">"lint_on_load"</span>: <span class="literal">false</span>,</span><br><span class="line"></span><br><span class="line">  // 保存时检测</span><br><span class="line">  <span class="string">"lint_on_save"</span>: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line">  //高亮选中的部分</span><br><span class="line">  <span class="string">"highlight_selected_regions"</span>: <span class="literal">true</span>,</span><br><span class="line"></span><br><span class="line">  // 通过`.jshintrc`.配置</span><br><span class="line">  <span class="string">"print_diagnostics"</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">package setting-&gt;line-code</span><br><span class="line"></span><br><span class="line"><span class="comment"># 我改的不多几乎是用默认的，也是懒得折腾那么多。毕竟这个可以通过之后的学习在逐步理解。</span></span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">  <span class="string">"browser"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="string">"esnext"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="string">"globals"</span>: &#123;&#125;,</span><br><span class="line">  <span class="string">"strict"</span>: <span class="string">"global"</span>,</span><br><span class="line">  <span class="string">"undef"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="string">"unused"</span>: <span class="literal">true</span>,</span><br><span class="line">  //增加对es5的支持</span><br><span class="line">  <span class="string">"es5"</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="string">"node"</span>: <span class="literal">true</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>刚开始学我也不想枝节上扯太多，还是重点在语言本身，感觉和小程序的写法有相似的地方，不过也是，不都是js嘛 –!</p>
-
           
         
       
@@ -2264,7 +2289,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2310,7 +2335,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

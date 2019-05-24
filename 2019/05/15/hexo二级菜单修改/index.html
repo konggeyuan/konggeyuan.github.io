@@ -96,20 +96,20 @@
 
 
 
-  <meta name="description" content="next主题是我目前常用的主题,官方文档只是说了一级目录，但是二级怎么改似乎文档中没有提及。 next主题整体目录结构比较多，改页面结构只是用到layout目录中的对应文件 12cd blog/vim themes/next/layout/_macro/menu/menu-item.swig 在改之前先确认一个概念，hexo中我认为所谓的分类，其实就是二级目录，所以是否是分类就通过目录层级判断，以">
+  <meta name="description" content="next主题是我目前常用的主题,官方文档只是说了一级目录，但是二级怎么改似乎文档中没有提及。 next主题整体目录结构比较多，改页面结构只是用到layout目录中的对应文件 12cd blog/vim themes/next/layout/_macro/menu/menu-item.swig  在改之前先确认一个概念，hexo中我认为所谓的分类，其实就是二级目录，所以是否是分类就通过目录层级判断，">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo二级菜单修改">
 <meta property="og:url" content="http://konggeyuan.github.io/2019/05/15/hexo二级菜单修改/index.html">
 <meta property="og:site_name" content="技术博客">
-<meta property="og:description" content="next主题是我目前常用的主题,官方文档只是说了一级目录，但是二级怎么改似乎文档中没有提及。 next主题整体目录结构比较多，改页面结构只是用到layout目录中的对应文件 12cd blog/vim themes/next/layout/_macro/menu/menu-item.swig 在改之前先确认一个概念，hexo中我认为所谓的分类，其实就是二级目录，所以是否是分类就通过目录层级判断，以">
+<meta property="og:description" content="next主题是我目前常用的主题,官方文档只是说了一级目录，但是二级怎么改似乎文档中没有提及。 next主题整体目录结构比较多，改页面结构只是用到layout目录中的对应文件 12cd blog/vim themes/next/layout/_macro/menu/menu-item.swig  在改之前先确认一个概念，hexo中我认为所谓的分类，其实就是二级目录，所以是否是分类就通过目录层级判断，">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://konggeyuan.github.io/images/pasted-6.png">
 <meta property="og:image" content="http://konggeyuan.github.io/images/pasted-7.png">
 <meta property="og:updated_time" content="2019-05-15T15:10:45.543Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo二级菜单修改">
-<meta name="twitter:description" content="next主题是我目前常用的主题,官方文档只是说了一级目录，但是二级怎么改似乎文档中没有提及。 next主题整体目录结构比较多，改页面结构只是用到layout目录中的对应文件 12cd blog/vim themes/next/layout/_macro/menu/menu-item.swig 在改之前先确认一个概念，hexo中我认为所谓的分类，其实就是二级目录，所以是否是分类就通过目录层级判断，以">
+<meta name="twitter:description" content="next主题是我目前常用的主题,官方文档只是说了一级目录，但是二级怎么改似乎文档中没有提及。 next主题整体目录结构比较多，改页面结构只是用到layout目录中的对应文件 12cd blog/vim themes/next/layout/_macro/menu/menu-item.swig  在改之前先确认一个概念，hexo中我认为所谓的分类，其实就是二级目录，所以是否是分类就通过目录层级判断，">
 <meta name="twitter:image" content="http://konggeyuan.github.io/images/pasted-6.png">
 
 
@@ -572,10 +572,12 @@
         <p>next主题是我目前常用的主题,<a href="https://theme-next.org/docs/getting-started/" target="_blank" rel="noopener">官方文档</a>只是说了一级目录，但是二级怎么改似乎文档中没有提及。</p>
 <p>next主题整体目录结构比较多，改页面结构只是用到layout目录中的对应文件</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog/</span><br><span class="line">vim themes/next/layout/_macro/menu/menu-item.swig</span><br></pre></td></tr></table></figure>
+
 <p>在改之前先确认一个概念，hexo中我认为所谓的分类，其实就是二级目录，所以是否是分类就通过目录层级判断，以这个为核心概念，只要判断目录层级就好。</p>
 <p><img src="/images/pasted-6.png" alt="upload successful"></p>
 <p>修改后：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#123;% macro render(name, value) %&#125;</span><br><span class="line">&#123;% <span class="keyword">import</span> <span class="string">'menu-badge.swig'</span> <span class="keyword">as</span> menu_badge %&#125;</span><br><span class="line"></span><br><span class="line">  &#123;% <span class="keyword">set</span> itemURL = value.split('||')[0] | trim %&#125;</span><br><span class="line">  &#123;% <span class="keyword">if</span> itemURL.indexOf(<span class="string">'http'</span>) != <span class="number">0</span> %&#125;</span><br><span class="line">    &#123;% <span class="keyword">set</span> itemURL = itemURL | replace('//', '/', 'g') %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">  &lt;li <span class="class"><span class="keyword">class</span></span>=<span class="string">"menu-item menu-item-&#123;&#123; itemName | replace(' ', '-', 'g') &#125;&#125;&#123;&#123; item_active(itemURL, 'menu-item-active') &#125;&#125;"</span>&gt;</span><br><span class="line"></span><br><span class="line">    &#123;% <span class="keyword">set</span> menuText = __('menu.' + name) | replace('menu.', '') %&#125;</span><br><span class="line">    &#123;% <span class="keyword">set</span> menuURL = itemURL %&#125;</span><br><span class="line">    &#123;% <span class="keyword">if</span> theme.menu_settings.icons %&#125;</span><br><span class="line">      &#123;% <span class="keyword">set</span> menuIcon = '&lt;i class="menu-item-icon fa fa-fw fa-' + value.split('||')[1] | trim | default('question-circle') + '"&gt;&lt;/i&gt; &lt;br/&gt;' %&#125;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">    &#123;% <span class="keyword">if</span> theme.menu_settings.badges %&#125;</span><br><span class="line">      &#123;% <span class="keyword">set</span> menuBadge = menu_badge.render(name) | trim %&#125;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line"></span><br><span class="line">     &lt;!-- 判断是否为二级目录,增加自定义css --&gt;</span><br><span class="line">    &#123;% <span class="keyword">set</span> tmp = menuURL.split('/')[2] %&#125;</span><br><span class="line">    &#123;% <span class="keyword">if</span> tmp.length&gt;<span class="number">1</span> %&#125;</span><br><span class="line">        &#123;&#123; next_url(menuURL, menuIcon + menuText + menuBadge, &#123;<span class="attr">rel</span>: <span class="string">'section'</span>,<span class="string">'class'</span>:<span class="string">'submenu-item'</span>&#125;) &#125;&#125;</span><br><span class="line">    &#123;% <span class="keyword">else</span> %&#125;</span><br><span class="line">        &#123;&#123; next_url(menuURL, menuIcon + menuText + menuBadge, &#123;<span class="attr">rel</span>: <span class="string">'section'</span>&#125;) &#125;&#125;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line">	&lt;!-- 判断是否为二级目录,增加自定义css --&gt;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    &lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">&#123;% endmacro %&#125;</span></span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>我们在判断层级目录是二级后，在next_url的样式参数中增加了一个自定义样式参数</li>
 </ul>
@@ -584,6 +586,7 @@
 <li>增加自定义css</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">vim themes/next/<span class="built_in">source</span>/css/_custom/custom.style</span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改增加新的css样式</span></span><br><span class="line">.submenu-item &#123;</span><br><span class="line">  margin-left: 10%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li><p>修改主题配置文件 </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">vim theme/next/_config.yml</span><br><span class="line"></span><br><span class="line"><span class="comment"># 寻找menu部分,增加二级菜单</span></span><br><span class="line"></span><br><span class="line">menu:</span><br><span class="line">	home: / || home</span><br><span class="line">	about: /about/ || user</span><br><span class="line">	tags: /tags/ || tags</span><br><span class="line">	categories: /categories/ || th</span><br><span class="line">	学习笔记: /categories/学习笔记/ || book <span class="comment">#二级菜单</span></span><br></pre></td></tr></table></figure>
@@ -592,6 +595,7 @@
 </li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -702,7 +706,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -748,7 +752,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>

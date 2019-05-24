@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2019-05-16T10:56:23.731Z</updated>
+  <updated>2019-05-24T09:05:38.559Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>virtualbox Linux下搭建黑群晖开发环境</title>
+    <link href="http://konggeyuan.github.io/2019/05/24/virtualbox-%E5%BC%80%E5%8F%91%E6%9C%BA%E5%99%A8-%E6%90%AD%E5%BB%BA%E7%BE%A4%E6%99%96%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    <id>http://konggeyuan.github.io/2019/05/24/virtualbox-开发机器-搭建群晖开发环境/</id>
+    <published>2019-05-24T06:22:00.000Z</published>
+    <updated>2019-05-24T09:05:38.559Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#env&quot;&gt;环境安装&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#init&quot;&gt;vbox虚拟机配置&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#img_install&quot;&gt;黑群晖的磁盘镜像安装&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://konggeyuan.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="虚拟机" scheme="http://konggeyuan.github.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+      <category term="virtualbox" scheme="http://konggeyuan.github.io/tags/virtualbox/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo搜索安装</title>

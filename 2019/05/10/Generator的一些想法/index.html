@@ -568,6 +568,7 @@
       
         <p>Generator 看了一下午，想明白了就是一个能存储当前某一刹那状态的函数</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//特殊的函数用*标记</span></span><br><span class="line"><span class="function"><span class="keyword">function</span>* <span class="title">fn5</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> x=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(x) &#123;</span><br><span class="line">        <span class="keyword">yield</span>(x++);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//定义后，每次next()会再yield之前运行停止,下一次调用就从yield后运行至下一个yield之前</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> c = fn5();</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(c.next().value);	<span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(c.next().value);	<span class="comment">// 2</span></span><br><span class="line"><span class="built_in">console</span>.log(c.next().value);	<span class="comment">// 3</span></span><br></pre></td></tr></table></figure>
+
 <p>可以用这种暂停作为异步的执行，当异步执行时候暂停，等到异步停止后，用next()继续执行</p>
 <p>结合之前的Promise，可以在异步中这样执行。</p>
 <ol>
@@ -686,7 +687,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -732,7 +733,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
