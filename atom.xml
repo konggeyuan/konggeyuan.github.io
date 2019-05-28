@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2019-05-24T09:05:38.559Z</updated>
+  <updated>2019-05-28T13:33:56.633Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>moon river 月亮河</title>
+    <link href="http://konggeyuan.github.io/2019/05/28/moon-river-%E6%9C%88%E4%BA%AE%E6%B2%B3/"/>
+    <id>http://konggeyuan.github.io/2019/05/28/moon-river-月亮河/</id>
+    <published>2019-05-28T13:33:00.000Z</published>
+    <updated>2019-05-28T13:33:56.633Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;月亮河&lt;/p&gt;
+&lt;p&gt;（数字为吹 前面加扛得为吸）&lt;/p&gt;
+&lt;p&gt;6 -8 7 -7 -6 6 -5 6&lt;br&gt;Moon Riv-er, wid-er than a mile&lt;/p&gt;
+&lt;p&gt;4 -7 -6 6 -5 6 4 -4&lt;br&gt;I’m cross-in’ you
+        
+      
+    
+    </summary>
+    
+      <category term="口琴谱" scheme="http://konggeyuan.github.io/categories/%E5%8F%A3%E7%90%B4%E8%B0%B1/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>virtualbox Linux下搭建黑群晖开发环境</title>

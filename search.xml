@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[moon river 月亮河]]></title>
+    <url>%2F2019%2F05%2F28%2Fmoon-river-%E6%9C%88%E4%BA%AE%E6%B2%B3%2F</url>
+    <content type="text"><![CDATA[月亮河 （数字为吹 前面加扛得为吸） 6 -8 7 -7 -6 6 -5 6Moon Riv-er, wid-er than a mile 4 -7 -6 6 -5 6 4 -4I’m cross-in’ you in style some day. 5 4 6 5 -4 4 6 5Old dream mak-er, you heart break-er -4 4 5 6 7 -7Wher-ev-er you’re go-in’ -6 -7 -6 6 -6I’m go-in’ your way. 6 -8 7 -7 -6 6 -5 6Two drift-ers, off to see the world. 4 -7 -6 6 -5 6 4 -4There’s such a lot of world to see. 5 4 5 6 7 -8 7 6We’re af-ter the same rain-bow’s end. -7 -6 6 -5 6wait-in’ ‘round the bend, 4 -7 -6 6 -5 6my Huck-le-ber-ry friend, 4 -5 -4 5 4Moon Riv-er and me.]]></content>
+      <categories>
+        <category>口琴谱</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[virtualbox Linux下搭建黑群晖开发环境]]></title>
     <url>%2F2019%2F05%2F24%2Fvirtualbox-%E5%BC%80%E5%8F%91%E6%9C%BA%E5%99%A8-%E6%90%AD%E5%BB%BA%E7%BE%A4%E6%99%96%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%2F</url>
     <content type="text"><![CDATA[环境安装 vbox虚拟机配置 黑群晖的磁盘镜像安装 安装群晖系统 ubuntu部署vbox虚拟机 安装linux版vbox 注册虚拟机 虚拟机环境信息更改 软件环境运行virtualbox(简称vbox)环境主机 Ubuntu linux 16.04 群晖开发环境搭建机 osx 环境安装 vbox虚拟机配置 osx本地建立vbox虚拟机，建立4个磁盘 1个ide用来装ubuntu 1个scsci用来装群晖系统 /dev/sdb 2个scsi用来装群晖数据盘 黑群晖的磁盘镜像安装 12345#下载镜像wget http://down.nas2x.com/synology/dsm/6.2/6.2.0/ds3617_6.2/synoboot.img#vbox中dd镜像到群晖系统盘dd if=synoboot.img of=/dev/sdb 重启系统，并用群晖系统盘启动 此时选择第一项即可，当出现下面这样的图片表示系统启动成功 安装群晖系统 12345#下载系统文件wget http://down.nas2x.com/synology/dsm/6.2/6.2.0/ds3617_6.2/DSM_DS3617xs_23739.pat#下载群晖工具（Synology Assistant）https://www.synology.cn/zh-cn/support/download/DS3617xs#utilities 修改发现的虚拟机mac地址 重启该虚拟机，再次用群晖助手搜索 登陆网页版安装 安装过程会格式化所有的虚拟磁盘，安装完后会自动重启 ubuntu部署vbox虚拟机 安装linux版vbox123456789101112 sudo sh -c 'echo "deb http://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" &gt;&gt; /etc/apt/sources.list.d/virtualbox.list' wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add - wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add - apt-get install virtualbox-6.0 #安装扩展包wget http://download.virtualbox.org/virtualbox/6.0.8/Oracle_VM_VirtualBox_Extension_Pack-6.0.8-130520.vbox-extpack VBoxManage expack install ./Oracle_VM_VirtualBox_Extension_Pack-6.0.8-130520.vbox-extpack注册虚拟机1vboxmanage registervm /vms/syno/syno.vbox修改数据磁盘大小容量12345678vboxmanage modifyhd a81abcee-823e-4bd1-9964-e8de3460d7dd --resize 10248#修改网卡信息#不同的机器的对应网卡是不同，需要修改VBoxManage modifyvm syno --nic1 bridged --nictype1 82540EM --cableconnected1 on --bridgeadapter1 p2p1#无界面启动虚拟机vboxmanage startvm syno --type=headless]]></content>
