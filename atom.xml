@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2019-05-28T13:33:56.633Z</updated>
+  <updated>2019-05-29T06:34:43.925Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>群晖SPK打包</title>
+    <link href="http://konggeyuan.github.io/2019/05/29/%E7%BE%A4%E6%99%96SPK%E6%89%93%E5%8C%85/"/>
+    <id>http://konggeyuan.github.io/2019/05/29/群晖SPK打包/</id>
+    <published>2019-05-29T06:27:00.000Z</published>
+    <updated>2019-05-29T06:34:43.925Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="工作笔记" scheme="http://konggeyuan.github.io/categories/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="群晖" scheme="http://konggeyuan.github.io/tags/%E7%BE%A4%E6%99%96/"/>
+    
+  </entry>
   
   <entry>
     <title>moon river 月亮河</title>

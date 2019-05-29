@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[群晖SPK打包]]></title>
+    <url>%2F2019%2F05%2F29%2F%E7%BE%A4%E6%99%96SPK%E6%89%93%E5%8C%85%2F</url>
+    <content type="text"><![CDATA[12345678910111213#获得环境编译包git clone https://github.com/SynologyOpenSource/pkgscripts-ng.git pkgscripts#创建编译环境cd pkgscripts/./EnvDeploy -v 6.2 -p x64#测试包cd /toolkit/source/git clone https://github.com/SynologyOpenSource/minimalPkg.git#编译测试包pkgscripts/PkgCreate.py -x0 -c minimalPkg -p x64]]></content>
+      <categories>
+        <category>工作笔记</category>
+      </categories>
+      <tags>
+        <tag>群晖</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[moon river 月亮河]]></title>
     <url>%2F2019%2F05%2F28%2Fmoon-river-%E6%9C%88%E4%BA%AE%E6%B2%B3%2F</url>
     <content type="text"><![CDATA[月亮河 （数字为吹 前面加扛得为吸） 6 -8 7 -7 -6 6 -5 6Moon Riv-er, wid-er than a mile 4 -7 -6 6 -5 6 4 -4I’m cross-in’ you in style some day. 5 4 6 5 -4 4 6 5Old dream mak-er, you heart break-er -4 4 5 6 7 -7Wher-ev-er you’re go-in’ -6 -7 -6 6 -6I’m go-in’ your way. 6 -8 7 -7 -6 6 -5 6Two drift-ers, off to see the world. 4 -7 -6 6 -5 6 4 -4There’s such a lot of world to see. 5 4 5 6 7 -8 7 6We’re af-ter the same rain-bow’s end. -7 -6 6 -5 6wait-in’ ‘round the bend, 4 -7 -6 6 -5 6my Huck-le-ber-ry friend, 4 -5 -4 5 4Moon Riv-er and me.]]></content>
