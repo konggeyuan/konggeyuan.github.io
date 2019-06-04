@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[tp5-nginx配置]]></title>
+    <url>%2F2019%2F06%2F04%2Ftp5-nginx%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[做项目要弄一个微信管理系统，涉及到tp5，为了pathinfo问题改了好久的配置。耽误了不少的功夫。当然其中也有项目的因素，更加坚定了之前的想法。 废话不说，适应tp的配置如下： 1234567891011121314151617181920212223242526server &#123; listen 80; root /www/rhaphp; index index.php index.html index.htm index.nginx-debian.html; server_name rhaphp.localhost; location / &#123; index index.php index.html index.htm; try_files $uri /index.php$uri; if (!-e $request_filename) &#123; #rewrite ^/(.*)$ /index.php?$1 last; rewrite ^(.*)$ /index.php?s=$1 last; break; &#125; client_max_body_size 50m; &#125; location ~ \.php(.*)$ &#123; fastcgi_pass php:9000; fastcgi_index index.php; fastcgi_split_path_info ^(.+\.php)(.*)$; fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name; fastcgi_param PATH_INFO $fastcgi_path_info; include fastcgi_params; &#125;&#125;]]></content>
+      <categories>
+        <category>工作笔记</category>
+      </categories>
+      <tags>
+        <tag>thinkphp5</tag>
+        <tag>nginx</tag>
+        <tag>rhaphp</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[群晖SPK打包]]></title>
     <url>%2F2019%2F05%2F29%2F%E7%BE%A4%E6%99%96SPK%E6%89%93%E5%8C%85%2F</url>
     <content type="text"><![CDATA[12345678910111213#获得环境编译包git clone https://github.com/SynologyOpenSource/pkgscripts-ng.git pkgscripts#创建编译环境cd pkgscripts/./EnvDeploy -v 6.2 -p x64#测试包cd /toolkit/source/git clone https://github.com/SynologyOpenSource/minimalPkg.git#编译测试包pkgscripts/PkgCreate.py -x0 -c minimalPkg -p x64]]></content>

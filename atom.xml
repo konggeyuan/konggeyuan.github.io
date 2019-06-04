@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2019-05-29T06:34:43.925Z</updated>
+  <updated>2019-06-04T10:17:47.040Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>tp5-nginx配置</title>
+    <link href="http://konggeyuan.github.io/2019/06/04/tp5-nginx%E9%85%8D%E7%BD%AE/"/>
+    <id>http://konggeyuan.github.io/2019/06/04/tp5-nginx配置/</id>
+    <published>2019-06-04T10:12:00.000Z</published>
+    <updated>2019-06-04T10:17:47.040Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;做项目要弄一个微信管理系统，涉及到tp5，为了pathinfo问题改了好久的配置。耽误了不少的功夫。当然其中也有项目的因素，更加坚定了之前的想法。&lt;/p&gt;
+&lt;p&gt;废话不说，适应tp的配置如下：&lt;/p&gt;
+&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+      <category term="工作笔记" scheme="http://konggeyuan.github.io/categories/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="thinkphp5" scheme="http://konggeyuan.github.io/tags/thinkphp5/"/>
+    
+      <category term="nginx" scheme="http://konggeyuan.github.io/tags/nginx/"/>
+    
+      <category term="rhaphp" scheme="http://konggeyuan.github.io/tags/rhaphp/"/>
+    
+  </entry>
   
   <entry>
     <title>群晖SPK打包</title>
