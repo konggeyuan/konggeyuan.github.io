@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2019-08-04T16:23:07.778Z</updated>
+  <updated>2019-09-04T04:04:14.028Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>layui&amp;jquery-autocomplete组合</title>
+    <link href="http://konggeyuan.github.io/2019/09/04/layui-jquery-autocomplete%E7%BB%84%E5%90%88/"/>
+    <id>http://konggeyuan.github.io/2019/09/04/layui-jquery-autocomplete组合/</id>
+    <published>2019-09-04T03:25:00.000Z</published>
+    <updated>2019-09-04T04:04:14.028Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;layui与jquery-autocomplete 组合使用中的问题&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;载入问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;远程载入顺序&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="http://konggeyuan.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>产业互联网 重新定义效率与消费 (Chinese Edition)</title>

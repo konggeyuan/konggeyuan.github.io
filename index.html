@@ -297,6 +297,48 @@
         
         
           
+          <li class="menu-item menu-item-前端">
+
+    
+    
+    
+      
+    
+
+    
+
+     <!-- 判断是否为二级目录,增加自定义css -->
+    
+    
+        <a href="/categories/前端/" rel="section" class="submenu-item"><i class="menu-item-icon fa fa-fw fa-book"></i> <br>前端</a>
+    
+
+    </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-后端">
+
+    
+    
+    
+      
+    
+
+    
+
+     <!-- 判断是否为二级目录,增加自定义css -->
+    
+    
+        <a href="/categories/后端/" rel="section" class="submenu-item"><i class="menu-item-icon fa fa-fw fa-book"></i> <br>后端</a>
+    
+
+    </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-学习笔记">
 
     
@@ -446,6 +488,199 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://konggeyuan.github.io/2019/09/04/layui-jquery-autocomplete组合/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Space Yuan">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/4988185??v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="技术博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/09/04/layui-jquery-autocomplete组合/" class="post-title-link" itemprop="url">layui&jquery-autocomplete组合</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-04 11:25:00 / 修改时间：12:04:14" itemprop="dateCreated datePublished" datetime="2019-09-04T11:25:00+08:00">2019-09-04</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/前端/" itemprop="url" rel="index"><span itemprop="name">前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>layui与jquery-autocomplete 组合使用中的问题</p>
+<ul>
+<li>载入问题</li>
+</ul>
+<p>远程载入顺序</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 先jquery --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"images/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- layui --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"images/layui/css/layui.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"images/layui/layui.all.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- jquery插件 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"images/autocomplete/jquery.autocomplete.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"https://cdn.bootcss.com/jquery-autocomplete/1.0.7/jquery.auto-complete.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>layui-form表单</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 文本框 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">name</span>=<span class="string">"card_sn"</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">autocomplete</span>=<span class="string">"off"</span> <span class="attr">class</span>=<span class="string">"layui-input"</span> <span class="attr">lay-verify</span>=<span class="string">"required"</span> <span class="attr">placeholder</span>=<span class="string">"默认提示"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 蓝色普通按钮 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"layui-btn layui-btn-normal"</span> <span class="attr">lay-filter</span>=<span class="string">"card_gen_form"</span> <span class="attr">lay-submit</span>&gt;</span>立即提交<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>layui表单提交-ajax+msgbox提示</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">layui.use([<span class="string">'jquery'</span>, <span class="string">'layer'</span>,<span class="string">'laydate'</span>,<span class="string">'form'</span>], <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123; </span><br><span class="line"></span><br><span class="line">    <span class="comment">//日期选择</span></span><br><span class="line">    <span class="keyword">let</span> laydate = layui.laydate;</span><br><span class="line">    laydate.render(&#123;</span><br><span class="line">        elem: <span class="string">'#start_date'</span> <span class="comment">//指定元素</span></span><br><span class="line">    &#125;);</span><br><span class="line">    laydate.render(&#123;</span><br><span class="line">        elem: <span class="string">'#end_date'</span> <span class="comment">//指定元素</span></span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">// jquery载入</span></span><br><span class="line">    <span class="keyword">let</span> $ = layui.$      </span><br><span class="line">    <span class="keyword">let</span> Url = <span class="string">'cards.php?rec=gen'</span></span><br><span class="line">    <span class="keyword">let</span> form = layui.form;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// ajax提交，msgbox显示</span></span><br><span class="line">    form.on(<span class="string">'submit(card_gen_form)'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">        <span class="comment">// layer.msg(JSON.stringify(data.field));</span></span><br><span class="line">       loading = layer.load(<span class="number">1</span>, &#123;</span><br><span class="line">                    shade: [<span class="number">0.1</span>, <span class="string">'#fff'</span>]</span><br><span class="line">                 &#125;);</span><br><span class="line">        <span class="keyword">let</span> card_gen_config = <span class="built_in">JSON</span>.stringify(data.field);</span><br><span class="line">        </span><br><span class="line">        $.ajax(&#123;</span><br><span class="line">            type:<span class="string">"post"</span>,</span><br><span class="line">            url:Url,</span><br><span class="line">            data:card_gen_config,</span><br><span class="line">            dataType:<span class="string">"json"</span>,</span><br><span class="line">            success : <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">                <span class="comment">// console.log(data.message);</span></span><br><span class="line">                layer.close(loading);</span><br><span class="line">                layer.msg(</span><br><span class="line">                    data.message,&#123;</span><br><span class="line">                        time: <span class="number">2000</span>   </span><br><span class="line">                    &#125;);</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            &#125;,</span><br><span class="line">            error:<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>jquery-autocomplete需要被layui调用中的修改问题</li>
+</ul>
+<p>打开jquery.autocomplete.js，修改其中的22行，将jquery调用改为用layui中的jquery调用方法</p>
+<p><img src="/images/pasted-15.png" alt="upload successful"></p>
+<p>修改代码如下</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">layui.use([<span class="string">'jquery'</span>], <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    factory(layui.jquery);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>autocomplete插件与layui弹层问题冲突</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*设定z-index置顶*/</span></span><br><span class="line"><span class="selector-class">.ui-front</span> &#123;</span><br><span class="line">    <span class="attribute">z-index</span>: <span class="number">110000003</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>layui&amp;jquery-autocomplete组合调用</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">layui.use([<span class="string">'jquery'</span>,<span class="string">'layer'</span>,<span class="string">'form'</span>], <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 载入jquery</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">let</span> $=layui.jquery;</span><br><span class="line">  $(<span class="string">"[id='card_edit']"</span>).on(<span class="string">"click"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    $(<span class="string">'#user_info'</span>).val(<span class="string">''</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 弹框</span></span><br><span class="line">    <span class="keyword">let</span> user_sel = layer.open(&#123;</span><br><span class="line">                      type: <span class="number">1</span>,</span><br><span class="line">                      title: <span class="string">'手机号&amp;姓名&amp;昵称'</span>,</span><br><span class="line">                      content: $(<span class="string">'#user_sel'</span>)</span><br><span class="line">                    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 设定高宽</span></span><br><span class="line">    layer.style(user_sel, &#123;</span><br><span class="line">      width: <span class="string">'400px'</span>,</span><br><span class="line">      height: <span class="string">'200px'</span></span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"> <span class="comment">// 文本框输入内容自动检索，每次检索都调用接口</span></span><br><span class="line"> $(<span class="string">"#user_info"</span>).autocomplete(&#123;</span><br><span class="line"></span><br><span class="line">    source: <span class="function"><span class="keyword">function</span>(<span class="params"> request, response </span>) </span>&#123;</span><br><span class="line">      $.ajax(&#123;</span><br><span class="line">        url: <span class="string">"cards.php?rec=search"</span>,</span><br><span class="line">        dataType: <span class="string">"json"</span>,</span><br><span class="line">        type: <span class="string">"post"</span>,</span><br><span class="line">        data:&#123;</span><br><span class="line">            searchUserInfo: $(<span class="string">"#user_info"</span>).val()</span><br><span class="line">        &#125;,</span><br><span class="line">        success:<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">          response(data);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;</span><br><span class="line"> &#125;);</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -2091,208 +2326,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://konggeyuan.github.io/2019/05/13/一些学习JS的资料地址/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Space Yuan">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/4988185??v=3&s=460">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="技术博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/05/13/一些学习JS的资料地址/" class="post-title-link" itemprop="url">一些学习JS的资料地址</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-05-13 15:45:00 / 修改时间：17:52:32" itemprop="dateCreated datePublished" datetime="2019-05-13T15:45:00+08:00">2019-05-13</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ul>
-<li><a href="http://es6.ruanyifeng.com" target="_blank" rel="noopener">ES6语法入门教程</a></li>
-</ul>
-<blockquote>
-<p>es6的入门教程，涵盖了语言的大部分方面，都是一些入门知识，要更深入。只能将知识点一个个搜索更细节的东西，光入门是够了。</p>
-</blockquote>
-<ul>
-<li><a href="https://www.liaoxuefeng.com/wiki/1022910821149312" target="_blank" rel="noopener">javascript全栈教程</a></li>
-</ul>
-<blockquote>
-<p>感觉这本更泛，作为走马观花不错，可以了解各个知识点。</p>
-</blockquote>
-<ul>
-<li><a href="https://cnodejs.org/topic/542953d42ca9451e1bf3c251" target="_blank" rel="noopener">拥抱Generator，告别异步回调</a></li>
-</ul>
-<blockquote>
-<p>更详细的说明generator</p>
-</blockquote>
-<ul>
-<li><a href="https://medium.com/@xyz030206/更強大的非同步模式-從generator到async-await-7235f24d00eb" target="_blank" rel="noopener">更強大的非同步模式：從Generator到Async Await</a></li>
-</ul>
-<blockquote>
-<p>学了es6的generator、promise，够用，但是async要学总要知道为啥。这个能说明为什么</p>
-</blockquote>
-<ul>
-<li><a href="http://www.ruanyifeng.com/blog/2015/04/generator.html" target="_blank" rel="noopener">深入掌握 ECMAScript 6 异步编程</a></li>
-</ul>
-<blockquote>
-<p>异步编程众所纷纭，总是太多名词，这篇相对简单，先从弄清楚名词说起</p>
-</blockquote>
-<ul>
-<li><a href="http://fengliner.github.io/2016/11/28/深入理解ES6异步编程/" target="_blank" rel="noopener">深入理解ES6异步编程</a></li>
-</ul>
-<blockquote>
-<p>相对更简单的说明</p>
-</blockquote>
-<ul>
-<li><a href="https://juejin.im/entry/5b076c0a51882538ac1cdb0b" target="_blank" rel="noopener">小议async/await和coroutine</a></li>
-</ul>
-<blockquote>
-<p>js异步协程开发的几种常见方式的说明</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2341,7 +2374,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">17</span>
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2368,7 +2401,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
