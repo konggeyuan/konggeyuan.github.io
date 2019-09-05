@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2019-09-04T04:04:14.028Z</updated>
+  <updated>2019-09-05T05:07:10.886Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -17,11 +17,65 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>mysql 随机数&amp;日常用户序列号</title>
+    <link href="http://konggeyuan.github.io/2019/09/05/mysql-%E9%9A%8F%E6%9C%BA%E6%95%B0-%E6%97%A5%E5%B8%B8%E7%94%A8%E6%88%B7%E5%BA%8F%E5%88%97%E5%8F%B7/"/>
+    <id>http://konggeyuan.github.io/2019/09/05/mysql-随机数-日常用户序列号/</id>
+    <published>2019-09-05T05:01:00.000Z</published>
+    <updated>2019-09-05T05:07:10.886Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;日常随机数&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="数据库" scheme="http://konggeyuan.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="mysql" scheme="http://konggeyuan.github.io/tags/mysql/"/>
+    
+      <category term="随机数" scheme="http://konggeyuan.github.io/tags/%E9%9A%8F%E6%9C%BA%E6%95%B0/"/>
+    
+      <category term="序号生成" scheme="http://konggeyuan.github.io/tags/%E5%BA%8F%E5%8F%B7%E7%94%9F%E6%88%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jquery-ajax常用</title>
+    <link href="http://konggeyuan.github.io/2019/09/05/jquery-ajax%E5%B8%B8%E7%94%A8/"/>
+    <id>http://konggeyuan.github.io/2019/09/05/jquery-ajax常用/</id>
+    <published>2019-09-05T04:31:35.000Z</published>
+    <updated>2019-09-05T04:35:06.202Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;与后端交互，直接json串，省去传统的一个个参数post&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>layui&amp;jquery-autocomplete组合</title>
     <link href="http://konggeyuan.github.io/2019/09/04/layui-jquery-autocomplete%E7%BB%84%E5%90%88/"/>
     <id>http://konggeyuan.github.io/2019/09/04/layui-jquery-autocomplete组合/</id>
     <published>2019-09-04T03:25:00.000Z</published>
-    <updated>2019-09-04T04:04:14.028Z</updated>
+    <updated>2019-09-05T03:21:47.401Z</updated>
     
     <summary type="html">
     
@@ -42,6 +96,10 @@
     
       <category term="前端" scheme="http://konggeyuan.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
+    
+      <category term="layui" scheme="http://konggeyuan.github.io/tags/layui/"/>
+    
+      <category term="jquery" scheme="http://konggeyuan.github.io/tags/jquery/"/>
     
   </entry>
   
@@ -160,7 +218,7 @@
     <link href="http://konggeyuan.github.io/2019/05/28/moon-river-%E6%9C%88%E4%BA%AE%E6%B2%B3/"/>
     <id>http://konggeyuan.github.io/2019/05/28/moon-river-月亮河/</id>
     <published>2019-05-28T13:33:00.000Z</published>
-    <updated>2019-05-28T13:33:56.633Z</updated>
+    <updated>2019-09-05T06:19:55.414Z</updated>
     
     <summary type="html">
     
@@ -177,7 +235,7 @@
     
     </summary>
     
-      <category term="口琴谱" scheme="http://konggeyuan.github.io/categories/%E5%8F%A3%E7%90%B4%E8%B0%B1/"/>
+      <category term="口琴" scheme="http://konggeyuan.github.io/categories/%E5%8F%A3%E7%90%B4/"/>
     
     
   </entry>

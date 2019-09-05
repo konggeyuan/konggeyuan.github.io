@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[mysql 随机数&日常用户序列号]]></title>
+    <url>%2F2019%2F09%2F05%2Fmysql-%E9%9A%8F%E6%9C%BA%E6%95%B0-%E6%97%A5%E5%B8%B8%E7%94%A8%E6%88%B7%E5%BA%8F%E5%88%97%E5%8F%B7%2F</url>
+    <content type="text"><![CDATA[日常随机数 123456789101112//产生0到1000间的随机数 SELECT RAND() * 10000; // 增加取整SELECT FLOOR(RAND() * 10000) // 产生1000-10000间的整形 SELECT FLOOR( 1000 + RAND() * (10000 - 1000)) // 日常用户序列号,头部参数+1000~9999之间的随机数+时间戳，md5后值concat(&apos;TZ-&apos;,md5(concat(FLOOR(1000 + RAND() * (10000 - 1000)),UNIX_TIMESTAMP())))]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+        <tag>随机数</tag>
+        <tag>序号生成</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[jquery-ajax常用]]></title>
+    <url>%2F2019%2F09%2F05%2Fjquery-ajax%E5%B8%B8%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[与后端交互，直接json串，省去传统的一个个参数post 12345678910111213141516171819202122// 设定json结构let postData = &#123; "userTel": $("#user_info").val(), "cardSN": cardSN&#125;;// 生成jsonpostData = JSON.stringify(postData);// 提交$.ajax(&#123; url: URL, dataType: "json", type: "post", data:postData, // 成功返回 success:function(data)&#123; &#125;&#125;); php端 123456// 直接接收data = trim(file_get_contents('php://input', 'r'));// 解析$data = json_decode($data);]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[layui&jquery-autocomplete组合]]></title>
     <url>%2F2019%2F09%2F04%2Flayui-jquery-autocomplete%E7%BB%84%E5%90%88%2F</url>
     <content type="text"><![CDATA[layui与jquery-autocomplete 组合使用中的问题 载入问题 远程载入顺序 1234567891011&lt;!-- 先jquery --&gt;&lt;script type="text/javascript" src="images/jquery.min.js"&gt;&lt;/script&gt;&lt;!-- layui --&gt;&lt;link rel="stylesheet" href="images/layui/css/layui.css"&gt;&lt;script type="text/javascript" src="images/layui/layui.all.js"&gt;&lt;/script&gt;&lt;!-- jquery插件 --&gt;&lt;script type="text/javascript" src="images/autocomplete/jquery.autocomplete.js"&gt;&lt;/script&gt;&lt;link href="https://cdn.bootcss.com/jquery-autocomplete/1.0.7/jquery.auto-complete.css" rel="stylesheet"&gt; layui-form表单 12345&lt;!-- 文本框 --&gt;&lt;input name="card_sn" type="text" autocomplete="off" class="layui-input" lay-verify="required" placeholder="默认提示"/&gt;&lt;!-- 蓝色普通按钮 --&gt;&lt;button class="layui-btn layui-btn-normal" lay-filter="card_gen_form" lay-submit&gt;立即提交&lt;/button&gt; layui表单提交-ajax+msgbox提示 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748layui.use(['jquery', 'layer','laydate','form'], function()&#123; //日期选择 let laydate = layui.laydate; laydate.render(&#123; elem: '#start_date' //指定元素 &#125;); laydate.render(&#123; elem: '#end_date' //指定元素 &#125;); // jquery载入 let $ = layui.$ let Url = 'cards.php?rec=gen' let form = layui.form; // ajax提交，msgbox显示 form.on('submit(card_gen_form)', function(data)&#123; // layer.msg(JSON.stringify(data.field)); loading = layer.load(1, &#123; shade: [0.1, '#fff'] &#125;); let card_gen_config = JSON.stringify(data.field); $.ajax(&#123; type:"post", url:Url, data:card_gen_config, dataType:"json", success : function(data)&#123; // console.log(data.message); layer.close(loading); layer.msg( data.message,&#123; time: 2000 &#125;); return false; &#125;, error:function()&#123; &#125; &#125;); return false; &#125;);&#125;); jquery-autocomplete需要被layui调用中的修改问题 打开jquery.autocomplete.js，修改其中的22行，将jquery调用改为用layui中的jquery调用方法 修改代码如下 123layui.use(['jquery'], function () &#123; factory(layui.jquery);&#125;); autocomplete插件与layui弹层问题冲突 1234/*设定z-index置顶*/.ui-front &#123; z-index: 110000003;&#125; layui&amp;jquery-autocomplete组合调用 1234567891011121314151617181920212223242526272829303132333435363738394041424344layui.use(['jquery','layer','form'], function()&#123; // 载入jquery let $=layui.jquery; $("[id='card_edit']").on("click",function()&#123; $('#user_info').val(''); // 弹框 let user_sel = layer.open(&#123; type: 1, title: '手机号&amp;姓名&amp;昵称', content: $('#user_sel') &#125;); // 设定高宽 layer.style(user_sel, &#123; width: '400px', height: '200px' &#125;); &#125;); // 文本框输入内容自动检索，每次检索都调用接口 $("#user_info").autocomplete(&#123; source: function( request, response ) &#123; $.ajax(&#123; url: "cards.php?rec=search", dataType: "json", type: "post", data:&#123; searchUserInfo: $("#user_info").val() &#125;, success:function(data)&#123; response(data); &#125; &#125;); &#125; &#125;);&#125;);]]></content>
       <categories>
         <category>前端</category>
       </categories>
+      <tags>
+        <tag>layui</tag>
+        <tag>jquery</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[产业互联网 重新定义效率与消费 (Chinese Edition)]]></title>
@@ -53,7 +75,7 @@
     <url>%2F2019%2F05%2F28%2Fmoon-river-%E6%9C%88%E4%BA%AE%E6%B2%B3%2F</url>
     <content type="text"><![CDATA[月亮河 （数字为吹 前面加扛得为吸） 6 -8 7 -7 -6 6 -5 6Moon Riv-er, wid-er than a mile 4 -7 -6 6 -5 6 4 -4I’m cross-in’ you in style some day. 5 4 6 5 -4 4 6 5Old dream mak-er, you heart break-er -4 4 5 6 7 -7Wher-ev-er you’re go-in’ -6 -7 -6 6 -6I’m go-in’ your way. 6 -8 7 -7 -6 6 -5 6Two drift-ers, off to see the world. 4 -7 -6 6 -5 6 4 -4There’s such a lot of world to see. 5 4 5 6 7 -8 7 6We’re af-ter the same rain-bow’s end. -7 -6 6 -5 6wait-in’ ‘round the bend, 4 -7 -6 6 -5 6my Huck-le-ber-ry friend, 4 -5 -4 5 4Moon Riv-er and me.]]></content>
       <categories>
-        <category>口琴谱</category>
+        <category>口琴</category>
       </categories>
   </entry>
   <entry>
