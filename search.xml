@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[laravel 数据库查询器常用]]></title>
+    <url>%2F2019%2F09%2F11%2Flaravel%E6%9F%A5%E8%AF%A2%E5%99%A8%2F</url>
+    <content type="text"><![CDATA[连表查询、排序 123456789101112$fields = ['op.id','op.product_id','op.product_number as num','pd.image','op.name','op.order_id'];DB::table('order_product as op') -&gt;select($fields) -&gt;leftJoin('product as pd', 'pd.id', '=', 'op.product_id') -&gt;where('op.order_id',$orderId) -&gt;orderBy('id','desc') -&gt;limit(6) -&gt;get(); 单一查询 1234DB::table('video')-&gt;select($fields) -&gt;where('id',$vid) -&gt;first(); 自减 123DB::table('product') -&gt;where('id',$pid) -&gt;decrement('gift_amount',$num); 更新 1234DB::table('product') -&gt;where('id',$pid) -&gt;where('amount','&lt;=',0) -&gt;update($fields); 添加返回id DB::table('comment') -&gt;insertGetId($fields);]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>laravel</tag>
+        <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[js操作json的常用函数]]></title>
+    <url>%2F2019%2F09%2F05%2Fjs%E6%93%8D%E4%BD%9Cjson%E7%9A%84%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0%2F</url>
+    <content type="text"><![CDATA[JSON.stringify() 从一个对象中解析出字符串 JSON.stringify({“a”:”1”,”b”:”2”}) 结果是：”{“a”:”1”,”b”:”2”}” JSON.parse()从一个字符串中解析出JSON对象 var str = ‘{“a”:”1”,”b”:”2”}’; JSON.parse(str); 结果是：Object{a:”1”,b:”2”}]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[mysql 随机数&日常用户序列号]]></title>
     <url>%2F2019%2F09%2F05%2Fmysql-%E9%9A%8F%E6%9C%BA%E6%95%B0-%E6%97%A5%E5%B8%B8%E7%94%A8%E6%88%B7%E5%BA%8F%E5%88%97%E5%8F%B7%2F</url>
     <content type="text"><![CDATA[日常随机数 123456789101112//产生0到1000间的随机数 SELECT RAND() * 10000; // 增加取整SELECT FLOOR(RAND() * 10000) // 产生1000-10000间的整形 SELECT FLOOR( 1000 + RAND() * (10000 - 1000)) // 日常用户序列号,头部参数+1000~9999之间的随机数+时间戳，md5后值concat(&apos;TZ-&apos;,md5(concat(FLOOR(1000 + RAND() * (10000 - 1000)),UNIX_TIMESTAMP())))]]></content>
