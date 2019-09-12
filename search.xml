@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[layui-table常用]]></title>
+    <url>%2F2019%2F09%2F12%2Flayui-table%E5%B8%B8%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[静态表格 1234567891011121314151617181920212223&lt;table lay-size="sm" class="layui-table"&gt; &lt;!-- 定义单元格高宽 --&gt; &lt;colgroup&gt; &lt;col width="10"&gt; &lt;col width="300"&gt; &lt;col&gt; &lt;/colgroup&gt; &lt;!-- 定义第一行高宽 --&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;&lt;/th&gt; &lt;th&gt;&#123;$lang.card_sn&#125;&lt;/th&gt; &lt;th&gt;&#123;$lang.user_phone&#125;&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;!-- &#123;foreach from=$cards item=card&#125; --&gt; &lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt;&lt;/table&gt;]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>layui</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[laravel 数据库查询器常用]]></title>
     <url>%2F2019%2F09%2F11%2Flaravel%E6%9F%A5%E8%AF%A2%E5%99%A8%2F</url>
     <content type="text"><![CDATA[连表查询、排序 123456789101112$fields = ['op.id','op.product_id','op.product_number as num','pd.image','op.name','op.order_id'];DB::table('order_product as op') -&gt;select($fields) -&gt;leftJoin('product as pd', 'pd.id', '=', 'op.product_id') -&gt;where('op.order_id',$orderId) -&gt;orderBy('id','desc') -&gt;limit(6) -&gt;get(); 单一查询 1234DB::table('video')-&gt;select($fields) -&gt;where('id',$vid) -&gt;first(); 自减 123DB::table('product') -&gt;where('id',$pid) -&gt;decrement('gift_amount',$num); 更新 1234DB::table('product') -&gt;where('id',$pid) -&gt;where('amount','&lt;=',0) -&gt;update($fields); 添加返回id DB::table('comment') -&gt;insertGetId($fields);]]></content>
