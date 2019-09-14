@@ -99,14 +99,14 @@
   <meta name="description" content="静态表格 1234567891011121314151617181920212223&amp;lt;table lay-size=&quot;sm&quot; class=&quot;layui-table&quot;&amp;gt;  &amp;lt;!-- 定义单元格高宽 --&amp;gt;    &amp;lt;colgroup&amp;gt;      &amp;lt;col width=&quot;10&quot;&amp;gt;      &amp;lt;col width=&quot;300&quot;&amp;gt;      &amp;lt;">
 <meta name="keywords" content="layui">
 <meta property="og:type" content="article">
-<meta property="og:title" content="layui-table常用">
+<meta property="og:title" content="layui常用部件">
 <meta property="og:url" content="http://konggeyuan.github.io/2019/09/12/layui-table常用/index.html">
 <meta property="og:site_name" content="技术博客">
 <meta property="og:description" content="静态表格 1234567891011121314151617181920212223&amp;lt;table lay-size=&quot;sm&quot; class=&quot;layui-table&quot;&amp;gt;  &amp;lt;!-- 定义单元格高宽 --&amp;gt;    &amp;lt;colgroup&amp;gt;      &amp;lt;col width=&quot;10&quot;&amp;gt;      &amp;lt;col width=&quot;300&quot;&amp;gt;      &amp;lt;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-09-12T08:21:06.444Z">
+<meta property="og:updated_time" content="2019-09-14T07:10:25.365Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="layui-table常用">
+<meta name="twitter:title" content="layui常用部件">
 <meta name="twitter:description" content="静态表格 1234567891011121314151617181920212223&amp;lt;table lay-size=&quot;sm&quot; class=&quot;layui-table&quot;&amp;gt;  &amp;lt;!-- 定义单元格高宽 --&amp;gt;    &amp;lt;colgroup&amp;gt;      &amp;lt;col width=&quot;10&quot;&amp;gt;      &amp;lt;col width=&quot;300&quot;&amp;gt;      &amp;lt;">
 
 
@@ -127,7 +127,7 @@
   };
 </script>
 
-  <title>layui-table常用 | 技术博客</title>
+  <title>layui常用部件 | 技术博客</title>
   
 
 
@@ -567,7 +567,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">layui-table常用
+          <h1 class="post-title" itemprop="name headline">layui常用部件
 
               
             
@@ -593,12 +593,24 @@
                 
               
 
-              <time title="创建时间：2019-09-12 16:13:00 / 修改时间：16:21:06" itemprop="dateCreated datePublished" datetime="2019-09-12T16:13:00+08:00">2019-09-12</time>
+              <time title="创建时间：2019-09-12 16:13:00" itemprop="dateCreated datePublished" datetime="2019-09-12T16:13:00+08:00">2019-09-12</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-09-14 15:10:25" itemprop="dateModified" datetime="2019-09-14T15:10:25+08:00">2019-09-14</time>
               
             
           </span>
@@ -652,6 +664,9 @@
       
         <p>静态表格</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">lay-size</span>=<span class="string">"sm"</span> <span class="attr">class</span>=<span class="string">"layui-table"</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 定义单元格高宽 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">colgroup</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">col</span> <span class="attr">width</span>=<span class="string">"10"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">col</span> <span class="attr">width</span>=<span class="string">"300"</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">col</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">colgroup</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 定义第一行高宽 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">thead</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">th</span>&gt;</span><span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">th</span>&gt;</span>&#123;$lang.card_sn&#125;<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">th</span>&gt;</span>&#123;$lang.user_phone&#125;<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">thead</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tbody</span>&gt;</span></span><br><span class="line">      <span class="comment">&lt;!-- &#123;foreach from=$cards item=card&#125; --&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">tbody</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>form表单</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--文本框--&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">name</span>=<span class="string">"points"</span> <span class="attr">value</span>=<span class="string">""</span> <span class="attr">placeholder</span>=<span class="string">""</span> <span class="attr">autocomplete</span>=<span class="string">"off"</span> <span class="attr">class</span>=<span class="string">"layui-input"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--加按钮标记的图标--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">"card_edit"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">class</span>=<span class="string">"layui-btn layui-btn-sm layui-bg-cyan"</span> <span class="attr">title</span>=<span class="string">"&#123;$lang.edit&#125;"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"layui-icon"</span>&gt;</span>&amp;#xe642;<span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"></span><br><span class="line">layui-btn-normal 普通蓝色按钮</span><br><span class="line">layui-btn-danger 红色警告按钮</span><br></pre></td></tr></table></figure>
       
     </div>
 
