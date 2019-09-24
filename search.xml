@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[微信小程序-跳转-本地获取存储-手机号验证]]></title>
+    <url>%2F2019%2F09%2F24%2F%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E8%B7%B3%E8%BD%AC-%E8%8E%B7%E5%8F%96%E5%AD%98%E5%82%A8%2F</url>
+    <content type="text"><![CDATA[获取本地存储 12345//获取本地存储wx.getStorageSync("SysInfo").permission.title;//设置本地存储wx.setStorageSync("UserID", data.data.user_id); 跳转 12345//直接跳转并不删除当前页面wx.navigateTo(&#123;'url':'/pages/shop/c/register/register'&#125;);//删除当前页面并跳转wx.redirectTo(&#123;'url':'/pages/shop/c/register/register'&#125;); 手机号验证 1234const phoneVerification = function(phone) &#123; let reg = /^(((13[0-9]&#123;1&#125;)|(15[0-9]&#123;1&#125;)|(18[0-9]&#123;1&#125;)|(17[0-9]&#123;1&#125;))+\d&#123;8&#125;)$/; return reg.test(phone);&#125;]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>小程序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[微信小程序-弹框插件]]></title>
+    <url>%2F2019%2F09%2F24%2F%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%BC%B9%E6%A1%86%2F</url>
+    <content type="text"><![CDATA[123456789101112131415161718192021222324252627// 下载git clone git@github.com:konggeyuan/popup.git//json文件定义"usingComponents": &#123; "zx-popup": "/components/zx-popup/index"&#125;//页面&lt;button bindtap="bottomPop"&gt;显示bottom弹框&lt;/button&gt;//弹框界面&lt;zx-popup popup-visible="&#123;&#123; bottom &#125;&#125;" zx-position="&#123;&#123;'bottom'&#125;&#125;" bind:popupStatus="popupChange"&gt; &lt;view class="wrap bottom"&gt;显示bottom弹框&lt;/view&gt;&lt;/zx-popup&gt;//调用bottomPop() &#123; this.setData(&#123; bottom: true &#125;);&#125;,//状态eventspopupChange() &#123; console.log(this.data.bottom);&#125;,]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>小程序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[微信小程序-环境标题设置]]></title>
     <url>%2F2019%2F09%2F24%2F%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E7%8E%AF%E5%A2%83%E6%A0%87%E9%A2%98%E8%AE%BE%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[1234567891011//首页标题data = &#123;"type":"title","position":&#123;"type":"wx-title","value":"user"&#125;&#125;; wx.request(&#123; method:'POST', url: utils.restfulUrl+"layout", data: JSON.stringify(data), success: (&#123; data &#125;) =&gt; &#123; that.setData(&#123; title: data.data[0].title || [] &#125;); wx.setNavigationBarTitle(&#123;title: data.data[0].title&#125;); &#125; &#125;); 1234567891011console.log('列表导航');data = &#123;"type":"title","position":&#123;"type":"wx-nav-user"&#125;&#125;;wx.request(&#123; method:'POST', url: utils.restfulUrl+"layout", data: JSON.stringify(data), success: (&#123; data &#125;) =&gt; &#123; // console.log(data.data); that.setData(&#123; subObj: data.data || [] &#125;); &#125;&#125;); 1234567891011//首页标题data = &#123;"type":"title","position":&#123;"type":"wx-title","value":"user"&#125;&#125;; wx.request(&#123; method:'POST', url: utils.restfulUrl+"layout", data: JSON.stringify(data), success: (&#123; data &#125;) =&gt; &#123; that.setData(&#123; title: data.data[0].title || [] &#125;); wx.setNavigationBarTitle(&#123;title: data.data[0].title&#125;); &#125; &#125;); 123 // 用户是否登陆let userObj = wx.getStorageSync("user_info") || false;that.setData(&#123;userObj:userObj&#125;); 12345678appInstance.loginStat();console.log(&apos;登陆状态&apos;);appInstance.sysInfo();console.log(&apos;系统环境信息&apos;);appInstance.tabBar();console.log(&apos;底部导航&apos;);]]></content>
