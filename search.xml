@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[微信小程序-环境标题设置]]></title>
+    <url>%2F2019%2F09%2F24%2F%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E7%8E%AF%E5%A2%83%E6%A0%87%E9%A2%98%E8%AE%BE%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[1234567891011//首页标题data = &#123;"type":"title","position":&#123;"type":"wx-title","value":"user"&#125;&#125;; wx.request(&#123; method:'POST', url: utils.restfulUrl+"layout", data: JSON.stringify(data), success: (&#123; data &#125;) =&gt; &#123; that.setData(&#123; title: data.data[0].title || [] &#125;); wx.setNavigationBarTitle(&#123;title: data.data[0].title&#125;); &#125; &#125;); 1234567891011console.log('列表导航');data = &#123;"type":"title","position":&#123;"type":"wx-nav-user"&#125;&#125;;wx.request(&#123; method:'POST', url: utils.restfulUrl+"layout", data: JSON.stringify(data), success: (&#123; data &#125;) =&gt; &#123; // console.log(data.data); that.setData(&#123; subObj: data.data || [] &#125;); &#125;&#125;); 1234567891011//首页标题data = &#123;"type":"title","position":&#123;"type":"wx-title","value":"user"&#125;&#125;; wx.request(&#123; method:'POST', url: utils.restfulUrl+"layout", data: JSON.stringify(data), success: (&#123; data &#125;) =&gt; &#123; that.setData(&#123; title: data.data[0].title || [] &#125;); wx.setNavigationBarTitle(&#123;title: data.data[0].title&#125;); &#125; &#125;); 123 // 用户是否登陆let userObj = wx.getStorageSync("user_info") || false;that.setData(&#123;userObj:userObj&#125;); 12345678appInstance.loginStat();console.log(&apos;登陆状态&apos;);appInstance.sysInfo();console.log(&apos;系统环境信息&apos;);appInstance.tabBar();console.log(&apos;底部导航&apos;);]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>小程序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[layui常用部件]]></title>
     <url>%2F2019%2F09%2F12%2Flayui-table%E5%B8%B8%E7%94%A8%2F</url>
     <content type="text"><![CDATA[静态表格 1234567891011121314151617181920212223&lt;table lay-size="sm" class="layui-table"&gt; &lt;!-- 定义单元格高宽 --&gt; &lt;colgroup&gt; &lt;col width="10"&gt; &lt;col width="300"&gt; &lt;col&gt; &lt;/colgroup&gt; &lt;!-- 定义第一行高宽 --&gt; &lt;thead&gt; &lt;tr&gt; &lt;th&gt;&lt;/th&gt; &lt;th&gt;&#123;$lang.card_sn&#125;&lt;/th&gt; &lt;th&gt;&#123;$lang.user_phone&#125;&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt; &lt;tbody&gt; &lt;!-- &#123;foreach from=$cards item=card&#125; --&gt; &lt;tr&gt; &lt;td&gt;&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt;&lt;/table&gt; form表单 12345678910111213&lt;!--文本框--&gt; &lt;input type="text" name="points" value="" placeholder="" autocomplete="off" class="layui-input" /&gt;&lt;!--文本域--&gt;&lt;textarea name="desc" placeholder="请输入内容" class="layui-textarea"&gt;&lt;/textarea&gt;&lt;!--加按钮标记的图标--&gt;&lt;button id="card_edit" type="button" class="layui-btn layui-btn-sm layui-bg-cyan" title="&#123;$lang.edit&#125;"&gt; &lt;i class="layui-icon"&gt;&amp;#xe642;&lt;/i&gt;&lt;/button&gt;layui-btn-normal 普通蓝色按钮layui-btn-danger 红色警告按钮]]></content>
