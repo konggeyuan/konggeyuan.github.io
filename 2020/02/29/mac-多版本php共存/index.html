@@ -96,19 +96,18 @@
 
 
 
-  <meta name="description" content="运行过程 主线程 执行 node 代码，将代码加入队列中 执行同步操作代码 同步执行完成后，执行异步代码 异步分为两种 IO1：会从线程池取一条子线程来帮助主线程执行 非IO2 ： 判断能否执行，能执行加入队列，不能就跳过   主线程会一直循环，直到队列中没有代码后，主线程才会退出  1) IO 即 input 和 out，指有数据操作 2) 无数据操作，例如定时器 setTimeOut()">
+  <meta name="description" content="MAC上安装有多个不同的PHP网站，要求必须在PHP5.6、PHP7.1+并且需要安装xdebug扩展。 操作 1）先安装PHP56 PHP71 12brew install php@5.6brew install php@7.3  安装好之后，去修改他们php-fpm的绑定端口，然后执行brew services restart php@5.6 这样，启动 2）安装扩展 必须确认目录是否存在 /">
+<meta name="keywords" content="php,mac">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Node.js 事件驱动模型">
-<meta property="og:url" content="http://konggeyuan.github.io/2019/12/02/Node-js-事件驱动模型/index.html">
+<meta property="og:title" content="mac 多版本php共存">
+<meta property="og:url" content="http://konggeyuan.github.io/2020/02/29/mac-多版本php共存/index.html">
 <meta property="og:site_name" content="技术博客">
-<meta property="og:description" content="运行过程 主线程 执行 node 代码，将代码加入队列中 执行同步操作代码 同步执行完成后，执行异步代码 异步分为两种 IO1：会从线程池取一条子线程来帮助主线程执行 非IO2 ： 判断能否执行，能执行加入队列，不能就跳过   主线程会一直循环，直到队列中没有代码后，主线程才会退出  1) IO 即 input 和 out，指有数据操作 2) 无数据操作，例如定时器 setTimeOut()">
+<meta property="og:description" content="MAC上安装有多个不同的PHP网站，要求必须在PHP5.6、PHP7.1+并且需要安装xdebug扩展。 操作 1）先安装PHP56 PHP71 12brew install php@5.6brew install php@7.3  安装好之后，去修改他们php-fpm的绑定端口，然后执行brew services restart php@5.6 这样，启动 2）安装扩展 必须确认目录是否存在 /">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://konggeyuan.github.io/images/pasted-17.png">
-<meta property="og:updated_time" content="2019-12-02T13:47:27.803Z">
+<meta property="og:updated_time" content="2020-02-29T15:33:57.159Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Node.js 事件驱动模型">
-<meta name="twitter:description" content="运行过程 主线程 执行 node 代码，将代码加入队列中 执行同步操作代码 同步执行完成后，执行异步代码 异步分为两种 IO1：会从线程池取一条子线程来帮助主线程执行 非IO2 ： 判断能否执行，能执行加入队列，不能就跳过   主线程会一直循环，直到队列中没有代码后，主线程才会退出  1) IO 即 input 和 out，指有数据操作 2) 无数据操作，例如定时器 setTimeOut()">
-<meta name="twitter:image" content="http://konggeyuan.github.io/images/pasted-17.png">
+<meta name="twitter:title" content="mac 多版本php共存">
+<meta name="twitter:description" content="MAC上安装有多个不同的PHP网站，要求必须在PHP5.6、PHP7.1+并且需要安装xdebug扩展。 操作 1）先安装PHP56 PHP71 12brew install php@5.6brew install php@7.3  安装好之后，去修改他们php-fpm的绑定端口，然后执行brew services restart php@5.6 这样，启动 2）安装扩展 必须确认目录是否存在 /">
 
 
 
@@ -118,7 +117,7 @@
 
   
   
-  <link rel="canonical" href="http://konggeyuan.github.io/2019/12/02/Node-js-事件驱动模型/">
+  <link rel="canonical" href="http://konggeyuan.github.io/2020/02/29/mac-多版本php共存/">
 
 
 
@@ -128,7 +127,7 @@
   };
 </script>
 
-  <title>Node.js 事件驱动模型 | 技术博客</title>
+  <title>mac 多版本php共存 | 技术博客</title>
   
 
 
@@ -572,7 +571,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://konggeyuan.github.io/2019/12/02/Node-js-事件驱动模型/">
+    <link itemprop="mainEntityOfPage" href="http://konggeyuan.github.io/2020/02/29/mac-多版本php共存/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Space Yuan">
@@ -589,7 +588,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Node.js 事件驱动模型
+          <h1 class="post-title" itemprop="name headline">mac 多版本php共存
 
               
             
@@ -615,7 +614,7 @@
                 
               
 
-              <time title="创建时间：2019-12-02 21:41:00 / 修改时间：21:47:27" itemprop="dateCreated datePublished" datetime="2019-12-02T21:41:00+08:00">2019-12-02</time>
+              <time title="创建时间：2020-02-29 23:31:00 / 修改时间：23:33:57" itemprop="dateCreated datePublished" datetime="2020-02-29T23:31:00+08:00">2020-02-29</time>
             
 
             
@@ -637,7 +636,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/nodejs/" itemprop="url" rel="index"><span itemprop="name">nodejs</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/学习笔记/" itemprop="url" rel="index"><span itemprop="name">学习笔记</span></a></span>
 
                 
                 
@@ -672,27 +671,23 @@
       
 
       
-        <p><img src="/images/pasted-17.png" alt="upload successful"></p>
-<p>运行过程</p>
-<h4 id="主线程"><a href="#主线程" class="headerlink" title="主线程"></a>主线程</h4><ol>
-<li>执行 node 代码，将代码加入队列中</li>
-<li>执行同步操作代码</li>
-<li>同步执行完成后，执行异步代码</li>
-<li>异步分为两种<ol>
-<li>IO1：会从线程池取一条子线程来帮助主线程执行</li>
-<li>非IO2 ： 判断能否执行，能执行加入队列，不能就跳过</li>
-</ol>
-</li>
-<li>主线程会一直循环，直到队列中没有代码后，主线程才会退出</li>
-</ol>
-<p>1) IO 即 input 和 out，指有数据操作</p>
-<p>2) 无数据操作，例如定时器 setTimeOut() </p>
-<h4 id="子线程"><a href="#子线程" class="headerlink" title="子线程"></a>子线程</h4><p>主要用来执行异步操作</p>
-<ol>
-<li>无任务时放在线程池中休息</li>
-<li>有异步IO操作，执行异步的IO操作</li>
-<li>执行完成后的子线程会把IO操作的回调，扔回给队列</li>
-</ol>
+        <p>MAC上安装有多个不同的PHP网站，要求必须在PHP5.6、PHP7.1+<br>并且需要安装xdebug扩展。</p>
+<p>操作</p>
+<p>1）先安装PHP56 PHP71</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew install php@5.6</span><br><span class="line">brew install php@7.3</span><br></pre></td></tr></table></figure>
+
+<p>安装好之后，去修改他们php-fpm的绑定端口，然后执行brew services restart <a href="mailto:php@5.6" target="_blank" rel="noopener">php@5.6</a> 这样，启动</p>
+<p>2）安装扩展</p>
+<p>必须确认目录是否存在 /usr/local/lib/php/pecl</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/usr/<span class="built_in">local</span>/opt/php@7.1/bin/pecl install http://pecl.php.net/get/xdebug-2.9.2.tgz</span><br><span class="line">/usr/<span class="built_in">local</span>/opt/php@5.6/bin/pecl install http://pecl.php.net/get/xdebug-2.5.5.tgz</span><br></pre></td></tr></table></figure>
+
+<p>3）修改对应的php.ini</p>
+<p>添加extension扩展so</p>
+<p>4）修改php-fpm端口<br><a href="http://www.conf" target="_blank" rel="noopener">www.conf</a></p>
+<p>listening 端口</p>
+<p>5）启动服务</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew services restart php@5.6 </span><br><span class="line">brew services restart php@7.1</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -714,6 +709,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/php/" rel="tag"># php</a>
+          
+            <a href="/tags/mac/" rel="tag"># mac</a>
+          
+        </div>
+      
 
       
       
@@ -723,8 +726,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/09/25/微信小程序-常用自定义函数/" rel="next" title="微信小程序-常用自定义函数">
-                <i class="fa fa-chevron-left"></i> 微信小程序-常用自定义函数
+              <a href="/2020/02/29/hexo-server状态怎么常驻后台/" rel="next" title="hexo server状态怎么常驻后台">
+                <i class="fa fa-chevron-left"></i> hexo server状态怎么常驻后台
               </a>
             
           </div>
@@ -732,10 +735,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2020/02/29/hexo-server状态怎么常驻后台/" rel="prev" title="hexo server状态怎么常驻后台">
-                hexo server状态怎么常驻后台 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -779,17 +778,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -957,23 +947,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#主线程"><span class="nav-number">1.</span> <span class="nav-text">主线程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#子线程"><span class="nav-number">2.</span> <span class="nav-text">子线程</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
