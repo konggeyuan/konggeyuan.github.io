@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hexo server状态怎么常驻后台]]></title>
+    <url>%2F2020%2F02%2F29%2Fhexo-server%E7%8A%B6%E6%80%81%E6%80%8E%E4%B9%88%E5%B8%B8%E9%A9%BB%E5%90%8E%E5%8F%B0%2F</url>
+    <content type="text"><![CDATA[刚刚批发学来，转载一下 12#安装pm2npm install -g pm2 在博客根目录下面创建一个hexo_run.js 12345678910//runconst &#123; exec &#125; = require('child_process')exec('hexo server',(error, stdout, stderr) =&gt; &#123; if(error)&#123; console.log('exec error: $&#123;error&#125;') return &#125; console.log('stdout: $&#123;stdout&#125;'); console.log('stderr: $&#123;stderr&#125;');&#125;) 运行脚本 1pm2 start hexo_run.js 转载地址：https://blog.csdn.net/Tangcuyuha/article/details/80331169]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Node.js 事件驱动模型]]></title>
     <url>%2F2019%2F12%2F02%2FNode-js-%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E6%A8%A1%E5%9E%8B%2F</url>
     <content type="text"><![CDATA[运行过程 主线程 执行 node 代码，将代码加入队列中 执行同步操作代码 同步执行完成后，执行异步代码 异步分为两种 IO1：会从线程池取一条子线程来帮助主线程执行 非IO2 ： 判断能否执行，能执行加入队列，不能就跳过 主线程会一直循环，直到队列中没有代码后，主线程才会退出 1) IO 即 input 和 out，指有数据操作 2) 无数据操作，例如定时器 setTimeOut() 子线程主要用来执行异步操作 无任务时放在线程池中休息 有异步IO操作，执行异步的IO操作 执行完成后的子线程会把IO操作的回调，扔回给队列]]></content>
