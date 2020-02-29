@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Node.js 事件驱动模型]]></title>
+    <url>%2F2019%2F12%2F02%2FNode-js-%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E6%A8%A1%E5%9E%8B%2F</url>
+    <content type="text"><![CDATA[运行过程 主线程 执行 node 代码，将代码加入队列中 执行同步操作代码 同步执行完成后，执行异步代码 异步分为两种 IO1：会从线程池取一条子线程来帮助主线程执行 非IO2 ： 判断能否执行，能执行加入队列，不能就跳过 主线程会一直循环，直到队列中没有代码后，主线程才会退出 1) IO 即 input 和 out，指有数据操作 2) 无数据操作，例如定时器 setTimeOut() 子线程主要用来执行异步操作 无任务时放在线程池中休息 有异步IO操作，执行异步的IO操作 执行完成后的子线程会把IO操作的回调，扔回给队列]]></content>
+      <categories>
+        <category>nodejs</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[微信小程序-常用自定义函数]]></title>
+    <url>%2F2019%2F09%2F25%2F%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%B8%B8%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%2F</url>
+    <content type="text"><![CDATA[ajax 1234567891011121314151617const ajaxPromisify = function(options=&#123;&#125;) &#123; return new Promise((resolve,reject) =&gt; &#123; wx.showLoading(&#123;title: '加载中'&#125;); wx.request(&#123; url: options.url, method: options.method, data: options.data, success:function(res)&#123; wx.hideLoading(); resolve(res); &#125;, fail:function(res)&#123; reject(res); &#125; &#125;); &#125;);&#125;; 用户认证信息获取，没有获取到就弹框 12345678910111213const userPromisify = function() &#123; return new Promise((resolve,reject) =&gt; &#123; wx.getUserInfo(&#123; success:function(res)&#123; resolve(res); &#125;, withCredentials:true, fail:function(res)&#123; reject(res); &#125; &#125;); &#125;);&#125;; 微信登陆 12345678910111213const wxLogin = function() &#123; return new Promise((resolve,reject) =&gt; &#123; wx.login(&#123; success:function(res)&#123; resolve(res); &#125;, withCredentials:true, fail:function(res)&#123; reject(res); &#125; &#125;); &#125;);&#125; 判断某些权限是否获取到 12345678910111213141516const authSettingPromisify = function(authtype) &#123; return new Promise((resolve,reject) =&gt; &#123; wx.getSetting(&#123; success(res) &#123; if (!res.authSetting[authtype]) &#123; resolve(false); &#125;else &#123; resolve(true); &#125; &#125;, fail(err) &#123; reject(err); &#125; &#125;); &#125;);&#125;;]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>小程序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[微信小程序-跳转-本地获取存储-手机号验证]]></title>
     <url>%2F2019%2F09%2F24%2F%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E8%B7%B3%E8%BD%AC-%E8%8E%B7%E5%8F%96%E5%AD%98%E5%82%A8%2F</url>
     <content type="text"><![CDATA[获取本地存储 12345//获取本地存储wx.getStorageSync("SysInfo").permission.title;//设置本地存储wx.setStorageSync("UserID", data.data.user_id); 跳转 12345//直接跳转并不删除当前页面wx.navigateTo(&#123;'url':'/pages/shop/c/register/register'&#125;);//删除当前页面并跳转wx.redirectTo(&#123;'url':'/pages/shop/c/register/register'&#125;); 手机号验证 1234const phoneVerification = function(phone) &#123; let reg = /^(((13[0-9]&#123;1&#125;)|(15[0-9]&#123;1&#125;)|(18[0-9]&#123;1&#125;)|(17[0-9]&#123;1&#125;))+\d&#123;8&#125;)$/; return reg.test(phone);&#125;]]></content>

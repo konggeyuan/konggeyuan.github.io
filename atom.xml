@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2019-09-24T14:58:19.046Z</updated>
+  <updated>2019-12-02T13:47:27.803Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,59 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Node.js 事件驱动模型</title>
+    <link href="http://konggeyuan.github.io/2019/12/02/Node-js-%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E6%A8%A1%E5%9E%8B/"/>
+    <id>http://konggeyuan.github.io/2019/12/02/Node-js-事件驱动模型/</id>
+    <published>2019-12-02T13:41:00.000Z</published>
+    <updated>2019-12-02T13:47:27.803Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/pasted-17.png&quot; alt=&quot;upload successful&quot;&gt;&lt;/p&gt;
+&lt;p&gt;运行过程&lt;/p&gt;
+&lt;h4 id=&quot;主线程&quot;&gt;&lt;a href=&quot;#主线程&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="nodejs" scheme="http://konggeyuan.github.io/categories/nodejs/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序-常用自定义函数</title>
+    <link href="http://konggeyuan.github.io/2019/09/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%B8%B8%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0/"/>
+    <id>http://konggeyuan.github.io/2019/09/25/微信小程序-常用自定义函数/</id>
+    <published>2019-09-25T07:18:00.000Z</published>
+    <updated>2019-09-25T07:21:54.073Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;ajax&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="前端" scheme="http://konggeyuan.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="小程序" scheme="http://konggeyuan.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>微信小程序-跳转-本地获取存储-手机号验证</title>
@@ -503,53 +556,6 @@
     </summary>
     
       <category term="学习笔记" scheme="http://konggeyuan.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>一些学习JS的资料地址</title>
-    <link href="http://konggeyuan.github.io/2019/05/13/%E4%B8%80%E4%BA%9B%E5%AD%A6%E4%B9%A0JS%E7%9A%84%E8%B5%84%E6%96%99%E5%9C%B0%E5%9D%80/"/>
-    <id>http://konggeyuan.github.io/2019/05/13/一些学习JS的资料地址/</id>
-    <published>2019-05-13T07:45:00.000Z</published>
-    <updated>2019-05-13T09:52:32.522Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://es6.ruanyifeng.com&quot; target=&quot;_blank&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="学习笔记" scheme="http://konggeyuan.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo安装过程</title>
-    <link href="http://konggeyuan.github.io/2019/05/11/Hexo%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B/"/>
-    <id>http://konggeyuan.github.io/2019/05/11/Hexo安装过程/</id>
-    <published>2019-05-10T17:06:06.000Z</published>
-    <updated>2019-05-13T03:10:10.244Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;这里做个记录，&lt;a href=&quot;https://zhuanlan.zhihu.com/p/26625249&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;安装&amp;amp;github配置部分&lt;/a&gt;内容参考网络上，&lt;a
-        
-      
-    
-    </summary>
     
     
   </entry>
