@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2020-02-29T15:33:57.159Z</updated>
+  <updated>2020-02-29T15:34:56.839Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://konggeyuan.github.io/2020/02/29/mac-%E5%A4%9A%E7%89%88%E6%9C%ACphp%E5%85%B1%E5%AD%98/"/>
     <id>http://konggeyuan.github.io/2020/02/29/mac-多版本php共存/</id>
     <published>2020-02-29T15:31:00.000Z</published>
-    <updated>2020-02-29T15:33:57.159Z</updated>
+    <updated>2020-02-29T15:34:56.839Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,7 @@
       
         
         
-          &lt;p&gt;MAC上安装有多个不同的PHP网站，要求必须在PHP5.6、PHP7.1+&lt;br&gt;并且需要安装xdebug扩展。&lt;/p&gt;
+          &lt;p&gt;MAC上安装有多个不同的PHP网站，要求必须在PHP5.6、PHP7.1+，并且需要安装xdebug扩展。&lt;/p&gt;
 &lt;p&gt;操作&lt;/p&gt;
 &lt;p&gt;1）先安装PHP56 PHP71&lt;/p&gt;
 &lt;figure class=&quot;highlight
