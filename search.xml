@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[多个ssh key配置]]></title>
+    <url>%2F2020%2F03%2F01%2F%E5%A4%9A%E4%B8%AAssh-key%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[生成新的key1ssh-keygen -t rsa -f ~/.ssh/id_rsa.github -C &quot;你的邮箱&quot;修改ssh的配置文件，如果没有就新建一个1vim ~/.ssh/config配置不同的key指向不同的git仓库服务器12345678910#github Host github.com HostName github.com PreferredAuthentications publickey IdentityFile ~/.ssh/id_rsa.blog.github#gitee Host gitee.com HostName gitee.com PreferredAuthentications publickey IdentityFile ~/.ssh/id_rsa测试1ssh -T git@github.com]]></content>
+      <categories>
+        <category>运维</category>
+      </categories>
+      <tags>
+        <tag>ssh</tag>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[MySQL备份脚本]]></title>
     <url>%2F2020%2F03%2F01%2FMySQL%E5%A4%87%E4%BB%BD%E8%84%9A%E6%9C%AC%2F</url>
     <content type="text"><![CDATA[云主机厂商都有自己的RDS系统，自然那是万无一失，但费用可真不便宜，一般还是喜欢自己备份一下。这里是一段备份脚本。放在cron中自动执行。12345678910111213141516171819202122232425262728293031323334353637#!/bin/bash#备份目录BACKUP_ROOT=/srv/backupBACKUP_FILEDIR=$BACKUP_ROOT/filesBACKUP_LOGDIR=$BACKUP_ROOT/logs#当前日期DATE=$(date +%Y%m%d)FILEEXT=$(date +%Y%m%d%H)if [ ! -d $BACKUP_FILEDIR/$DATE ];then mkdir $BACKUP_FILEDIR/$DATEfi######备份#######查询所有数据库DATABASES=$(mysql -u用户名 -h 网络IP -p密码 -e "show databases" | grep -Ev "Database|sys|information_schema")#echo $DATABASES#循环数据库进行备份for db in $DATABASESdo echo echo ----------$BACKUP_FILEDIR/$DATE/$&#123;db&#125;_$FILEEXT.sql.gz BEGIN---------- mysqldump -u用户名 -h 网络IP -p密码 \ --default-character-set=utf8 -q --lock-all-tables \ --flush-logs -E -R --triggers -B $&#123;db&#125; \ | gzip &gt; $BACKUP_FILEDIR/$DATE/$&#123;db&#125;_$FILEEXT.sql.gz echo ----------$BACKUP_FILEDIR/$DATE/$&#123;db&#125;_$FILEEXT.sql.gz COMPLETE---------- echodoneecho "done"cron中设置备份频段，建议再加上远程传输，做成异地备份]]></content>
       <categories>
-        <category>数据库</category>
         <category>运维</category>
       </categories>
       <tags>
