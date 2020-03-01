@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[nodejs 常驻后台 pm2 使用]]></title>
+    <url>%2F2020%2F03%2F01%2Fnodejs-%E5%B8%B8%E9%A9%BB%E5%90%8E%E5%8F%B0-pm2-%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[什么是pm2pm2是一个用node编写的进程管理工具，它不仅可以用来管理node进程，任何进程相关的东西都可以使用pm2来进行管理安装pm2npm install pm2常规使用开启进程pm2 start app.jspm2 list 查看当前被pm2所管理的进程查看日志pm2 log关闭所有进程pm2 stop all重新加载进程pm2 reload app_name删除进程pm2 delete app_name]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>nodejs</tag>
+        <tag>运维</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[多个ssh key配置]]></title>
     <url>%2F2020%2F03%2F01%2F%E5%A4%9A%E4%B8%AAssh-key%E9%85%8D%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[生成新的key1ssh-keygen -t rsa -f ~/.ssh/id_rsa.github -C &quot;你的邮箱&quot;修改ssh的配置文件，如果没有就新建一个1vim ~/.ssh/config配置不同的key指向不同的git仓库服务器12345678910#github Host github.com HostName github.com PreferredAuthentications publickey IdentityFile ~/.ssh/id_rsa.blog.github#gitee Host gitee.com HostName gitee.com PreferredAuthentications publickey IdentityFile ~/.ssh/id_rsa测试1ssh -T git@github.com]]></content>
