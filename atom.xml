@@ -49,7 +49,7 @@
     <link href="http://konggeyuan.github.io/2020/03/01/laravel-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%99%A8/"/>
     <id>http://konggeyuan.github.io/2020/03/01/laravel-数据库查询器/</id>
     <published>2020-03-01T08:31:00.000Z</published>
-    <updated>2020-03-01T08:33:25.316Z</updated>
+    <updated>2020-03-02T12:16:09.351Z</updated>
     
     <summary type="html">
     
@@ -57,13 +57,13 @@
       
         
         
-          &lt;!-- build time:Mon Mar 02 2020 16:00:02 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;插入数据库&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Mon Mar 02 2020 20:22:31 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;插入数据库&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
     </summary>
     
-      <category term="后端" scheme="http://konggeyuan.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="laravel" scheme="http://konggeyuan.github.io/tags/laravel/"/>
@@ -159,7 +159,7 @@
     <link href="http://konggeyuan.github.io/2020/02/29/mac-%E5%A4%9A%E7%89%88%E6%9C%ACphp%E5%85%B1%E5%AD%98/"/>
     <id>http://konggeyuan.github.io/2020/02/29/mac-多版本php共存/</id>
     <published>2020-02-29T15:31:00.000Z</published>
-    <updated>2020-02-29T15:34:56.839Z</updated>
+    <updated>2020-03-02T12:16:59.047Z</updated>
     
     <summary type="html">
     
@@ -167,13 +167,13 @@
       
         
         
-          &lt;!-- build time:Sun Mar 01 2020 14:37:14 GMT+0800 (GMT+08:00)
+          &lt;!-- build time:Mon Mar 02 2020 20:22:31 GMT+0800 (GMT+08:00)
         
       
     
     </summary>
     
-      <category term="学习笔记" scheme="http://konggeyuan.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="php" scheme="http://konggeyuan.github.io/tags/php/"/>
@@ -187,7 +187,7 @@
     <link href="http://konggeyuan.github.io/2020/02/29/hexo-server%E7%8A%B6%E6%80%81%E6%80%8E%E4%B9%88%E5%B8%B8%E9%A9%BB%E5%90%8E%E5%8F%B0/"/>
     <id>http://konggeyuan.github.io/2020/02/29/hexo-server状态怎么常驻后台/</id>
     <published>2020-02-29T15:03:00.000Z</published>
-    <updated>2020-02-29T15:14:53.527Z</updated>
+    <updated>2020-03-02T12:17:17.723Z</updated>
     
     <summary type="html">
     
@@ -195,13 +195,13 @@
       
         
         
-          &lt;!-- build time:Sun Mar 01 2020 14:37:14 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;刚刚批发学来，转载一下&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Mon Mar 02 2020 20:22:31 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;刚刚批发学来，转载一下&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
     </summary>
     
-      <category term="后端" scheme="http://konggeyuan.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
   </entry>
@@ -211,7 +211,7 @@
     <link href="http://konggeyuan.github.io/2019/12/02/Node-js-%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E6%A8%A1%E5%9E%8B/"/>
     <id>http://konggeyuan.github.io/2019/12/02/Node-js-事件驱动模型/</id>
     <published>2019-12-02T13:41:00.000Z</published>
-    <updated>2019-12-02T13:47:27.803Z</updated>
+    <updated>2020-03-02T12:17:47.676Z</updated>
     
     <summary type="html">
     
@@ -219,13 +219,13 @@
       
         
         
-          &lt;!-- build time:Sun Mar 01 2020 14:37:14 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;img src=&quot;/images/pasted-17.png&quot; alt=&quot;upload
+          &lt;!-- build time:Mon Mar 02 2020 20:22:31 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;img src=&quot;/images/pasted-17.png&quot; alt=&quot;upload
         
       
     
     </summary>
     
-      <category term="nodejs" scheme="http://konggeyuan.github.io/categories/nodejs/"/>
+      <category term="学习笔记" scheme="http://konggeyuan.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -235,7 +235,7 @@
     <link href="http://konggeyuan.github.io/2019/09/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%B8%B8%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0/"/>
     <id>http://konggeyuan.github.io/2019/09/25/微信小程序-常用自定义函数/</id>
     <published>2019-09-25T07:18:00.000Z</published>
-    <updated>2019-09-25T07:21:54.073Z</updated>
+    <updated>2020-03-02T12:18:01.658Z</updated>
     
     <summary type="html">
     
@@ -243,13 +243,13 @@
       
         
         
-          &lt;!-- build time:Sun Mar 01 2020 14:37:14 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;ajax&lt;/p&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Mon Mar 02 2020 20:22:31 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;ajax&lt;/p&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
     </summary>
     
-      <category term="前端" scheme="http://konggeyuan.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="小程序" scheme="http://konggeyuan.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
@@ -261,7 +261,7 @@
     <link href="http://konggeyuan.github.io/2019/09/24/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E8%B7%B3%E8%BD%AC-%E8%8E%B7%E5%8F%96%E5%AD%98%E5%82%A8/"/>
     <id>http://konggeyuan.github.io/2019/09/24/微信小程序-跳转-获取存储/</id>
     <published>2019-09-24T14:55:00.000Z</published>
-    <updated>2019-09-24T14:58:19.046Z</updated>
+    <updated>2020-03-02T12:18:35.726Z</updated>
     
     <summary type="html">
     
@@ -269,13 +269,13 @@
       
         
         
-          &lt;!-- build time:Sun Mar 01 2020 14:37:14 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;获取本地存储&lt;/p&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Mon Mar 02 2020 20:22:31 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;获取本地存储&lt;/p&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
     </summary>
     
-      <category term="前端" scheme="http://konggeyuan.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="小程序" scheme="http://konggeyuan.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>

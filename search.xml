@@ -17,7 +17,7 @@
     <url>%2F2020%2F03%2F01%2Flaravel-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%99%A8%2F</url>
     <content type="text"><![CDATA[插入数据库1Companyauth::insert($data);更新1Companyauth::where(&apos;uid&apos;,$uid)-&gt;update($data);查询1Companyauth::where(&apos;uid&apos;,$uid)-&gt;find(1);orderBy和limit组合1Companyauth::orderBy(&apos;id&apos;,&apos;desc&apos;)-&gt;take(6)-&gt;get();where条件12Newsinformation::where(&apos;id&apos;,&apos;&lt;&apos;,$id)-&gt;first();Orderbook::where(&apos;buyId&apos;,$uid)-&gt;get();left join123$prdList = Product::where(&apos;product.type&apos;,2) -&gt;leftjoin(&apos;companyauth&apos;,&apos;companyauth.uid&apos;,&apos;=&apos;,&apos;product.uid&apos;) -&gt;orderBy(&apos;product.id&apos;,&apos;desc&apos;)-&gt;get();从配置文件读取数据1$choiseType = Config::get(&apos;user.choicetype&apos;);单一纪录1Newsinformation::where(&apos;id&apos;,&apos;&lt;&apos;,$id)-&gt;first();]]></content>
       <categories>
-        <category>后端</category>
+        <category>技术</category>
       </categories>
       <tags>
         <tag>laravel</tag>
@@ -64,7 +64,7 @@
     <url>%2F2020%2F02%2F29%2Fmac-%E5%A4%9A%E7%89%88%E6%9C%ACphp%E5%85%B1%E5%AD%98%2F</url>
     <content type="text"><![CDATA[MAC上安装有多个不同的PHP网站，要求必须在PHP5.6、PHP7.1+，并且需要安装xdebug扩展。操作1）先安装PHP56 PHP7112brew install php@5.6brew install php@7.3安装好之后，去修改他们php-fpm的绑定端口，然后执行brew services restart php@5.6 这样，启动2）安装扩展必须确认目录是否存在 /usr/local/lib/php/pecl12/usr/local/opt/php@7.1/bin/pecl install http://pecl.php.net/get/xdebug-2.9.2.tgz/usr/local/opt/php@5.6/bin/pecl install http://pecl.php.net/get/xdebug-2.5.5.tgz3）修改对应的php.ini添加extension扩展so4）修改php-fpm端口www.conflistening 端口5）启动服务12brew services restart php@5.6 brew services restart php@7.1]]></content>
       <categories>
-        <category>学习笔记</category>
+        <category>技术</category>
       </categories>
       <tags>
         <tag>php</tag>
@@ -76,7 +76,7 @@
     <url>%2F2020%2F02%2F29%2Fhexo-server%E7%8A%B6%E6%80%81%E6%80%8E%E4%B9%88%E5%B8%B8%E9%A9%BB%E5%90%8E%E5%8F%B0%2F</url>
     <content type="text"><![CDATA[刚刚批发学来，转载一下12#安装pm2npm install -g pm2在博客根目录下面创建一个hexo_run.js12345678910//runconst &#123; exec &#125; = require('child_process')exec('hexo server',(error, stdout, stderr) =&gt; &#123; if(error)&#123; console.log('exec error: $&#123;error&#125;') return &#125; console.log('stdout: $&#123;stdout&#125;'); console.log('stderr: $&#123;stderr&#125;');&#125;)运行脚本1pm2 start hexo_run.js转载地址：https://blog.csdn.net/Tangcuyuha/article/details/80331169]]></content>
       <categories>
-        <category>后端</category>
+        <category>技术</category>
       </categories>
   </entry>
   <entry>
@@ -84,7 +84,7 @@
     <url>%2F2019%2F12%2F02%2FNode-js-%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E6%A8%A1%E5%9E%8B%2F</url>
     <content type="text"><![CDATA[运行过程主线程执行 node 代码，将代码加入队列中执行同步操作代码同步执行完成后，执行异步代码异步分为两种IO1：会从线程池取一条子线程来帮助主线程执行非IO2 ： 判断能否执行，能执行加入队列，不能就跳过主线程会一直循环，直到队列中没有代码后，主线程才会退出1) IO 即 input 和 out，指有数据操作2) 无数据操作，例如定时器 setTimeOut()子线程主要用来执行异步操作无任务时放在线程池中休息有异步IO操作，执行异步的IO操作执行完成后的子线程会把IO操作的回调，扔回给队列]]></content>
       <categories>
-        <category>nodejs</category>
+        <category>学习笔记</category>
       </categories>
   </entry>
   <entry>
@@ -92,7 +92,7 @@
     <url>%2F2019%2F09%2F25%2F%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%B8%B8%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0%2F</url>
     <content type="text"><![CDATA[ajax1234567891011121314151617const ajaxPromisify = function(options=&#123;&#125;) &#123; return new Promise((resolve,reject) =&gt; &#123; wx.showLoading(&#123;title: '加载中'&#125;); wx.request(&#123; url: options.url, method: options.method, data: options.data, success:function(res)&#123; wx.hideLoading(); resolve(res); &#125;, fail:function(res)&#123; reject(res); &#125; &#125;); &#125;);&#125;;用户认证信息获取，没有获取到就弹框12345678910111213const userPromisify = function() &#123; return new Promise((resolve,reject) =&gt; &#123; wx.getUserInfo(&#123; success:function(res)&#123; resolve(res); &#125;, withCredentials:true, fail:function(res)&#123; reject(res); &#125; &#125;); &#125;);&#125;;微信登陆12345678910111213const wxLogin = function() &#123; return new Promise((resolve,reject) =&gt; &#123; wx.login(&#123; success:function(res)&#123; resolve(res); &#125;, withCredentials:true, fail:function(res)&#123; reject(res); &#125; &#125;); &#125;);&#125;判断某些权限是否获取到12345678910111213141516const authSettingPromisify = function(authtype) &#123; return new Promise((resolve,reject) =&gt; &#123; wx.getSetting(&#123; success(res) &#123; if (!res.authSetting[authtype]) &#123; resolve(false); &#125;else &#123; resolve(true); &#125; &#125;, fail(err) &#123; reject(err); &#125; &#125;); &#125;);&#125;;]]></content>
       <categories>
-        <category>前端</category>
+        <category>技术</category>
       </categories>
       <tags>
         <tag>小程序</tag>
@@ -103,7 +103,7 @@
     <url>%2F2019%2F09%2F24%2F%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E8%B7%B3%E8%BD%AC-%E8%8E%B7%E5%8F%96%E5%AD%98%E5%82%A8%2F</url>
     <content type="text"><![CDATA[获取本地存储12345//获取本地存储wx.getStorageSync("SysInfo").permission.title;//设置本地存储wx.setStorageSync("UserID", data.data.user_id);跳转12345//直接跳转并不删除当前页面wx.navigateTo(&#123;'url':'/pages/shop/c/register/register'&#125;);//删除当前页面并跳转wx.redirectTo(&#123;'url':'/pages/shop/c/register/register'&#125;);手机号验证1234const phoneVerification = function(phone) &#123; let reg = /^(((13[0-9]&#123;1&#125;)|(15[0-9]&#123;1&#125;)|(18[0-9]&#123;1&#125;)|(17[0-9]&#123;1&#125;))+\d&#123;8&#125;)$/; return reg.test(phone);&#125;]]></content>
       <categories>
-        <category>前端</category>
+        <category>技术</category>
       </categories>
       <tags>
         <tag>小程序</tag>
@@ -213,7 +213,7 @@
     <url>%2F2019%2F06%2F04%2Ftp5-nginx%E9%85%8D%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[做项目要弄一个微信管理系统，涉及到tp5，为了pathinfo问题改了好久的配置。耽误了不少的功夫。当然其中也有项目的因素，更加坚定了之前的想法。废话不说，适应tp的配置如下：1234567891011121314151617181920212223242526server &#123; listen 80; root /www/rhaphp; index index.php index.html index.htm index.nginx-debian.html; server_name rhaphp.localhost; location / &#123; index index.php index.html index.htm; try_files $uri /index.php$uri; if (!-e $request_filename) &#123; #rewrite ^/(.*)$ /index.php?$1 last; rewrite ^(.*)$ /index.php?s=$1 last; break; &#125; client_max_body_size 50m; &#125; location ~ \.php(.*)$ &#123; fastcgi_pass php:9000; fastcgi_index index.php; fastcgi_split_path_info ^(.+\.php)(.*)$; fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name; fastcgi_param PATH_INFO $fastcgi_path_info; include fastcgi_params; &#125;&#125;]]></content>
       <categories>
-        <category>工作笔记</category>
+        <category>运维</category>
       </categories>
       <tags>
         <tag>thinkphp5</tag>
@@ -226,7 +226,7 @@
     <url>%2F2019%2F05%2F29%2F%E7%BE%A4%E6%99%96SPK%E6%89%93%E5%8C%85%2F</url>
     <content type="text"><![CDATA[12345678910111213#获得环境编译包git clone https://github.com/SynologyOpenSource/pkgscripts-ng.git pkgscripts#创建编译环境cd pkgscripts/./EnvDeploy -v 6.2 -p x64#测试包cd /toolkit/source/git clone https://github.com/SynologyOpenSource/minimalPkg.git#编译测试包pkgscripts/PkgCreate.py -x0 -c minimalPkg -p x64]]></content>
       <categories>
-        <category>工作笔记</category>
+        <category>学习笔记</category>
       </categories>
       <tags>
         <tag>群晖</tag>
