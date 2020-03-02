@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2020-03-01T08:23:42.108Z</updated>
+  <updated>2020-03-02T07:59:37.944Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>FFmpeg常用基本命令</title>
+    <link href="http://konggeyuan.github.io/2020/03/02/ffmpeg%E5%B8%B8%E7%94%A8%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/"/>
+    <id>http://konggeyuan.github.io/2020/03/02/ffmpeg常用基本命令/</id>
+    <published>2020-03-02T07:41:57.000Z</published>
+    <updated>2020-03-02T07:59:37.944Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- build time:Mon Mar 02 2020 16:00:02 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;FFmpeg常用基本命令&lt;/p&gt;&lt;h4 id=&quot;常用参数说明&quot;&gt;&lt;a href=&quot;#常用参数说明&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>laravel 数据库查询器</title>
+    <link href="http://konggeyuan.github.io/2020/03/01/laravel-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%99%A8/"/>
+    <id>http://konggeyuan.github.io/2020/03/01/laravel-数据库查询器/</id>
+    <published>2020-03-01T08:31:00.000Z</published>
+    <updated>2020-03-01T08:33:25.316Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- build time:Mon Mar 02 2020 16:00:02 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;插入数据库&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+      <category term="后端" scheme="http://konggeyuan.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+      <category term="laravel" scheme="http://konggeyuan.github.io/tags/laravel/"/>
+    
+  </entry>
   
   <entry>
     <title>nodejs 常驻后台 pm2 使用</title>
@@ -483,62 +531,6 @@
     
     
       <category term="docker" scheme="http://konggeyuan.github.io/tags/docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>tp5-nginx配置</title>
-    <link href="http://konggeyuan.github.io/2019/06/04/tp5-nginx%E9%85%8D%E7%BD%AE/"/>
-    <id>http://konggeyuan.github.io/2019/06/04/tp5-nginx配置/</id>
-    <published>2019-06-04T10:12:00.000Z</published>
-    <updated>2019-06-04T10:17:47.040Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Sun Mar 01 2020 14:37:14 GMT+0800 (GMT+08:00)
-        
-      
-    
-    </summary>
-    
-      <category term="工作笔记" scheme="http://konggeyuan.github.io/categories/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="thinkphp5" scheme="http://konggeyuan.github.io/tags/thinkphp5/"/>
-    
-      <category term="nginx" scheme="http://konggeyuan.github.io/tags/nginx/"/>
-    
-      <category term="rhaphp" scheme="http://konggeyuan.github.io/tags/rhaphp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>群晖SPK打包</title>
-    <link href="http://konggeyuan.github.io/2019/05/29/%E7%BE%A4%E6%99%96SPK%E6%89%93%E5%8C%85/"/>
-    <id>http://konggeyuan.github.io/2019/05/29/群晖SPK打包/</id>
-    <published>2019-05-29T06:27:00.000Z</published>
-    <updated>2019-05-29T06:34:43.925Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Sun Mar 01 2020 14:37:14 GMT+0800 (GMT+08:00) --&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-      <category term="工作笔记" scheme="http://konggeyuan.github.io/categories/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="群晖" scheme="http://konggeyuan.github.io/tags/%E7%BE%A4%E6%99%96/"/>
     
   </entry>
   

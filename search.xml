@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[FFmpeg常用基本命令]]></title>
+    <url>%2F2020%2F03%2F02%2Fffmpeg%E5%B8%B8%E7%94%A8%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4%2F</url>
+    <content type="text"><![CDATA[FFmpeg常用基本命令常用参数说明主要参数1234567891011121314-i 设定输入流 -f 设定输出格式 -ss 开始时间 视频参数： -b 设定视频流量，默认为200Kbit/s -r 设定帧速率，默认为25 -s 设定画面的宽与高 -aspect 设定画面的比例 -vn 不处理视频 -vcodec 设定视频编解码器，未设定时则使用与输入流相同的编解码器 音频参数： -ar 设定采样率 -ac 设定声音的Channel数 -acodec 设定声音编解码器，未设定时则使用与输入流相同的编解码器 -an 不处理音频手头常用1234567891011121314//转大小 iphone maxffmpeg -i EP02.mp4 -strict -2 -vf scale=1242:-2 2.mp4//转720pffmpeg -i EP02.mp4 -strict -2 -vf scale=-2:720 2.mp4//字幕导入ffmpeg -i 1.mkv -metadata title=&quot;步履不停&quot; -strict -2 \vf subtitles=1.srt -metadata:s:s:0 language=chs out.mp4//从mkv转MP4，并用mkv中的中文字幕和视频音频合成ffmpeg -i input.mkv -filter_complex &quot;[0:v:0]subtitles=input.mkv:si=5[v]&quot; \metadata title=&quot;星球大战4新希望&quot; -map &quot;[v]&quot; -map 0:a:0 -c:a copy output.mp4常规使用组合分离视频音频流123//分离视频流ffmpeg -i input_file -vcodec copy -an output_file_video ffmpeg -i input_file -acodec copy -vn output_file_audio视频解复用123//分离音频流ffmpeg –i test.mp4 –vcodec copy –an –f m4v test.264ffmpeg –i test.avi –vcodec copy –an –f m4v test.264视频转码123456789//转码为码流原始文件ffmpeg –i test.mp4 –vcodec h264 –s 352*278 –an –f m4v test.264 //转码为码流原始文件ffmpeg –i test.mp4 –vcodec h264 –bf 0 –g 25 –s 352*278 –an –f m4v test.264//转码为封装文件//-bf B帧数目控制，-g 关键帧间隔控制，-s 分辨率控制ffmpeg –i test.avi -vcodec mpeg4 –vtag xvid –qsame test_xvid.avi视频封装1ffmpeg –i video_file –i audio_file –vcodec copy –acodec copy output_file视频剪切123456//提取图片ffmpeg –i test.avi –r 1 –f image2 image-%3d.jpeg//剪切视频//-r 提取图像的频率，-ss 开始时间，-t 持续时间ffmpeg -ss 0:1:30 -t 0:0:20 -i input.avi -vcodec copy -acodec copy output.avi视频录制1ffmpeg –i rtsp://192.168.3.205:5555/test –vcodec copy out.avi]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[laravel 数据库查询器]]></title>
+    <url>%2F2020%2F03%2F01%2Flaravel-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%99%A8%2F</url>
+    <content type="text"><![CDATA[插入数据库1Companyauth::insert($data);更新1Companyauth::where(&apos;uid&apos;,$uid)-&gt;update($data);查询1Companyauth::where(&apos;uid&apos;,$uid)-&gt;find(1);orderBy和limit组合1Companyauth::orderBy(&apos;id&apos;,&apos;desc&apos;)-&gt;take(6)-&gt;get();where条件12Newsinformation::where(&apos;id&apos;,&apos;&lt;&apos;,$id)-&gt;first();Orderbook::where(&apos;buyId&apos;,$uid)-&gt;get();left join123$prdList = Product::where(&apos;product.type&apos;,2) -&gt;leftjoin(&apos;companyauth&apos;,&apos;companyauth.uid&apos;,&apos;=&apos;,&apos;product.uid&apos;) -&gt;orderBy(&apos;product.id&apos;,&apos;desc&apos;)-&gt;get();从配置文件读取数据1$choiseType = Config::get(&apos;user.choicetype&apos;);单一纪录1Newsinformation::where(&apos;id&apos;,&apos;&lt;&apos;,$id)-&gt;first();]]></content>
+      <categories>
+        <category>后端</category>
+      </categories>
+      <tags>
+        <tag>laravel</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[nodejs 常驻后台 pm2 使用]]></title>
     <url>%2F2020%2F03%2F01%2Fnodejs-%E5%B8%B8%E9%A9%BB%E5%90%8E%E5%8F%B0-pm2-%E4%BD%BF%E7%94%A8%2F</url>
     <content type="text"><![CDATA[什么是pm2pm2是一个用node编写的进程管理工具，它不仅可以用来管理node进程，任何进程相关的东西都可以使用pm2来进行管理安装pm2npm install pm2常规使用开启进程pm2 start app.jspm2 list 查看当前被pm2所管理的进程查看日志pm2 log关闭所有进程pm2 stop all重新加载进程pm2 reload app_name删除进程pm2 delete app_name]]></content>
