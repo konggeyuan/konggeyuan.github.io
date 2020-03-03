@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>没事多喝水</title>
-  
+  <icon>http://konggeyuan.github.io/icon.png</icon>
   <subtitle>技术笔记&amp;记录生活点滴</subtitle>
   <link href="/atom.xml" rel="self"/>
   
@@ -14,12 +14,12 @@
     
   </author>
   
-  <generator uri="http://hexo.io/">Hexo</generator>
+  <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
     <title>科幻小说有感</title>
     <link href="http://konggeyuan.github.io/2020/03/02/%E7%A7%91%E5%B9%BB%E5%B0%8F%E8%AF%B4%E6%9C%89%E6%84%9F/"/>
-    <id>http://konggeyuan.github.io/2020/03/02/科幻小说有感/</id>
+    <id>http://konggeyuan.github.io/2020/03/02/%E7%A7%91%E5%B9%BB%E5%B0%8F%E8%AF%B4%E6%9C%89%E6%84%9F/</id>
     <published>2020-03-02T12:21:00.000Z</published>
     <updated>2020-03-02T14:23:25.463Z</updated>
     
@@ -29,11 +29,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;肺炎肆虐了几个月，也终有有点时间看看所谓的闲书。当然其实也是排除一些焦躁。&lt;/p&gt;&lt;!-- rebuild by neat
+          &lt;!-- build time:Tue Mar 03 2020 13:09:17 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;肺炎肆虐了几个月，也终有有点时间看看所谓的闲书。当然其实也是排除一些焦躁。&lt;/p&gt;&lt;!-- rebuild by neat
         
       
     
     </summary>
+    
     
       <category term="life" scheme="http://konggeyuan.github.io/categories/life/"/>
     
@@ -43,7 +44,7 @@
   <entry>
     <title>FFmpeg常用基本命令</title>
     <link href="http://konggeyuan.github.io/2020/03/02/ffmpeg%E5%B8%B8%E7%94%A8%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/"/>
-    <id>http://konggeyuan.github.io/2020/03/02/ffmpeg常用基本命令/</id>
+    <id>http://konggeyuan.github.io/2020/03/02/ffmpeg%E5%B8%B8%E7%94%A8%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</id>
     <published>2020-03-02T07:41:00.000Z</published>
     <updated>2020-03-02T12:39:23.430Z</updated>
     
@@ -53,11 +54,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;FFmpeg常用基本命令&lt;/p&gt;&lt;h4 id=&quot;常用参数说明&quot;&gt;&lt;a href=&quot;#常用参数说明&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Tue Mar 03 2020 13:09:16 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;FFmpeg常用基本命令&lt;/p&gt;&lt;h4 id=&quot;常用参数说明&quot;&gt;&lt;a href=&quot;#常用参数说明&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
+    
     
       <category term="linux" scheme="http://konggeyuan.github.io/categories/linux/"/>
     
@@ -71,7 +73,7 @@
   <entry>
     <title>laravel 数据库查询器</title>
     <link href="http://konggeyuan.github.io/2020/03/01/laravel-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%99%A8/"/>
-    <id>http://konggeyuan.github.io/2020/03/01/laravel-数据库查询器/</id>
+    <id>http://konggeyuan.github.io/2020/03/01/laravel-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%99%A8/</id>
     <published>2020-03-01T08:31:00.000Z</published>
     <updated>2020-03-02T12:16:09.351Z</updated>
     
@@ -81,11 +83,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;插入数据库&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Tue Mar 03 2020 13:09:17 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;插入数据库&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
     </summary>
+    
     
       <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
@@ -97,7 +100,7 @@
   <entry>
     <title>nodejs 常驻后台 pm2 使用</title>
     <link href="http://konggeyuan.github.io/2020/03/01/nodejs-%E5%B8%B8%E9%A9%BB%E5%90%8E%E5%8F%B0-pm2-%E4%BD%BF%E7%94%A8/"/>
-    <id>http://konggeyuan.github.io/2020/03/01/nodejs-常驻后台-pm2-使用/</id>
+    <id>http://konggeyuan.github.io/2020/03/01/nodejs-%E5%B8%B8%E9%A9%BB%E5%90%8E%E5%8F%B0-pm2-%E4%BD%BF%E7%94%A8/</id>
     <published>2020-03-01T08:17:00.000Z</published>
     <updated>2020-03-01T08:23:42.108Z</updated>
     
@@ -107,11 +110,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;h4 id=&quot;什么是pm2&quot;&gt;&lt;a href=&quot;#什么是pm2&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Tue Mar 03 2020 13:09:17 GMT+0800 (GMT+08:00) --&gt;&lt;h4 id=&quot;什么是pm2&quot;&gt;&lt;a href=&quot;#什么是pm2&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
+    
     
       <category term="后端" scheme="http://konggeyuan.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
     
@@ -125,7 +129,7 @@
   <entry>
     <title>多个ssh key配置</title>
     <link href="http://konggeyuan.github.io/2020/03/01/%E5%A4%9A%E4%B8%AAssh-key%E9%85%8D%E7%BD%AE/"/>
-    <id>http://konggeyuan.github.io/2020/03/01/多个ssh-key配置/</id>
+    <id>http://konggeyuan.github.io/2020/03/01/%E5%A4%9A%E4%B8%AAssh-key%E9%85%8D%E7%BD%AE/</id>
     <published>2020-03-01T06:46:00.000Z</published>
     <updated>2020-03-01T06:49:24.453Z</updated>
     
@@ -135,11 +139,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;生成新的key&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Tue Mar 03 2020 13:09:17 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;生成新的key&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
     </summary>
+    
     
       <category term="运维" scheme="http://konggeyuan.github.io/categories/%E8%BF%90%E7%BB%B4/"/>
     
@@ -153,7 +158,7 @@
   <entry>
     <title>MySQL备份脚本</title>
     <link href="http://konggeyuan.github.io/2020/03/01/MySQL%E5%A4%87%E4%BB%BD%E8%84%9A%E6%9C%AC/"/>
-    <id>http://konggeyuan.github.io/2020/03/01/MySQL备份脚本/</id>
+    <id>http://konggeyuan.github.io/2020/03/01/MySQL%E5%A4%87%E4%BB%BD%E8%84%9A%E6%9C%AC/</id>
     <published>2020-03-01T06:05:00.000Z</published>
     <updated>2020-03-01T06:42:09.106Z</updated>
     
@@ -163,11 +168,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00)
+          &lt;!-- build time:Tue Mar 03 2020 13:09:16 GMT+0800 (GMT+08:00)
         
       
     
     </summary>
+    
     
       <category term="运维" scheme="http://konggeyuan.github.io/categories/%E8%BF%90%E7%BB%B4/"/>
     
@@ -181,7 +187,7 @@
   <entry>
     <title>mac 多版本php共存</title>
     <link href="http://konggeyuan.github.io/2020/02/29/mac-%E5%A4%9A%E7%89%88%E6%9C%ACphp%E5%85%B1%E5%AD%98/"/>
-    <id>http://konggeyuan.github.io/2020/02/29/mac-多版本php共存/</id>
+    <id>http://konggeyuan.github.io/2020/02/29/mac-%E5%A4%9A%E7%89%88%E6%9C%ACphp%E5%85%B1%E5%AD%98/</id>
     <published>2020-02-29T15:31:00.000Z</published>
     <updated>2020-03-02T12:55:11.907Z</updated>
     
@@ -191,11 +197,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00)
+          &lt;!-- build time:Tue Mar 03 2020 13:09:17 GMT+0800 (GMT+08:00)
         
       
     
     </summary>
+    
     
       <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
@@ -209,7 +216,7 @@
   <entry>
     <title>hexo server状态怎么常驻后台</title>
     <link href="http://konggeyuan.github.io/2020/02/29/hexo-server%E7%8A%B6%E6%80%81%E6%80%8E%E4%B9%88%E5%B8%B8%E9%A9%BB%E5%90%8E%E5%8F%B0/"/>
-    <id>http://konggeyuan.github.io/2020/02/29/hexo-server状态怎么常驻后台/</id>
+    <id>http://konggeyuan.github.io/2020/02/29/hexo-server%E7%8A%B6%E6%80%81%E6%80%8E%E4%B9%88%E5%B8%B8%E9%A9%BB%E5%90%8E%E5%8F%B0/</id>
     <published>2020-02-29T15:03:00.000Z</published>
     <updated>2020-03-02T12:17:17.723Z</updated>
     
@@ -219,11 +226,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;刚刚批发学来，转载一下&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Tue Mar 03 2020 13:09:16 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;刚刚批发学来，转载一下&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
     </summary>
+    
     
       <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
@@ -233,7 +241,7 @@
   <entry>
     <title>Node.js 事件驱动模型</title>
     <link href="http://konggeyuan.github.io/2019/12/02/Node-js-%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E6%A8%A1%E5%9E%8B/"/>
-    <id>http://konggeyuan.github.io/2019/12/02/Node-js-事件驱动模型/</id>
+    <id>http://konggeyuan.github.io/2019/12/02/Node-js-%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E6%A8%A1%E5%9E%8B/</id>
     <published>2019-12-02T13:41:00.000Z</published>
     <updated>2020-03-02T12:17:47.676Z</updated>
     
@@ -243,11 +251,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;img src=&quot;/images/pasted-17.png&quot; alt=&quot;upload
+          &lt;!-- build time:Tue Mar 03 2020 13:09:16 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;img src=&quot;/images/pasted-17.png&quot; alt=&quot;upload
         
       
     
     </summary>
+    
     
       <category term="学习笔记" scheme="http://konggeyuan.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
@@ -257,7 +266,7 @@
   <entry>
     <title>微信小程序-常用自定义函数</title>
     <link href="http://konggeyuan.github.io/2019/09/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%B8%B8%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0/"/>
-    <id>http://konggeyuan.github.io/2019/09/25/微信小程序-常用自定义函数/</id>
+    <id>http://konggeyuan.github.io/2019/09/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%B8%B8%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0/</id>
     <published>2019-09-25T07:18:00.000Z</published>
     <updated>2020-03-02T12:18:01.658Z</updated>
     
@@ -267,11 +276,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;ajax&lt;/p&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Tue Mar 03 2020 13:09:17 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;ajax&lt;/p&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
     </summary>
+    
     
       <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
@@ -283,7 +293,7 @@
   <entry>
     <title>微信小程序-跳转-本地获取存储-手机号验证</title>
     <link href="http://konggeyuan.github.io/2019/09/24/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E8%B7%B3%E8%BD%AC-%E8%8E%B7%E5%8F%96%E5%AD%98%E5%82%A8/"/>
-    <id>http://konggeyuan.github.io/2019/09/24/微信小程序-跳转-获取存储/</id>
+    <id>http://konggeyuan.github.io/2019/09/24/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E8%B7%B3%E8%BD%AC-%E8%8E%B7%E5%8F%96%E5%AD%98%E5%82%A8/</id>
     <published>2019-09-24T14:55:00.000Z</published>
     <updated>2020-03-02T12:18:35.726Z</updated>
     
@@ -293,11 +303,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;获取本地存储&lt;/p&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Tue Mar 03 2020 13:09:17 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;获取本地存储&lt;/p&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
     </summary>
+    
     
       <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
@@ -309,7 +320,7 @@
   <entry>
     <title>微信小程序-弹框插件</title>
     <link href="http://konggeyuan.github.io/2019/09/24/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%BC%B9%E6%A1%86/"/>
-    <id>http://konggeyuan.github.io/2019/09/24/微信小程序-弹框/</id>
+    <id>http://konggeyuan.github.io/2019/09/24/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%BC%B9%E6%A1%86/</id>
     <published>2019-09-24T12:10:00.000Z</published>
     <updated>2019-09-24T12:17:51.591Z</updated>
     
@@ -319,11 +330,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Tue Mar 03 2020 13:09:17 GMT+0800 (GMT+08:00) --&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
     </summary>
+    
     
       <category term="前端" scheme="http://konggeyuan.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
@@ -335,7 +347,7 @@
   <entry>
     <title>微信小程序-环境标题设置</title>
     <link href="http://konggeyuan.github.io/2019/09/24/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E7%8E%AF%E5%A2%83%E6%A0%87%E9%A2%98%E8%AE%BE%E7%BD%AE/"/>
-    <id>http://konggeyuan.github.io/2019/09/24/微信小程序-环境标题设置/</id>
+    <id>http://konggeyuan.github.io/2019/09/24/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E7%8E%AF%E5%A2%83%E6%A0%87%E9%A2%98%E8%AE%BE%E7%BD%AE/</id>
     <published>2019-09-24T07:26:00.000Z</published>
     <updated>2019-09-24T07:30:04.250Z</updated>
     
@@ -345,11 +357,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Tue Mar 03 2020 13:09:17 GMT+0800 (GMT+08:00) --&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
     </summary>
+    
     
       <category term="前端" scheme="http://konggeyuan.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
@@ -361,7 +374,7 @@
   <entry>
     <title>layui常用部件</title>
     <link href="http://konggeyuan.github.io/2019/09/12/layui-table%E5%B8%B8%E7%94%A8/"/>
-    <id>http://konggeyuan.github.io/2019/09/12/layui-table常用/</id>
+    <id>http://konggeyuan.github.io/2019/09/12/layui-table%E5%B8%B8%E7%94%A8/</id>
     <published>2019-09-12T08:13:00.000Z</published>
     <updated>2019-09-17T13:04:13.348Z</updated>
     
@@ -371,11 +384,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;静态表格&lt;/p&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Tue Mar 03 2020 13:09:17 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;静态表格&lt;/p&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
     </summary>
+    
     
       <category term="前端" scheme="http://konggeyuan.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
@@ -387,7 +401,7 @@
   <entry>
     <title>laravel 数据库查询器常用</title>
     <link href="http://konggeyuan.github.io/2019/09/11/laravel%E6%9F%A5%E8%AF%A2%E5%99%A8/"/>
-    <id>http://konggeyuan.github.io/2019/09/11/laravel查询器/</id>
+    <id>http://konggeyuan.github.io/2019/09/11/laravel%E6%9F%A5%E8%AF%A2%E5%99%A8/</id>
     <published>2019-09-11T07:50:00.000Z</published>
     <updated>2019-09-11T07:59:29.197Z</updated>
     
@@ -397,11 +411,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;连表查询、排序&lt;/p&gt;&lt;figure class=&quot;highlight php&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Tue Mar 03 2020 13:09:17 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;连表查询、排序&lt;/p&gt;&lt;figure class=&quot;highlight php&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
     </summary>
+    
     
       <category term="后端" scheme="http://konggeyuan.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
     
@@ -415,7 +430,7 @@
   <entry>
     <title>js操作json的常用函数</title>
     <link href="http://konggeyuan.github.io/2019/09/05/js%E6%93%8D%E4%BD%9Cjson%E7%9A%84%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/"/>
-    <id>http://konggeyuan.github.io/2019/09/05/js操作json的常用函数/</id>
+    <id>http://konggeyuan.github.io/2019/09/05/js%E6%93%8D%E4%BD%9Cjson%E7%9A%84%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0/</id>
     <published>2019-09-05T07:04:00.000Z</published>
     <updated>2019-09-05T07:04:24.640Z</updated>
     
@@ -425,11 +440,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;JSON.stringify()
+          &lt;!-- build time:Tue Mar 03 2020 13:09:17 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;JSON.stringify()
         
       
     
     </summary>
+    
     
       <category term="前端" scheme="http://konggeyuan.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
@@ -439,7 +455,7 @@
   <entry>
     <title>mysql 随机数&amp;日常用户序列号</title>
     <link href="http://konggeyuan.github.io/2019/09/05/mysql-%E9%9A%8F%E6%9C%BA%E6%95%B0-%E6%97%A5%E5%B8%B8%E7%94%A8%E6%88%B7%E5%BA%8F%E5%88%97%E5%8F%B7/"/>
-    <id>http://konggeyuan.github.io/2019/09/05/mysql-随机数-日常用户序列号/</id>
+    <id>http://konggeyuan.github.io/2019/09/05/mysql-%E9%9A%8F%E6%9C%BA%E6%95%B0-%E6%97%A5%E5%B8%B8%E7%94%A8%E6%88%B7%E5%BA%8F%E5%88%97%E5%8F%B7/</id>
     <published>2019-09-05T05:01:00.000Z</published>
     <updated>2019-09-05T05:07:10.886Z</updated>
     
@@ -449,11 +465,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;日常随机数&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Tue Mar 03 2020 13:09:17 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;日常随机数&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
     </summary>
+    
     
       <category term="数据库" scheme="http://konggeyuan.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
@@ -469,7 +486,7 @@
   <entry>
     <title>jquery-ajax常用</title>
     <link href="http://konggeyuan.github.io/2019/09/05/jquery-ajax%E5%B8%B8%E7%94%A8/"/>
-    <id>http://konggeyuan.github.io/2019/09/05/jquery-ajax常用/</id>
+    <id>http://konggeyuan.github.io/2019/09/05/jquery-ajax%E5%B8%B8%E7%94%A8/</id>
     <published>2019-09-05T04:31:35.000Z</published>
     <updated>2019-09-05T04:35:06.202Z</updated>
     
@@ -479,11 +496,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;与后端交互，直接json串，省去传统的一个个参数post&lt;/p&gt;&lt;figure class=&quot;highlight
+          &lt;!-- build time:Tue Mar 03 2020 13:09:17 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;与后端交互，直接json串，省去传统的一个个参数post&lt;/p&gt;&lt;figure class=&quot;highlight
         
       
     
     </summary>
+    
     
     
   </entry>
@@ -491,7 +509,7 @@
   <entry>
     <title>layui&amp;jquery-autocomplete组合</title>
     <link href="http://konggeyuan.github.io/2019/09/04/layui-jquery-autocomplete%E7%BB%84%E5%90%88/"/>
-    <id>http://konggeyuan.github.io/2019/09/04/layui-jquery-autocomplete组合/</id>
+    <id>http://konggeyuan.github.io/2019/09/04/layui-jquery-autocomplete%E7%BB%84%E5%90%88/</id>
     <published>2019-09-04T03:25:00.000Z</published>
     <updated>2019-09-05T03:21:47.401Z</updated>
     
@@ -501,11 +519,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;layui与jquery-autocomplete
+          &lt;!-- build time:Tue Mar 03 2020 13:09:17 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;layui与jquery-autocomplete
         
       
     
     </summary>
+    
     
       <category term="前端" scheme="http://konggeyuan.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
@@ -519,7 +538,7 @@
   <entry>
     <title>产业互联网 重新定义效率与消费 (Chinese Edition)</title>
     <link href="http://konggeyuan.github.io/2019/08/05/%E4%BA%A7%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91-%E9%87%8D%E6%96%B0%E5%AE%9A%E4%B9%89%E6%95%88%E7%8E%87%E4%B8%8E%E6%B6%88%E8%B4%B9-Chinese-Edition/"/>
-    <id>http://konggeyuan.github.io/2019/08/05/产业互联网-重新定义效率与消费-Chinese-Edition/</id>
+    <id>http://konggeyuan.github.io/2019/08/05/%E4%BA%A7%E4%B8%9A%E4%BA%92%E8%81%94%E7%BD%91-%E9%87%8D%E6%96%B0%E5%AE%9A%E4%B9%89%E6%95%88%E7%8E%87%E4%B8%8E%E6%B6%88%E8%B4%B9-Chinese-Edition/</id>
     <published>2019-08-04T16:11:00.000Z</published>
     <updated>2019-08-04T16:23:07.778Z</updated>
     
@@ -529,11 +548,12 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 12:20:55 GMT+0800 (GMT+08:00) --&gt;&lt;h3 id=&quot;标注-黄色-位置-109&quot;&gt;&lt;a href=&quot;#标注-黄色-位置-109&quot; class=&quot;headerlink&quot; title=&quot;标注
+          &lt;!-- build time:Tue Mar 03 2020 13:09:17 GMT+0800 (GMT+08:00) --&gt;&lt;h3 id=&quot;标注-黄色-位置-109&quot;&gt;&lt;a href=&quot;#标注-黄色-位置-109&quot; class=&quot;headerlink&quot; title=&quot;标注
         
       
     
     </summary>
+    
     
       <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
