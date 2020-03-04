@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2020-03-04T03:34:40.783Z</updated>
+  <updated>2020-03-04T13:05:32.674Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>laravel 多数据库查询</title>
+    <link href="http://konggeyuan.github.io/2020/03/04/laravel-%E5%A4%9A%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2/"/>
+    <id>http://konggeyuan.github.io/2020/03/04/laravel-%E5%A4%9A%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2/</id>
+    <published>2020-03-04T13:03:00.000Z</published>
+    <updated>2020-03-04T13:05:32.674Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- build time:Wed Mar 04 2020 21:42:10 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;控制器构造函数，动态修改数据库配置即可&lt;/p&gt;&lt;figure class=&quot;highlight php&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>精益数据分析</title>
@@ -119,33 +144,6 @@
       <category term="ffmpeg" scheme="http://konggeyuan.github.io/tags/ffmpeg/"/>
     
       <category term="视频转码" scheme="http://konggeyuan.github.io/tags/%E8%A7%86%E9%A2%91%E8%BD%AC%E7%A0%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>laravel 数据库查询器</title>
-    <link href="http://konggeyuan.github.io/2020/03/01/laravel-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%99%A8/"/>
-    <id>http://konggeyuan.github.io/2020/03/01/laravel-%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E5%99%A8/</id>
-    <published>2020-03-01T08:31:00.000Z</published>
-    <updated>2020-03-02T12:16:09.351Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Tue Mar 03 2020 13:21:33 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;插入数据库&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="laravel" scheme="http://konggeyuan.github.io/tags/laravel/"/>
     
   </entry>
   
@@ -451,11 +449,11 @@
   </entry>
   
   <entry>
-    <title>laravel 数据库查询器常用</title>
+    <title>laravel 数据库查询器</title>
     <link href="http://konggeyuan.github.io/2019/09/11/laravel%E6%9F%A5%E8%AF%A2%E5%99%A8/"/>
     <id>http://konggeyuan.github.io/2019/09/11/laravel%E6%9F%A5%E8%AF%A2%E5%99%A8/</id>
     <published>2019-09-11T07:50:00.000Z</published>
-    <updated>2019-09-11T07:59:29.197Z</updated>
+    <updated>2020-03-04T13:02:28.893Z</updated>
     
     <summary type="html">
     
@@ -463,14 +461,14 @@
       
         
         
-          &lt;!-- build time:Tue Mar 03 2020 13:21:33 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;连表查询、排序&lt;/p&gt;&lt;figure class=&quot;highlight php&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Wed Mar 04 2020 21:42:10 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;插入数据库&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
     </summary>
     
     
-      <category term="后端" scheme="http://konggeyuan.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="laravel" scheme="http://konggeyuan.github.io/tags/laravel/"/>
