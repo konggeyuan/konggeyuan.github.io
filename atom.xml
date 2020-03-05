@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2020-03-04T13:05:32.674Z</updated>
+  <updated>2020-03-05T06:34:18.691Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>laravel artisan命令大全</title>
+    <link href="http://konggeyuan.github.io/2020/03/05/laravel_artisan%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/"/>
+    <id>http://konggeyuan.github.io/2020/03/05/laravel_artisan%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/</id>
+    <published>2020-03-05T06:23:00.000Z</published>
+    <updated>2020-03-05T06:34:18.691Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- build time:Thu Mar 05 2020 14:34:51 GMT+0800 (GMT+08:00) --&gt;&lt;h6 id=&quot;查看artisan命令&quot;&gt;&lt;a href=&quot;#查看artisan命令&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>laravel 多数据库查询</title>
@@ -449,11 +474,11 @@
   </entry>
   
   <entry>
-    <title>laravel 数据库查询器</title>
+    <title>laravel 数据库结构化查询</title>
     <link href="http://konggeyuan.github.io/2019/09/11/laravel%E6%9F%A5%E8%AF%A2%E5%99%A8/"/>
     <id>http://konggeyuan.github.io/2019/09/11/laravel%E6%9F%A5%E8%AF%A2%E5%99%A8/</id>
     <published>2019-09-11T07:50:00.000Z</published>
-    <updated>2020-03-04T13:02:28.893Z</updated>
+    <updated>2020-03-05T06:16:49.325Z</updated>
     
     <summary type="html">
     
@@ -461,7 +486,7 @@
       
         
         
-          &lt;!-- build time:Wed Mar 04 2020 21:42:10 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;插入数据库&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Thu Mar 05 2020 14:34:51 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;插入数据库&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
@@ -530,29 +555,6 @@
       <category term="随机数" scheme="http://konggeyuan.github.io/tags/%E9%9A%8F%E6%9C%BA%E6%95%B0/"/>
     
       <category term="序号生成" scheme="http://konggeyuan.github.io/tags/%E5%BA%8F%E5%8F%B7%E7%94%9F%E6%88%90/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>jquery-ajax常用</title>
-    <link href="http://konggeyuan.github.io/2019/09/05/jquery-ajax%E5%B8%B8%E7%94%A8/"/>
-    <id>http://konggeyuan.github.io/2019/09/05/jquery-ajax%E5%B8%B8%E7%94%A8/</id>
-    <published>2019-09-05T04:31:35.000Z</published>
-    <updated>2019-09-05T04:35:06.202Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Tue Mar 03 2020 13:21:33 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;与后端交互，直接json串，省去传统的一个个参数post&lt;/p&gt;&lt;figure class=&quot;highlight
-        
-      
-    
-    </summary>
-    
-    
     
   </entry>
   
