@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2020-03-05T06:34:18.691Z</updated>
+  <updated>2020-03-06T10:39:46.740Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>读书笔记</title>
+    <link href="http://konggeyuan.github.io/2020/03/06/%E9%87%8D%E6%9D%A5-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <id>http://konggeyuan.github.io/2020/03/06/%E9%87%8D%E6%9D%A5-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
+    <published>2020-03-06T10:36:00.000Z</published>
+    <updated>2020-03-06T10:39:46.740Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- build time:Fri Mar 06 2020 18:39:47 GMT+0800 (GMT+08:00)
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="重来" scheme="http://konggeyuan.github.io/tags/%E9%87%8D%E6%9D%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>laravel artisan命令大全</title>
@@ -29,7 +54,7 @@
       
         
         
-          &lt;!-- build time:Thu Mar 05 2020 14:34:51 GMT+0800 (GMT+08:00) --&gt;&lt;h6 id=&quot;查看artisan命令&quot;&gt;&lt;a href=&quot;#查看artisan命令&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Thu Mar 05 2020 14:34:18 GMT+0800 (GMT+08:00) --&gt;&lt;h6 id=&quot;查看artisan命令&quot;&gt;&lt;a href=&quot;#查看artisan命令&quot; class=&quot;headerlink&quot;
         
       
     
@@ -486,7 +511,7 @@
       
         
         
-          &lt;!-- build time:Thu Mar 05 2020 14:34:51 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;插入数据库&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+          &lt;!-- build time:Thu Mar 05 2020 14:16:49 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;插入数据库&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
         
       
     
@@ -524,37 +549,6 @@
     
       <category term="前端" scheme="http://konggeyuan.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>mysql 随机数&amp;日常用户序列号</title>
-    <link href="http://konggeyuan.github.io/2019/09/05/mysql-%E9%9A%8F%E6%9C%BA%E6%95%B0-%E6%97%A5%E5%B8%B8%E7%94%A8%E6%88%B7%E5%BA%8F%E5%88%97%E5%8F%B7/"/>
-    <id>http://konggeyuan.github.io/2019/09/05/mysql-%E9%9A%8F%E6%9C%BA%E6%95%B0-%E6%97%A5%E5%B8%B8%E7%94%A8%E6%88%B7%E5%BA%8F%E5%88%97%E5%8F%B7/</id>
-    <published>2019-09-05T05:01:00.000Z</published>
-    <updated>2019-09-05T05:07:10.886Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Tue Mar 03 2020 13:21:33 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;日常随机数&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-    
-      <category term="数据库" scheme="http://konggeyuan.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    
-      <category term="mysql" scheme="http://konggeyuan.github.io/tags/mysql/"/>
-    
-      <category term="随机数" scheme="http://konggeyuan.github.io/tags/%E9%9A%8F%E6%9C%BA%E6%95%B0/"/>
-    
-      <category term="序号生成" scheme="http://konggeyuan.github.io/tags/%E5%BA%8F%E5%8F%B7%E7%94%9F%E6%88%90/"/>
     
   </entry>
   
