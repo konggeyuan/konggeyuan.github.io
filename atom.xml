@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2020-03-07T11:30:03.508Z</updated>
+  <updated>2020-03-09T15:57:36.657Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于工作生活时间管理1</title>
+    <link href="http://konggeyuan.github.io/2020/03/09/%E5%85%B3%E4%BA%8E%E5%B7%A5%E4%BD%9C%E7%94%9F%E6%B4%BB%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%861/"/>
+    <id>http://konggeyuan.github.io/2020/03/09/%E5%85%B3%E4%BA%8E%E5%B7%A5%E4%BD%9C%E7%94%9F%E6%B4%BB%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%861/</id>
+    <published>2020-03-09T15:48:00.000Z</published>
+    <updated>2020-03-09T15:57:36.657Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- build time:Mon Mar 09 2020 23:58:18 GMT+0800 (GMT+08:00)
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>openwrt u盘扩容</title>
+    <link href="http://konggeyuan.github.io/2020/03/09/openwrt-u%E7%9B%98%E6%89%A9%E5%AE%B9/"/>
+    <id>http://konggeyuan.github.io/2020/03/09/openwrt-u%E7%9B%98%E6%89%A9%E5%AE%B9/</id>
+    <published>2020-03-09T07:21:00.000Z</published>
+    <updated>2020-03-09T07:33:04.129Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- build time:Mon Mar 09 2020 23:58:18 GMT+0800 (GMT+08:00) --&gt;&lt;h5 id=&quot;usb挂载支持&quot;&gt;&lt;a href=&quot;#usb挂载支持&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Docker安装配置 Nginx+PHP+MySQL</title>
@@ -493,62 +541,6 @@
     
     
       <category term="小程序" scheme="http://konggeyuan.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>layui常用部件</title>
-    <link href="http://konggeyuan.github.io/2019/09/12/layui-table%E5%B8%B8%E7%94%A8/"/>
-    <id>http://konggeyuan.github.io/2019/09/12/layui-table%E5%B8%B8%E7%94%A8/</id>
-    <published>2019-09-12T08:13:00.000Z</published>
-    <updated>2019-09-17T13:04:13.348Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Tue Mar 03 2020 13:21:33 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;静态表格&lt;/p&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="http://konggeyuan.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="layui" scheme="http://konggeyuan.github.io/tags/layui/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>laravel 数据库结构化查询</title>
-    <link href="http://konggeyuan.github.io/2019/09/11/laravel%E6%9F%A5%E8%AF%A2%E5%99%A8/"/>
-    <id>http://konggeyuan.github.io/2019/09/11/laravel%E6%9F%A5%E8%AF%A2%E5%99%A8/</id>
-    <published>2019-09-11T07:50:00.000Z</published>
-    <updated>2020-03-05T06:16:49.325Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Thu Mar 05 2020 14:16:49 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;插入数据库&lt;/p&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="laravel" scheme="http://konggeyuan.github.io/tags/laravel/"/>
-    
-      <category term="php" scheme="http://konggeyuan.github.io/tags/php/"/>
     
   </entry>
   
