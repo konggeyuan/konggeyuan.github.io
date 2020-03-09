@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2020-03-09T15:57:36.657Z</updated>
+  <updated>2020-03-09T16:23:56.380Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>需要绕过的域名和IP</title>
+    <link href="http://konggeyuan.github.io/2020/03/10/%E9%9C%80%E8%A6%81%E7%BB%95%E8%BF%87%E7%9A%84%E5%9F%9F%E5%90%8D%E5%92%8CIP/"/>
+    <id>http://konggeyuan.github.io/2020/03/10/%E9%9C%80%E8%A6%81%E7%BB%95%E8%BF%87%E7%9A%84%E5%9F%9F%E5%90%8D%E5%92%8CIP/</id>
+    <published>2020-03-09T16:21:00.000Z</published>
+    <updated>2020-03-09T16:23:56.380Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- build time:Tue Mar 10 2020 00:25:11 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;翻过需要添加一些规则&lt;/p&gt;&lt;figure class=&quot;highlight json&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="路由器" scheme="http://konggeyuan.github.io/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    
+      <category term="v2ray" scheme="http://konggeyuan.github.io/tags/v2ray/"/>
+    
+  </entry>
   
   <entry>
     <title>关于工作生活时间管理1</title>
@@ -496,33 +525,6 @@
     <id>http://konggeyuan.github.io/2019/09/24/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%BC%B9%E6%A1%86/</id>
     <published>2019-09-24T12:10:00.000Z</published>
     <updated>2019-09-24T12:17:51.591Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Tue Mar 03 2020 13:21:33 GMT+0800 (GMT+08:00) --&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="http://konggeyuan.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    
-      <category term="小程序" scheme="http://konggeyuan.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信小程序-环境标题设置</title>
-    <link href="http://konggeyuan.github.io/2019/09/24/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E7%8E%AF%E5%A2%83%E6%A0%87%E9%A2%98%E8%AE%BE%E7%BD%AE/"/>
-    <id>http://konggeyuan.github.io/2019/09/24/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E7%8E%AF%E5%A2%83%E6%A0%87%E9%A2%98%E8%AE%BE%E7%BD%AE/</id>
-    <published>2019-09-24T07:26:00.000Z</published>
-    <updated>2019-09-24T07:30:04.250Z</updated>
     
     <summary type="html">
     
