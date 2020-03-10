@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2020-03-09T16:23:56.380Z</updated>
+  <updated>2020-03-10T09:00:40.466Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo 升级</title>
+    <link href="http://konggeyuan.github.io/2020/03/10/hexo-%E5%8D%87%E7%BA%A7/"/>
+    <id>http://konggeyuan.github.io/2020/03/10/hexo-%E5%8D%87%E7%BA%A7/</id>
+    <published>2020-03-10T04:30:00.000Z</published>
+    <updated>2020-03-10T09:00:40.466Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- build time:Tue Mar 10 2020 17:00:53 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;查看现有版本&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="hexo" scheme="http://konggeyuan.github.io/tags/hexo/"/>
+    
+      <category term="升级" scheme="http://konggeyuan.github.io/tags/%E5%8D%87%E7%BA%A7/"/>
+    
+  </entry>
   
   <entry>
     <title>需要绕过的域名和IP</title>
@@ -513,33 +542,6 @@
     
     
       <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="小程序" scheme="http://konggeyuan.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信小程序-弹框插件</title>
-    <link href="http://konggeyuan.github.io/2019/09/24/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%BC%B9%E6%A1%86/"/>
-    <id>http://konggeyuan.github.io/2019/09/24/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%BC%B9%E6%A1%86/</id>
-    <published>2019-09-24T12:10:00.000Z</published>
-    <updated>2019-09-24T12:17:51.591Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Tue Mar 03 2020 13:21:33 GMT+0800 (GMT+08:00) --&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="http://konggeyuan.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
     
       <category term="小程序" scheme="http://konggeyuan.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
