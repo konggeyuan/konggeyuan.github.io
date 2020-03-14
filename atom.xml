@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2020-03-10T09:00:40.466Z</updated>
+  <updated>2020-03-14T10:20:48.629Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,89 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>智商税</title>
+    <link href="http://konggeyuan.github.io/2020/03/14/%E6%99%BA%E5%95%86%E7%A8%8E/"/>
+    <id>http://konggeyuan.github.io/2020/03/14/%E6%99%BA%E5%95%86%E7%A8%8E/</id>
+    <published>2020-03-14T08:05:00.000Z</published>
+    <updated>2020-03-14T10:20:48.629Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- build time:Sat Mar 14 2020 18:21:12 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;昂贵的免费&quot;&gt;&lt;a href=&quot;#昂贵的免费&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="智商税" scheme="http://konggeyuan.github.io/tags/%E6%99%BA%E5%95%86%E7%A8%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>私域流量</title>
+    <link href="http://konggeyuan.github.io/2020/03/12/%E7%A7%81%E5%9F%9F%E6%B5%81%E9%87%8F-%E7%AC%94%E8%AE%B0/"/>
+    <id>http://konggeyuan.github.io/2020/03/12/%E7%A7%81%E5%9F%9F%E6%B5%81%E9%87%8F-%E7%AC%94%E8%AE%B0/</id>
+    <published>2020-03-12T04:44:00.000Z</published>
+    <updated>2020-03-13T13:23:45.072Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- build time:Fri Mar 13 2020 21:23:45 GMT+0800 (GMT+08:00)
+        
+      
+    
+    </summary>
+    
+    
+      <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="私域流量" scheme="http://konggeyuan.github.io/tags/%E7%A7%81%E5%9F%9F%E6%B5%81%E9%87%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Calibre Web搭建</title>
+    <link href="http://konggeyuan.github.io/2020/03/12/Calibre-Web%E6%90%AD%E5%BB%BA/"/>
+    <id>http://konggeyuan.github.io/2020/03/12/Calibre-Web%E6%90%AD%E5%BB%BA/</id>
+    <published>2020-03-11T16:50:00.000Z</published>
+    <updated>2020-03-11T16:53:19.681Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- build time:Thu Mar 12 2020 00:53:19 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;kindle还是不够自由，干脆搭建了一个自己的图书馆&lt;/p&gt;&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="calibre" scheme="http://konggeyuan.github.io/tags/calibre/"/>
+    
+      <category term="kindle" scheme="http://konggeyuan.github.io/tags/kindle/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo 升级</title>
@@ -79,7 +162,7 @@
     <link href="http://konggeyuan.github.io/2020/03/09/%E5%85%B3%E4%BA%8E%E5%B7%A5%E4%BD%9C%E7%94%9F%E6%B4%BB%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%861/"/>
     <id>http://konggeyuan.github.io/2020/03/09/%E5%85%B3%E4%BA%8E%E5%B7%A5%E4%BD%9C%E7%94%9F%E6%B4%BB%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%861/</id>
     <published>2020-03-09T15:48:00.000Z</published>
-    <updated>2020-03-09T15:57:36.657Z</updated>
+    <updated>2020-03-13T13:24:03.159Z</updated>
     
     <summary type="html">
     
@@ -87,12 +170,14 @@
       
         
         
-          &lt;!-- build time:Mon Mar 09 2020 23:58:18 GMT+0800 (GMT+08:00)
+          &lt;!-- build time:Fri Mar 13 2020 21:24:03 GMT+0800 (GMT+08:00)
         
       
     
     </summary>
     
+    
+      <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -148,11 +233,11 @@
   </entry>
   
   <entry>
-    <title>读书笔记</title>
+    <title>重来:更为简单有效的商业思维</title>
     <link href="http://konggeyuan.github.io/2020/03/06/%E9%87%8D%E6%9D%A5-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     <id>http://konggeyuan.github.io/2020/03/06/%E9%87%8D%E6%9D%A5-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
     <published>2020-03-06T10:36:00.000Z</published>
-    <updated>2020-03-06T10:39:46.740Z</updated>
+    <updated>2020-03-13T13:24:43.553Z</updated>
     
     <summary type="html">
     
@@ -160,12 +245,14 @@
       
         
         
-          &lt;!-- build time:Fri Mar 06 2020 18:39:47 GMT+0800 (GMT+08:00)
+          &lt;!-- build time:Fri Mar 13 2020 21:24:43 GMT+0800 (GMT+08:00)
         
       
     
     </summary>
     
+    
+      <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
     
       <category term="重来" scheme="http://konggeyuan.github.io/tags/%E9%87%8D%E6%9D%A5/"/>
@@ -227,7 +314,7 @@
     <link href="http://konggeyuan.github.io/2020/03/03/%E7%B2%BE%E7%9B%8A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
     <id>http://konggeyuan.github.io/2020/03/03/%E7%B2%BE%E7%9B%8A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</id>
     <published>2020-03-03T14:17:00.000Z</published>
-    <updated>2020-03-04T03:34:40.783Z</updated>
+    <updated>2020-03-13T13:25:51.605Z</updated>
     
     <summary type="html">
     
@@ -235,14 +322,14 @@
       
         
         
-          &lt;!-- build time:Wed Mar 04 2020 14:52:08 GMT+0800 (GMT+08:00) --&gt;&lt;hr&gt;&lt;h2 id=&quot;第二部分-找到当前的正确指标&quot;&gt;&lt;a href=&quot;#第二部分-找到当前的正确指标&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Fri Mar 13 2020 21:25:52 GMT+0800 (GMT+08:00) --&gt;&lt;hr&gt;&lt;h2 id=&quot;第二部分-找到当前的正确指标&quot;&gt;&lt;a href=&quot;#第二部分-找到当前的正确指标&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
     
-      <category term="测试看看" scheme="http://konggeyuan.github.io/categories/%E6%B5%8B%E8%AF%95%E7%9C%8B%E7%9C%8B/"/>
+      <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
     
       <category term="精益数据分析" scheme="http://konggeyuan.github.io/tags/%E7%B2%BE%E7%9B%8A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
@@ -466,85 +553,6 @@
     
       <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>Node.js 事件驱动模型</title>
-    <link href="http://konggeyuan.github.io/2019/12/02/Node-js-%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E6%A8%A1%E5%9E%8B/"/>
-    <id>http://konggeyuan.github.io/2019/12/02/Node-js-%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E6%A8%A1%E5%9E%8B/</id>
-    <published>2019-12-02T13:41:00.000Z</published>
-    <updated>2020-03-02T12:17:47.676Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Tue Mar 03 2020 13:21:33 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;&lt;img src=&quot;/images/pasted-17.png&quot; alt=&quot;upload
-        
-      
-    
-    </summary>
-    
-    
-      <category term="学习笔记" scheme="http://konggeyuan.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>微信小程序-常用自定义函数</title>
-    <link href="http://konggeyuan.github.io/2019/09/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%B8%B8%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0/"/>
-    <id>http://konggeyuan.github.io/2019/09/25/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%B8%B8%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0/</id>
-    <published>2019-09-25T07:18:00.000Z</published>
-    <updated>2020-03-02T12:18:01.658Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Tue Mar 03 2020 13:21:33 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;ajax&lt;/p&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="小程序" scheme="http://konggeyuan.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信小程序-跳转-本地获取存储-手机号验证</title>
-    <link href="http://konggeyuan.github.io/2019/09/24/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E8%B7%B3%E8%BD%AC-%E8%8E%B7%E5%8F%96%E5%AD%98%E5%82%A8/"/>
-    <id>http://konggeyuan.github.io/2019/09/24/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E8%B7%B3%E8%BD%AC-%E8%8E%B7%E5%8F%96%E5%AD%98%E5%82%A8/</id>
-    <published>2019-09-24T14:55:00.000Z</published>
-    <updated>2020-03-02T12:18:35.726Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Tue Mar 03 2020 13:21:33 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;获取本地存储&lt;/p&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="小程序" scheme="http://konggeyuan.github.io/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   
