@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2020-03-14T10:53:08.948Z</updated>
+  <updated>2020-03-14T13:16:32.377Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>智商税</title>
-    <link href="http://konggeyuan.github.io/2020/03/14/%E6%99%BA%E5%95%86%E7%A8%8E/"/>
-    <id>http://konggeyuan.github.io/2020/03/14/%E6%99%BA%E5%95%86%E7%A8%8E/</id>
-    <published>2020-03-14T08:05:00.000Z</published>
-    <updated>2020-03-14T10:53:08.948Z</updated>
+    <title>draw流程图绘图工具搭建</title>
+    <link href="http://konggeyuan.github.io/2020/03/14/draw%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%9B%BE%E5%B7%A5%E5%85%B7%E6%90%AD%E5%BB%BA/"/>
+    <id>http://konggeyuan.github.io/2020/03/14/draw%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%9B%BE%E5%B7%A5%E5%85%B7%E6%90%AD%E5%BB%BA/</id>
+    <published>2020-03-14T13:14:00.000Z</published>
+    <updated>2020-03-14T13:16:32.377Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,38 @@
       
         
         
-          &lt;!-- build time:Sat Mar 14 2020 18:55:25 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;昂贵的免费&quot;&gt;&lt;a href=&quot;#昂贵的免费&quot; class=&quot;headerlink&quot;
+          &lt;!-- build time:Sat Mar 14 2020 21:16:44 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;processon和百度脑图，挺方便，但总是会有些用的感觉不太爽，想改也没的改。于是自己搭建了一个。&lt;/p&gt;&lt;figure
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="draw.io" scheme="http://konggeyuan.github.io/tags/draw-io/"/>
+    
+      <category term="流程图" scheme="http://konggeyuan.github.io/tags/%E6%B5%81%E7%A8%8B%E5%9B%BE/"/>
+    
+      <category term="脑图" scheme="http://konggeyuan.github.io/tags/%E8%84%91%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>智商税</title>
+    <link href="http://konggeyuan.github.io/2020/03/14/%E6%99%BA%E5%95%86%E7%A8%8E/"/>
+    <id>http://konggeyuan.github.io/2020/03/14/%E6%99%BA%E5%95%86%E7%A8%8E/</id>
+    <published>2020-03-14T08:05:00.000Z</published>
+    <updated>2020-03-14T12:48:57.240Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!-- build time:Sat Mar 14 2020 21:16:44 GMT+0800 (GMT+08:00) --&gt;&lt;h2 id=&quot;昂贵的免费&quot;&gt;&lt;a href=&quot;#昂贵的免费&quot; class=&quot;headerlink&quot;
         
       
     
@@ -528,31 +559,6 @@
       <category term="php" scheme="http://konggeyuan.github.io/tags/php/"/>
     
       <category term="mac" scheme="http://konggeyuan.github.io/tags/mac/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo server状态怎么常驻后台</title>
-    <link href="http://konggeyuan.github.io/2020/02/29/hexo-server%E7%8A%B6%E6%80%81%E6%80%8E%E4%B9%88%E5%B8%B8%E9%A9%BB%E5%90%8E%E5%8F%B0/"/>
-    <id>http://konggeyuan.github.io/2020/02/29/hexo-server%E7%8A%B6%E6%80%81%E6%80%8E%E4%B9%88%E5%B8%B8%E9%A9%BB%E5%90%8E%E5%8F%B0/</id>
-    <published>2020-02-29T15:03:00.000Z</published>
-    <updated>2020-03-02T12:17:17.723Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Tue Mar 03 2020 13:21:33 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;刚刚批发学来，转载一下&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
     
   </entry>
   
