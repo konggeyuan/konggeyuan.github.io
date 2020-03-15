@@ -1,6 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>What A Wonderful World</title>
+    <url>/2020/03/15/What-A-Wonderful-World/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><!-- build time:Sun Mar 15 2020 18:36:03 GMT+0800 (GMT+08:00) --><p><img src="/images/pasted-29.png" alt="upload successful"></p><!-- rebuild by neat -->]]></content>
+      <categories>
+        <category>口琴</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Jambalaya</title>
+    <url>/2020/03/15/Jambalaya/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><!-- build time:Sun Mar 15 2020 18:36:03 GMT+0800 (GMT+08:00) --><p><img src="/images/pasted-28.png" alt="upload successful"></p><!-- rebuild by neat -->]]></content>
+  </entry>
+  <entry>
+    <title>恋曲1980 - C调</title>
+    <url>/2020/03/15/%E6%81%8B%E6%9B%B21980-C%E8%B0%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><!-- build time:Sun Mar 15 2020 18:36:03 GMT+0800 (GMT+08:00) --><p><img src="/images/pasted-27.png" alt="upload successful"></p><!-- rebuild by neat -->]]></content>
+      <categories>
+        <category>口琴</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>光阴的故事 - C调</title>
+    <url>/2020/03/15/%E5%85%89%E9%98%B4%E7%9A%84%E6%95%85%E4%BA%8B-C%E8%B0%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><!-- build time:Sun Mar 15 2020 18:36:03 GMT+0800 (GMT+08:00) --><p><img src="/images/pasted-26.png" alt="upload successful"></p><!-- rebuild by neat -->]]></content>
+      <categories>
+        <category>口琴</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>双门洞/惠化洞 - C调</title>
+    <url>/2020/03/15/%E5%8F%8C%E9%97%A8%E6%B4%9E-%E6%83%A0%E5%8C%96%E6%B4%9E/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><!-- build time:Sun Mar 15 2020 18:36:03 GMT+0800 (GMT+08:00) --><p><img src="/images/pasted-25.png" alt="upload successful"></p><!-- rebuild by neat -->]]></content>
+      <categories>
+        <category>口琴</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>欢乐颂 - C调</title>
+    <url>/2020/03/15/%E6%AC%A2%E4%B9%90%E9%A2%82/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><!-- build time:Sun Mar 15 2020 18:36:03 GMT+0800 (GMT+08:00) --><p><img src="/images/pasted-24.png" alt="upload successful"></p><!-- rebuild by neat -->]]></content>
+      <categories>
+        <category>口琴</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Sally Gardens-爱尔兰画眉 - C调</title>
+    <url>/2020/03/15/sally-gardens/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="/assets/js/Meting.min.js"></script><!-- build time:Sun Mar 15 2020 18:36:03 GMT+0800 (GMT+08:00) --><p><img src="/images/pasted-23.png" alt="upload successful"></p><!-- rebuild by neat -->]]></content>
+      <categories>
+        <category>口琴</category>
+      </categories>
+  </entry>
+  <entry>
     <title>draw流程图绘图工具搭建</title>
     <url>/2020/03/14/draw%E6%B5%81%E7%A8%8B%E5%9B%BE%E7%BB%98%E5%9B%BE%E5%B7%A5%E5%85%B7%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<!-- build time:Sat Mar 14 2020 21:16:44 GMT+0800 (GMT+08:00) --><p>processon和百度脑图，挺方便，但总是会有些用的感觉不太爽，想改也没的改。于是自己搭建了一个。</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker pull fjudith/draw.io</span><br><span class="line">docker run -it -dit --name=<span class="string">"draw"</span> -p 8090:8080 -p 9443:8443 fjudith/draw.io</span><br><span class="line"></span><br><span class="line"><span class="comment">#修改nginx配置文件,添加反向代理</span></span><br><span class="line"><span class="comment"># draw.io</span></span><br><span class="line">  location /draw &#123;</span><br><span class="line">    proxy_pass http://192.168.0.6:8080;</span><br><span class="line">    proxy_set_header Host <span class="variable">$host</span>:80;</span><br><span class="line">    proxy_pass_header Server;</span><br><span class="line">    proxy_set_header X-Scheme <span class="variable">$scheme</span>;</span><br><span class="line">    proxy_set_header X-Real-IP <span class="variable">$remote_addr</span>;</span><br><span class="line">    proxy_set_header X-Forwarded-For <span class="variable">$remote_addr</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure><!-- rebuild by neat -->]]></content>
