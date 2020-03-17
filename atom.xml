@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2020-03-15T10:34:53.002Z</updated>
+  <updated>2020-03-17T15:55:17.739Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>慢思考</title>
+    <link href="http://konggeyuan.github.io/2020/03/17/%E6%85%A2%E6%80%9D%E8%80%83/"/>
+    <id>http://konggeyuan.github.io/2020/03/17/%E6%85%A2%E6%80%9D%E8%80%83/</id>
+    <published>2020-03-17T06:53:00.000Z</published>
+    <updated>2020-03-17T15:55:17.739Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="慢思考" scheme="http://konggeyuan.github.io/tags/%E6%85%A2%E6%80%9D%E8%80%83/"/>
+    
+  </entry>
   
   <entry>
     <title>What A Wonderful World</title>
@@ -510,33 +537,6 @@
     
       <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>精益数据分析</title>
-    <link href="http://konggeyuan.github.io/2020/03/03/%E7%B2%BE%E7%9B%8A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
-    <id>http://konggeyuan.github.io/2020/03/03/%E7%B2%BE%E7%9B%8A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</id>
-    <published>2020-03-03T14:17:00.000Z</published>
-    <updated>2020-03-13T13:25:51.605Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Fri Mar 13 2020 21:25:52 GMT+0800 (GMT+08:00) --&gt;&lt;hr&gt;&lt;h2 id=&quot;第二部分-找到当前的正确指标&quot;&gt;&lt;a href=&quot;#第二部分-找到当前的正确指标&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="精益数据分析" scheme="http://konggeyuan.github.io/tags/%E7%B2%BE%E7%9B%8A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
     
   </entry>
   
