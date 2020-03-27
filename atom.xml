@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2020-03-19T14:42:07.993Z</updated>
+  <updated>2020-03-27T07:17:37.759Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mac 端口进程查看</title>
+    <link href="http://konggeyuan.github.io/2020/03/27/mac-%E7%AB%AF%E5%8F%A3%E8%BF%9B%E7%A8%8B%E6%9F%A5%E7%9C%8B/"/>
+    <id>http://konggeyuan.github.io/2020/03/27/mac-%E7%AB%AF%E5%8F%A3%E8%BF%9B%E7%A8%8B%E6%9F%A5%E7%9C%8B/</id>
+    <published>2020-03-27T07:14:00.000Z</published>
+    <updated>2020-03-27T07:17:37.759Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="mac" scheme="http://konggeyuan.github.io/tags/mac/"/>
+    
+  </entry>
   
   <entry>
     <title>威廉退尔序曲</title>
@@ -73,7 +100,7 @@
     <link href="http://konggeyuan.github.io/2020/03/17/%E6%85%A2%E6%80%9D%E8%80%83/"/>
     <id>http://konggeyuan.github.io/2020/03/17/%E6%85%A2%E6%80%9D%E8%80%83/</id>
     <published>2020-03-17T06:53:00.000Z</published>
-    <updated>2020-03-21T15:01:12.376Z</updated>
+    <updated>2020-03-26T04:55:51.146Z</updated>
     
     <summary type="html">
     
@@ -512,33 +539,6 @@
     
       <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>重来:更为简单有效的商业思维</title>
-    <link href="http://konggeyuan.github.io/2020/03/06/%E9%87%8D%E6%9D%A5-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    <id>http://konggeyuan.github.io/2020/03/06/%E9%87%8D%E6%9D%A5-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</id>
-    <published>2020-03-06T10:36:00.000Z</published>
-    <updated>2020-03-13T13:24:43.553Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Fri Mar 13 2020 21:24:43 GMT+0800 (GMT+08:00)
-        
-      
-    
-    </summary>
-    
-    
-      <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="重来" scheme="http://konggeyuan.github.io/tags/%E9%87%8D%E6%9D%A5/"/>
     
   </entry>
   
