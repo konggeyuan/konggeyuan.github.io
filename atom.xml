@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2020-03-27T07:20:23.208Z</updated>
+  <updated>2020-03-30T07:34:42.576Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>laravel 文件上传 &amp; 跨域</title>
+    <link href="http://konggeyuan.github.io/2020/03/30/laravel-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-%E8%B7%A8%E5%9F%9F/"/>
+    <id>http://konggeyuan.github.io/2020/03/30/laravel-%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0-%E8%B7%A8%E5%9F%9F/</id>
+    <published>2020-03-30T07:31:00.000Z</published>
+    <updated>2020-03-30T07:34:42.576Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>mac 端口进程查看</title>
@@ -506,31 +531,6 @@
         
         
           &lt;!-- build time:Mon Mar 09 2020 23:58:18 GMT+0800 (GMT+08:00) --&gt;&lt;h5 id=&quot;usb挂载支持&quot;&gt;&lt;a href=&quot;#usb挂载支持&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Docker安装配置 Nginx+PHP+MySQL</title>
-    <link href="http://konggeyuan.github.io/2020/03/07/docker-nginx-php-mysql/"/>
-    <id>http://konggeyuan.github.io/2020/03/07/docker-nginx-php-mysql/</id>
-    <published>2020-03-07T10:55:00.000Z</published>
-    <updated>2020-03-07T11:30:03.508Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Sat Mar 07 2020 19:30:04 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;基于-阿里云服务器-ubuntu环境&lt;/p&gt;&lt;h4 id=&quot;安装Docker&quot;&gt;&lt;a href=&quot;#安装Docker&quot;
         
       
     
