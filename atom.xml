@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2020-05-08T16:52:44.770Z</updated>
+  <updated>2020-05-21T15:30:59.593Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>工业4.0-相关名词</title>
+    <link href="http://konggeyuan.github.io/2020/05/21/%E5%B7%A5%E4%B8%9A4-0%E7%9B%B8%E5%85%B3%E5%90%8D%E8%AF%8D/"/>
+    <id>http://konggeyuan.github.io/2020/05/21/%E5%B7%A5%E4%B8%9A4-0%E7%9B%B8%E5%85%B3%E5%90%8D%E8%AF%8D/</id>
+    <published>2020-05-21T15:10:00.000Z</published>
+    <updated>2020-05-21T15:30:59.593Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>工业4.0：正在发生的未来</title>
@@ -504,35 +527,6 @@
       <category term="calibre" scheme="http://konggeyuan.github.io/tags/calibre/"/>
     
       <category term="kindle" scheme="http://konggeyuan.github.io/tags/kindle/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo 升级</title>
-    <link href="http://konggeyuan.github.io/2020/03/10/hexo-%E5%8D%87%E7%BA%A7/"/>
-    <id>http://konggeyuan.github.io/2020/03/10/hexo-%E5%8D%87%E7%BA%A7/</id>
-    <published>2020-03-10T04:30:00.000Z</published>
-    <updated>2020-03-10T09:00:40.466Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Tue Mar 10 2020 17:00:53 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;查看现有版本&lt;/p&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
-        
-      
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="hexo" scheme="http://konggeyuan.github.io/tags/hexo/"/>
-    
-      <category term="升级" scheme="http://konggeyuan.github.io/tags/%E5%8D%87%E7%BA%A7/"/>
     
   </entry>
   
