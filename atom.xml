@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2020-05-25T07:33:05.783Z</updated>
+  <updated>2020-10-08T06:04:59.868Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>工业4.0-名词解释和概念</title>
-    <link href="http://konggeyuan.github.io/2020/05/21/%E5%B7%A5%E4%B8%9A4-0%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A%E5%92%8C%E6%A6%82%E5%BF%B5/"/>
-    <id>http://konggeyuan.github.io/2020/05/21/%E5%B7%A5%E4%B8%9A4-0%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A%E5%92%8C%E6%A6%82%E5%BF%B5/</id>
-    <published>2020-05-21T15:10:00.000Z</published>
-    <updated>2020-05-25T07:33:05.783Z</updated>
+    <title>当年情</title>
+    <link href="http://konggeyuan.github.io/2020/10/08/%E5%BD%93%E5%B9%B4%E6%83%85/"/>
+    <id>http://konggeyuan.github.io/2020/10/08/%E5%BD%93%E5%B9%B4%E6%83%85/</id>
+    <published>2020-10-08T06:02:00.000Z</published>
+    <updated>2020-10-08T06:04:59.868Z</updated>
     
     <summary type="html">
     
@@ -35,6 +35,33 @@
     
     </summary>
     
+    
+      <category term="口琴" scheme="http://konggeyuan.github.io/categories/%E5%8F%A3%E7%90%B4/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>工业4.0-名词解释和概念</title>
+    <link href="http://konggeyuan.github.io/2020/05/21/%E5%B7%A5%E4%B8%9A4-0%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A%E5%92%8C%E6%A6%82%E5%BF%B5/"/>
+    <id>http://konggeyuan.github.io/2020/05/21/%E5%B7%A5%E4%B8%9A4-0%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A%E5%92%8C%E6%A6%82%E5%BF%B5/</id>
+    <published>2020-05-21T15:10:00.000Z</published>
+    <updated>2020-10-05T09:46:35.350Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -44,7 +71,7 @@
     <link href="http://konggeyuan.github.io/2020/05/08/%E5%B7%A5%E4%B8%9A4-0%EF%BC%9A%E6%AD%A3%E5%9C%A8%E5%8F%91%E7%94%9F%E7%9A%84%E6%9C%AA%E6%9D%A5/"/>
     <id>http://konggeyuan.github.io/2020/05/08/%E5%B7%A5%E4%B8%9A4-0%EF%BC%9A%E6%AD%A3%E5%9C%A8%E5%8F%91%E7%94%9F%E7%9A%84%E6%9C%AA%E6%9D%A5/</id>
     <published>2020-05-08T07:25:00.000Z</published>
-    <updated>2020-05-08T16:52:44.770Z</updated>
+    <updated>2020-10-05T09:46:54.717Z</updated>
     
     <summary type="html">
     
@@ -58,6 +85,8 @@
     
     </summary>
     
+    
+      <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
@@ -498,35 +527,6 @@
     
     
       <category term="私域流量" scheme="http://konggeyuan.github.io/tags/%E7%A7%81%E5%9F%9F%E6%B5%81%E9%87%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Calibre Web搭建</title>
-    <link href="http://konggeyuan.github.io/2020/03/12/Calibre-Web%E6%90%AD%E5%BB%BA/"/>
-    <id>http://konggeyuan.github.io/2020/03/12/Calibre-Web%E6%90%AD%E5%BB%BA/</id>
-    <published>2020-03-11T16:50:00.000Z</published>
-    <updated>2020-03-11T16:53:19.681Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;!-- build time:Thu Mar 12 2020 00:53:19 GMT+0800 (GMT+08:00) --&gt;&lt;p&gt;kindle还是不够自由，干脆搭建了一个自己的图书馆&lt;/p&gt;&lt;figure class=&quot;highlight
-        
-      
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="calibre" scheme="http://konggeyuan.github.io/tags/calibre/"/>
-    
-      <category term="kindle" scheme="http://konggeyuan.github.io/tags/kindle/"/>
     
   </entry>
   
