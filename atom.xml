@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2020-10-08T06:04:59.868Z</updated>
+  <updated>2020-11-23T09:35:56.957Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于工作角色的思考</title>
+    <link href="http://konggeyuan.github.io/2020/11/23/%E5%85%B3%E4%BA%8E%E5%B7%A5%E4%BD%9C%E8%A7%92%E8%89%B2%E7%9A%84%E6%80%9D%E8%80%83/"/>
+    <id>http://konggeyuan.github.io/2020/11/23/%E5%85%B3%E4%BA%8E%E5%B7%A5%E4%BD%9C%E8%A7%92%E8%89%B2%E7%9A%84%E6%80%9D%E8%80%83/</id>
+    <published>2020-11-23T08:21:00.000Z</published>
+    <updated>2020-11-23T09:35:56.957Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="工作角色" scheme="http://konggeyuan.github.io/tags/%E5%B7%A5%E4%BD%9C%E8%A7%92%E8%89%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>当年情</title>
@@ -500,33 +527,6 @@
     
     
       <category term="智商税" scheme="http://konggeyuan.github.io/tags/%E6%99%BA%E5%95%86%E7%A8%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>私域流量</title>
-    <link href="http://konggeyuan.github.io/2020/03/12/%E7%A7%81%E5%9F%9F%E6%B5%81%E9%87%8F-%E7%AC%94%E8%AE%B0/"/>
-    <id>http://konggeyuan.github.io/2020/03/12/%E7%A7%81%E5%9F%9F%E6%B5%81%E9%87%8F-%E7%AC%94%E8%AE%B0/</id>
-    <published>2020-03-12T04:44:00.000Z</published>
-    <updated>2020-03-13T13:23:45.072Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="私域流量" scheme="http://konggeyuan.github.io/tags/%E7%A7%81%E5%9F%9F%E6%B5%81%E9%87%8F/"/>
     
   </entry>
   
