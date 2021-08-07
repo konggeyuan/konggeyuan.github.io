@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2021-07-06T15:22:12.515Z</updated>
+  <updated>2021-08-07T12:45:22.655Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -17,11 +17,127 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>小程序中使用外部icon</title>
+    <link href="http://konggeyuan.github.io/2021/08/07/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8icon/"/>
+    <id>http://konggeyuan.github.io/2021/08/07/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8icon/</id>
+    <published>2021-08-07T12:37:00.000Z</published>
+    <updated>2021-08-07T12:45:22.655Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="css" scheme="http://konggeyuan.github.io/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ssh秘钥配置</title>
+    <link href="http://konggeyuan.github.io/2021/07/11/ssh%E7%A7%98%E9%92%A5%E9%85%8D%E7%BD%AE/"/>
+    <id>http://konggeyuan.github.io/2021/07/11/ssh%E7%A7%98%E9%92%A5%E9%85%8D%E7%BD%AE/</id>
+    <published>2021-07-10T16:32:00.000Z</published>
+    <updated>2021-07-10T16:36:55.661Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="ssh" scheme="http://konggeyuan.github.io/tags/ssh/"/>
+    
+      <category term="秘钥" scheme="http://konggeyuan.github.io/tags/%E7%A7%98%E9%92%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>gitea-搭建</title>
+    <link href="http://konggeyuan.github.io/2021/07/10/gitea-%E6%90%AD%E5%BB%BA/"/>
+    <id>http://konggeyuan.github.io/2021/07/10/gitea-%E6%90%AD%E5%BB%BA/</id>
+    <published>2021-07-10T13:06:00.000Z</published>
+    <updated>2021-07-10T13:08:19.413Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="git" scheme="http://konggeyuan.github.io/tags/git/"/>
+    
+      <category term="docker-compse" scheme="http://konggeyuan.github.io/tags/docker-compse/"/>
+    
+      <category term="gitea" scheme="http://konggeyuan.github.io/tags/gitea/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>swagger-参数-样例</title>
+    <link href="http://konggeyuan.github.io/2021/07/08/swagger-%E5%8F%82%E6%95%B0/"/>
+    <id>http://konggeyuan.github.io/2021/07/08/swagger-%E5%8F%82%E6%95%B0/</id>
+    <published>2021-07-08T14:18:00.000Z</published>
+    <updated>2021-07-08T14:20:47.990Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="php" scheme="http://konggeyuan.github.io/tags/php/"/>
+    
+      <category term="swagger" scheme="http://konggeyuan.github.io/tags/swagger/"/>
+    
+  </entry>
+  
+  <entry>
     <title>swagger-laravel的使用</title>
     <link href="http://konggeyuan.github.io/2021/07/06/swagger-laravel%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>http://konggeyuan.github.io/2021/07/06/swagger-laravel%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
     <published>2021-07-06T15:09:00.000Z</published>
-    <updated>2021-07-06T15:22:12.515Z</updated>
+    <updated>2021-07-07T04:28:46.309Z</updated>
     
     <summary type="html">
     
@@ -81,7 +197,7 @@
     <link href="http://konggeyuan.github.io/2021/07/03/gogs-drone%E9%85%8D%E7%BD%AE/"/>
     <id>http://konggeyuan.github.io/2021/07/03/gogs-drone%E9%85%8D%E7%BD%AE/</id>
     <published>2021-07-03T13:42:00.000Z</published>
-    <updated>2021-07-03T14:21:22.417Z</updated>
+    <updated>2021-07-12T14:30:06.648Z</updated>
     
     <summary type="html">
     
@@ -428,108 +544,6 @@
     
     
       <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>关于工作角色的思考</title>
-    <link href="http://konggeyuan.github.io/2020/11/23/%E5%85%B3%E4%BA%8E%E5%B7%A5%E4%BD%9C%E8%A7%92%E8%89%B2%E7%9A%84%E6%80%9D%E8%80%83/"/>
-    <id>http://konggeyuan.github.io/2020/11/23/%E5%85%B3%E4%BA%8E%E5%B7%A5%E4%BD%9C%E8%A7%92%E8%89%B2%E7%9A%84%E6%80%9D%E8%80%83/</id>
-    <published>2020-11-23T08:21:00.000Z</published>
-    <updated>2020-11-23T09:35:56.957Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="工作角色" scheme="http://konggeyuan.github.io/tags/%E5%B7%A5%E4%BD%9C%E8%A7%92%E8%89%B2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>当年情</title>
-    <link href="http://konggeyuan.github.io/2020/10/08/%E5%BD%93%E5%B9%B4%E6%83%85/"/>
-    <id>http://konggeyuan.github.io/2020/10/08/%E5%BD%93%E5%B9%B4%E6%83%85/</id>
-    <published>2020-10-08T06:02:00.000Z</published>
-    <updated>2021-05-01T13:43:19.468Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="口琴" scheme="http://konggeyuan.github.io/categories/%E5%8F%A3%E7%90%B4/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>工业4.0-名词解释和概念</title>
-    <link href="http://konggeyuan.github.io/2020/05/21/%E5%B7%A5%E4%B8%9A4-0%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A%E5%92%8C%E6%A6%82%E5%BF%B5/"/>
-    <id>http://konggeyuan.github.io/2020/05/21/%E5%B7%A5%E4%B8%9A4-0%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A%E5%92%8C%E6%A6%82%E5%BF%B5/</id>
-    <published>2020-05-21T15:10:00.000Z</published>
-    <updated>2020-10-05T09:46:35.350Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>工业4.0：正在发生的未来</title>
-    <link href="http://konggeyuan.github.io/2020/05/08/%E5%B7%A5%E4%B8%9A4-0%EF%BC%9A%E6%AD%A3%E5%9C%A8%E5%8F%91%E7%94%9F%E7%9A%84%E6%9C%AA%E6%9D%A5/"/>
-    <id>http://konggeyuan.github.io/2020/05/08/%E5%B7%A5%E4%B8%9A4-0%EF%BC%9A%E6%AD%A3%E5%9C%A8%E5%8F%91%E7%94%9F%E7%9A%84%E6%9C%AA%E6%9D%A5/</id>
-    <published>2020-05-08T07:25:00.000Z</published>
-    <updated>2020-10-05T09:46:54.717Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
