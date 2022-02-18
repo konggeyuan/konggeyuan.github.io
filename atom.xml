@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>没事多喝水</title>
+  <icon>http://konggeyuan.github.io/icon.png</icon>
+  <subtitle>技术笔记&amp;记录生活点滴</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://konggeyuan.github.io/"/>
+  <updated>2022-02-18T16:16:29.112Z</updated>
+  <id>http://konggeyuan.github.io/</id>
+  
+  <author>
+    <name>Space Yuan</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>&#39;activity supporting action_view is not set as browsable&#39;的解决方法</title>
+    <link href="http://konggeyuan.github.io/2022/02/19/activity-supporting-action-view-is-not-set-as-browsable-%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>http://konggeyuan.github.io/2022/02/19/activity-supporting-action-view-is-not-set-as-browsable-%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</id>
+    <published>2022-02-18T16:12:00.000Z</published>
+    <updated>2022-02-18T16:16:29.112Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="笔记/安卓/" scheme="http://konggeyuan.github.io/categories/%E7%AC%94%E8%AE%B0-%E5%AE%89%E5%8D%93/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>创建空Activity</title>
+    <link href="http://konggeyuan.github.io/2022/02/18/%E5%88%9B%E5%BB%BA%E7%A9%BAActivity/"/>
+    <id>http://konggeyuan.github.io/2022/02/18/%E5%88%9B%E5%BB%BA%E7%A9%BAActivity/</id>
+    <published>2022-02-18T08:16:00.000Z</published>
+    <updated>2022-02-18T09:47:02.849Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="笔记/安卓/" scheme="http://konggeyuan.github.io/categories/%E7%AC%94%E8%AE%B0-%E5%AE%89%E5%8D%93/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>intent消息传递</title>
+    <link href="http://konggeyuan.github.io/2022/02/17/intent%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92/"/>
+    <id>http://konggeyuan.github.io/2022/02/17/intent%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92/</id>
+    <published>2022-02-17T12:54:00.000Z</published>
+    <updated>2022-02-17T17:17:12.825Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="笔记/安卓/" scheme="http://konggeyuan.github.io/categories/%E7%AC%94%E8%AE%B0-%E5%AE%89%E5%8D%93/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>测试笔记</title>
+    <link href="http://konggeyuan.github.io/2022/02/17/%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/"/>
+    <id>http://konggeyuan.github.io/2022/02/17/%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/</id>
+    <published>2022-02-17T11:53:00.000Z</published>
+    <updated>2022-02-17T11:55:13.264Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="http://konggeyuan.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Android 黄色报错 App is not indexable by Google Search</title>
+    <link href="http://konggeyuan.github.io/2022/02/17/Android-%E9%BB%84%E8%89%B2%E6%8A%A5%E9%94%99-App-is-not-indexable-by-Google-Search/"/>
+    <id>http://konggeyuan.github.io/2022/02/17/Android-%E9%BB%84%E8%89%B2%E6%8A%A5%E9%94%99-App-is-not-indexable-by-Google-Search/</id>
+    <published>2022-02-16T16:17:00.000Z</published>
+    <updated>2022-02-17T12:01:25.499Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="IT技术/安卓/" scheme="http://konggeyuan.github.io/categories/IT%E6%8A%80%E6%9C%AF-%E5%AE%89%E5%8D%93/"/>
+    
+    
+      <category term="android" scheme="http://konggeyuan.github.io/tags/android/"/>
+    
+      <category term="安卓" scheme="http://konggeyuan.github.io/tags/%E5%AE%89%E5%8D%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android Studio里Gradle Sync 国内镜像</title>
+    <link href="http://konggeyuan.github.io/2022/02/07/Android-Studio%E9%87%8CGradleSync-%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/"/>
+    <id>http://konggeyuan.github.io/2022/02/07/Android-Studio%E9%87%8CGradleSync-%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/</id>
+    <published>2022-02-07T12:39:00.000Z</published>
+    <updated>2022-02-17T12:40:42.561Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="IT技术/安卓/" scheme="http://konggeyuan.github.io/categories/IT%E6%8A%80%E6%9C%AF-%E5%AE%89%E5%8D%93/"/>
+    
+    
+      <category term="android配置" scheme="http://konggeyuan.github.io/tags/android%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android Studio 配置</title>
+    <link href="http://konggeyuan.github.io/2022/02/07/Android-Studio-%E9%85%8D%E7%BD%AE/"/>
+    <id>http://konggeyuan.github.io/2022/02/07/Android-Studio-%E9%85%8D%E7%BD%AE/</id>
+    <published>2022-02-07T08:31:00.000Z</published>
+    <updated>2022-02-17T12:40:58.950Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="IT技术/安卓/" scheme="http://konggeyuan.github.io/categories/IT%E6%8A%80%E6%9C%AF-%E5%AE%89%E5%8D%93/"/>
+    
+    
+      <category term="android配置" scheme="http://konggeyuan.github.io/tags/android%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SSL安全证书生成&amp;管理</title>
+    <link href="http://konggeyuan.github.io/2022/02/03/SSL%E5%AE%89%E5%85%A8%E8%AF%81%E4%B9%A6%E7%94%9F%E6%88%90&amp;%E7%AE%A1%E7%90%86/"/>
+    <id>http://konggeyuan.github.io/2022/02/03/SSL%E5%AE%89%E5%85%A8%E8%AF%81%E4%B9%A6%E7%94%9F%E6%88%90&amp;%E7%AE%A1%E7%90%86/</id>
+    <published>2022-02-03T09:30:00.000Z</published>
+    <updated>2022-02-05T08:16:21.686Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>自己一人如何去做一个web项目</title>
+    <link href="http://konggeyuan.github.io/2022/01/19/%E8%87%AA%E5%B7%B1%E4%B8%80%E4%BA%BA%E5%A6%82%E4%BD%95%E5%8E%BB%E5%81%9A%E4%B8%80%E4%B8%AAweb%E9%A1%B9%E7%9B%AE/"/>
+    <id>http://konggeyuan.github.io/2022/01/19/%E8%87%AA%E5%B7%B1%E4%B8%80%E4%BA%BA%E5%A6%82%E4%BD%95%E5%8E%BB%E5%81%9A%E4%B8%80%E4%B8%AAweb%E9%A1%B9%E7%9B%AE/</id>
+    <published>2022-01-19T09:15:00.000Z</published>
+    <updated>2022-01-19T09:37:17.629Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="http://konggeyuan.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+      <category term="一个人项目" scheme="http://konggeyuan.github.io/tags/%E4%B8%80%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>node安装&amp;设置</title>
+    <link href="http://konggeyuan.github.io/2022/01/09/node%E5%AE%89%E8%A3%85-%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://konggeyuan.github.io/2022/01/09/node%E5%AE%89%E8%A3%85-%E8%AE%BE%E7%BD%AE/</id>
+    <published>2022-01-09T14:13:00.000Z</published>
+    <updated>2022-01-09T14:44:07.637Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="http://konggeyuan.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="nodejs" scheme="http://konggeyuan.github.io/tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo发布的问题</title>
+    <link href="http://konggeyuan.github.io/2022/01/09/hexo%E5%8F%91%E5%B8%83%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <id>http://konggeyuan.github.io/2022/01/09/hexo%E5%8F%91%E5%B8%83%E7%9A%84%E9%97%AE%E9%A2%98/</id>
+    <published>2022-01-09T10:25:00.000Z</published>
+    <updated>2022-01-09T10:28:50.995Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="http://konggeyuan.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>hexo真吃资源</title>
+    <link href="http://konggeyuan.github.io/2022/01/09/hexo%E7%9C%9F%E5%90%83%E8%B5%84%E6%BA%90/"/>
+    <id>http://konggeyuan.github.io/2022/01/09/hexo%E7%9C%9F%E5%90%83%E8%B5%84%E6%BA%90/</id>
+    <published>2022-01-09T10:06:00.000Z</published>
+    <updated>2022-01-09T10:06:58.463Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="生活" scheme="http://konggeyuan.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>laravel 增加自定义路由</title>
+    <link href="http://konggeyuan.github.io/2021/12/06/laravel-%E5%A2%9E%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E8%B7%AF%E7%94%B1/"/>
+    <id>http://konggeyuan.github.io/2021/12/06/laravel-%E5%A2%9E%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E8%B7%AF%E7%94%B1/</id>
+    <published>2021-12-06T10:06:00.000Z</published>
+    <updated>2021-12-06T10:09:03.521Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="php" scheme="http://konggeyuan.github.io/tags/php/"/>
+    
+      <category term="laravel" scheme="http://konggeyuan.github.io/tags/laravel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>laravel 查询构造器-闭包</title>
+    <link href="http://konggeyuan.github.io/2021/09/24/laravel-%E6%9F%A5%E8%AF%A2%E6%9E%84%E9%80%A0%E5%99%A8-%E9%97%AD%E5%8C%85/"/>
+    <id>http://konggeyuan.github.io/2021/09/24/laravel-%E6%9F%A5%E8%AF%A2%E6%9E%84%E9%80%A0%E5%99%A8-%E9%97%AD%E5%8C%85/</id>
+    <published>2021-09-24T08:59:00.000Z</published>
+    <updated>2021-09-24T10:03:09.128Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="laravel" scheme="http://konggeyuan.github.io/tags/laravel/"/>
+    
+      <category term="查询构造器" scheme="http://konggeyuan.github.io/tags/%E6%9F%A5%E8%AF%A2%E6%9E%84%E9%80%A0%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>laravel 自定义配置项</title>
+    <link href="http://konggeyuan.github.io/2021/09/24/laravel-%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE%E9%A1%B9/"/>
+    <id>http://konggeyuan.github.io/2021/09/24/laravel-%E8%87%AA%E5%AE%9A%E4%B9%89%E9%85%8D%E7%BD%AE%E9%A1%B9/</id>
+    <published>2021-09-24T08:51:00.000Z</published>
+    <updated>2021-09-24T10:03:25.531Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="php" scheme="http://konggeyuan.github.io/tags/php/"/>
+    
+      <category term="laravel" scheme="http://konggeyuan.github.io/tags/laravel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nebula搭建</title>
+    <link href="http://konggeyuan.github.io/2021/09/22/Nebula%E6%90%AD%E5%BB%BA-1/"/>
+    <id>http://konggeyuan.github.io/2021/09/22/Nebula%E6%90%AD%E5%BB%BA-1/</id>
+    <published>2021-09-22T06:01:00.000Z</published>
+    <updated>2021-09-24T10:04:17.239Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="nebula" scheme="http://konggeyuan.github.io/tags/nebula/"/>
+    
+      <category term="p2p" scheme="http://konggeyuan.github.io/tags/p2p/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>知识的边界-读书笔记</title>
+    <link href="http://konggeyuan.github.io/2021/09/19/%E7%9F%A5%E8%AF%86%E7%9A%84%E8%BE%B9%E7%95%8C/"/>
+    <id>http://konggeyuan.github.io/2021/09/19/%E7%9F%A5%E8%AF%86%E7%9A%84%E8%BE%B9%E7%95%8C/</id>
+    <published>2021-09-19T06:50:00.000Z</published>
+    <updated>2021-09-22T07:37:44.621Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="读书笔记" scheme="http://konggeyuan.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>小程序中使用外部icon</title>
+    <link href="http://konggeyuan.github.io/2021/08/07/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8icon/"/>
+    <id>http://konggeyuan.github.io/2021/08/07/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8icon/</id>
+    <published>2021-08-07T12:37:00.000Z</published>
+    <updated>2021-08-28T06:23:30.617Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="css" scheme="http://konggeyuan.github.io/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ssh秘钥配置</title>
+    <link href="http://konggeyuan.github.io/2021/07/11/ssh%E7%A7%98%E9%92%A5%E9%85%8D%E7%BD%AE/"/>
+    <id>http://konggeyuan.github.io/2021/07/11/ssh%E7%A7%98%E9%92%A5%E9%85%8D%E7%BD%AE/</id>
+    <published>2021-07-10T16:32:00.000Z</published>
+    <updated>2021-07-10T16:36:55.661Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="ssh" scheme="http://konggeyuan.github.io/tags/ssh/"/>
+    
+      <category term="秘钥" scheme="http://konggeyuan.github.io/tags/%E7%A7%98%E9%92%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>gitea-搭建</title>
+    <link href="http://konggeyuan.github.io/2021/07/10/gitea-%E6%90%AD%E5%BB%BA/"/>
+    <id>http://konggeyuan.github.io/2021/07/10/gitea-%E6%90%AD%E5%BB%BA/</id>
+    <published>2021-07-10T13:06:00.000Z</published>
+    <updated>2021-07-10T13:08:19.413Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="git" scheme="http://konggeyuan.github.io/tags/git/"/>
+    
+      <category term="docker-compse" scheme="http://konggeyuan.github.io/tags/docker-compse/"/>
+    
+      <category term="gitea" scheme="http://konggeyuan.github.io/tags/gitea/"/>
+    
+  </entry>
+  
+</feed>
