@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2022-02-18T16:16:29.112Z</updated>
+  <updated>2022-02-21T07:46:54.973Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AndroidMainfest.xml的默认配置说明</title>
+    <link href="http://konggeyuan.github.io/2022/02/20/AndroidMainfest-xml%E7%9A%84%E9%85%8D%E7%BD%AE/"/>
+    <id>http://konggeyuan.github.io/2022/02/20/AndroidMainfest-xml%E7%9A%84%E9%85%8D%E7%BD%AE/</id>
+    <published>2022-02-20T07:43:00.000Z</published>
+    <updated>2022-02-21T07:46:54.973Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="笔记/安卓/" scheme="http://konggeyuan.github.io/categories/%E7%AC%94%E8%AE%B0-%E5%AE%89%E5%8D%93/"/>
+    
+    
+      <category term="mainfest" scheme="http://konggeyuan.github.io/tags/mainfest/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Activity生命周期</title>
+    <link href="http://konggeyuan.github.io/2022/02/19/Activity%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"/>
+    <id>http://konggeyuan.github.io/2022/02/19/Activity%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</id>
+    <published>2022-02-19T15:18:00.000Z</published>
+    <updated>2022-02-19T15:34:31.811Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="笔记/安卓/" scheme="http://konggeyuan.github.io/categories/%E7%AC%94%E8%AE%B0-%E5%AE%89%E5%8D%93/"/>
+    
+    
+      <category term="android" scheme="http://konggeyuan.github.io/tags/android/"/>
+    
+      <category term="Activity" scheme="http://konggeyuan.github.io/tags/Activity/"/>
+    
+  </entry>
   
   <entry>
     <title>&#39;activity supporting action_view is not set as browsable&#39;的解决方法</title>
@@ -71,7 +127,7 @@
     <link href="http://konggeyuan.github.io/2022/02/17/intent%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92/"/>
     <id>http://konggeyuan.github.io/2022/02/17/intent%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92/</id>
     <published>2022-02-17T12:54:00.000Z</published>
-    <updated>2022-02-17T17:17:12.825Z</updated>
+    <updated>2022-02-19T09:27:45.234Z</updated>
     
     <summary type="html">
     
@@ -491,66 +547,6 @@
     
     
       <category term="css" scheme="http://konggeyuan.github.io/tags/css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ssh秘钥配置</title>
-    <link href="http://konggeyuan.github.io/2021/07/11/ssh%E7%A7%98%E9%92%A5%E9%85%8D%E7%BD%AE/"/>
-    <id>http://konggeyuan.github.io/2021/07/11/ssh%E7%A7%98%E9%92%A5%E9%85%8D%E7%BD%AE/</id>
-    <published>2021-07-10T16:32:00.000Z</published>
-    <updated>2021-07-10T16:36:55.661Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="ssh" scheme="http://konggeyuan.github.io/tags/ssh/"/>
-    
-      <category term="秘钥" scheme="http://konggeyuan.github.io/tags/%E7%A7%98%E9%92%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gitea-搭建</title>
-    <link href="http://konggeyuan.github.io/2021/07/10/gitea-%E6%90%AD%E5%BB%BA/"/>
-    <id>http://konggeyuan.github.io/2021/07/10/gitea-%E6%90%AD%E5%BB%BA/</id>
-    <published>2021-07-10T13:06:00.000Z</published>
-    <updated>2021-07-10T13:08:19.413Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="http://konggeyuan.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="git" scheme="http://konggeyuan.github.io/tags/git/"/>
-    
-      <category term="docker-compse" scheme="http://konggeyuan.github.io/tags/docker-compse/"/>
-    
-      <category term="gitea" scheme="http://konggeyuan.github.io/tags/gitea/"/>
     
   </entry>
   
