@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2022-02-28T10:02:29.444Z</updated>
+  <updated>2022-03-11T13:13:26.248Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>RPC failed; HTTP 413 curl 22 The requested URL returned error: 413 Request Entity Too Large问题</title>
+    <link href="http://konggeyuan.github.io/2022/03/11/RPC-failed-HTTP-413-curl-22-The-requested-URL-returned-error-413-Request-Entity-Too-Large%E9%97%AE%E9%A2%98/"/>
+    <id>http://konggeyuan.github.io/2022/03/11/RPC-failed-HTTP-413-curl-22-The-requested-URL-returned-error-413-Request-Entity-Too-Large%E9%97%AE%E9%A2%98/</id>
+    <published>2022-03-11T13:10:00.000Z</published>
+    <updated>2022-03-11T13:13:26.248Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="IT技术/Web开发/" scheme="http://konggeyuan.github.io/categories/IT%E6%8A%80%E6%9C%AF-Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="git" scheme="http://konggeyuan.github.io/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title>4种基本布局</title>
@@ -89,9 +116,9 @@
       <category term="笔记/安卓/" scheme="http://konggeyuan.github.io/categories/%E7%AC%94%E8%AE%B0-%E5%AE%89%E5%8D%93/"/>
     
     
-      <category term="android" scheme="http://konggeyuan.github.io/tags/android/"/>
-    
       <category term="Activity启动模式" scheme="http://konggeyuan.github.io/tags/Activity%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F/"/>
+    
+      <category term="android" scheme="http://konggeyuan.github.io/tags/android/"/>
     
   </entry>
   
@@ -492,31 +519,6 @@
     <id>http://konggeyuan.github.io/2022/01/09/hexo%E5%8F%91%E5%B8%83%E7%9A%84%E9%97%AE%E9%A2%98/</id>
     <published>2022-01-09T10:25:00.000Z</published>
     <updated>2022-01-09T10:28:50.995Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="生活" scheme="http://konggeyuan.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hexo真吃资源</title>
-    <link href="http://konggeyuan.github.io/2022/01/09/hexo%E7%9C%9F%E5%90%83%E8%B5%84%E6%BA%90/"/>
-    <id>http://konggeyuan.github.io/2022/01/09/hexo%E7%9C%9F%E5%90%83%E8%B5%84%E6%BA%90/</id>
-    <published>2022-01-09T10:06:00.000Z</published>
-    <updated>2022-01-09T10:06:58.463Z</updated>
     
     <summary type="html">
     
