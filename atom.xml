@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2022-04-03T09:28:17.383Z</updated>
+  <updated>2022-05-15T08:50:03.396Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,155 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mac brew 目录说明</title>
+    <link href="http://konggeyuan.github.io/2022/05/15/mac-brew-%E7%9B%AE%E5%BD%95%E8%AF%B4%E6%98%8E/"/>
+    <id>http://konggeyuan.github.io/2022/05/15/mac-brew-%E7%9B%AE%E5%BD%95%E8%AF%B4%E6%98%8E/</id>
+    <published>2022-05-15T08:34:00.000Z</published>
+    <updated>2022-05-15T08:50:03.396Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="IT技术-桌面/" scheme="http://konggeyuan.github.io/categories/IT%E6%8A%80%E6%9C%AF-%E6%A1%8C%E9%9D%A2/"/>
+    
+    
+      <category term="mac" scheme="http://konggeyuan.github.io/tags/mac/"/>
+    
+      <category term="桌面系统" scheme="http://konggeyuan.github.io/tags/%E6%A1%8C%E9%9D%A2%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>H5腾讯地图开发</title>
+    <link href="http://konggeyuan.github.io/2022/05/14/H5%E8%85%BE%E8%AE%AF%E5%9C%B0%E5%9B%BE%E5%BC%80%E5%8F%91/"/>
+    <id>http://konggeyuan.github.io/2022/05/14/H5%E8%85%BE%E8%AE%AF%E5%9C%B0%E5%9B%BE%E5%BC%80%E5%8F%91/</id>
+    <published>2022-05-14T07:22:00.000Z</published>
+    <updated>2022-05-14T08:32:15.520Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="IT技术-Web开发" scheme="http://konggeyuan.github.io/categories/IT%E6%8A%80%E6%9C%AF-Web%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="技术" scheme="http://konggeyuan.github.io/categories/IT%E6%8A%80%E6%9C%AF-Web%E5%BC%80%E5%8F%91/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="lbs" scheme="http://konggeyuan.github.io/tags/lbs/"/>
+    
+      <category term="腾讯地图" scheme="http://konggeyuan.github.io/tags/%E8%85%BE%E8%AE%AF%E5%9C%B0%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PHP游览器判定</title>
+    <link href="http://konggeyuan.github.io/2022/05/08/PHP%E6%B8%B8%E8%A7%88%E5%99%A8%E5%88%A4%E5%AE%9A/"/>
+    <id>http://konggeyuan.github.io/2022/05/08/PHP%E6%B8%B8%E8%A7%88%E5%99%A8%E5%88%A4%E5%AE%9A/</id>
+    <published>2022-05-08T08:06:00.000Z</published>
+    <updated>2022-05-08T08:07:20.027Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="IT技术/Web开发" scheme="http://konggeyuan.github.io/categories/IT%E6%8A%80%E6%9C%AF-Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="php" scheme="http://konggeyuan.github.io/tags/php/"/>
+    
+      <category term="游览器判定" scheme="http://konggeyuan.github.io/tags/%E6%B8%B8%E8%A7%88%E5%99%A8%E5%88%A4%E5%AE%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webp图片生成</title>
+    <link href="http://konggeyuan.github.io/2022/05/08/webp%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90/"/>
+    <id>http://konggeyuan.github.io/2022/05/08/webp%E5%9B%BE%E7%89%87%E7%94%9F%E6%88%90/</id>
+    <published>2022-05-08T04:49:00.000Z</published>
+    <updated>2022-05-17T08:44:34.322Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="IT技术/Web开发" scheme="http://konggeyuan.github.io/categories/IT%E6%8A%80%E6%9C%AF-Web%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="php" scheme="http://konggeyuan.github.io/tags/php/"/>
+    
+      <category term="webp" scheme="http://konggeyuan.github.io/tags/webp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>七牛云cdn配置</title>
+    <link href="http://konggeyuan.github.io/2022/05/04/%E4%B8%83%E7%89%9B%E4%BA%91cdn%E9%85%8D%E7%BD%AE/"/>
+    <id>http://konggeyuan.github.io/2022/05/04/%E4%B8%83%E7%89%9B%E4%BA%91cdn%E9%85%8D%E7%BD%AE/</id>
+    <published>2022-05-03T17:29:00.000Z</published>
+    <updated>2022-05-04T06:51:02.537Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="IT技术/运维" scheme="http://konggeyuan.github.io/categories/IT%E6%8A%80%E6%9C%AF-%E8%BF%90%E7%BB%B4/"/>
+    
+    
+      <category term="cdn" scheme="http://konggeyuan.github.io/tags/cdn/"/>
+    
+      <category term="rsync" scheme="http://konggeyuan.github.io/tags/rsync/"/>
+    
+      <category term="inofity" scheme="http://konggeyuan.github.io/tags/inofity/"/>
+    
+  </entry>
   
   <entry>
     <title>git规范例子</title>
@@ -408,139 +557,6 @@
     
       <category term="笔记/安卓/" scheme="http://konggeyuan.github.io/categories/%E7%AC%94%E8%AE%B0-%E5%AE%89%E5%8D%93/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>intent消息传递</title>
-    <link href="http://konggeyuan.github.io/2022/02/17/intent%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92/"/>
-    <id>http://konggeyuan.github.io/2022/02/17/intent%E6%B6%88%E6%81%AF%E4%BC%A0%E9%80%92/</id>
-    <published>2022-02-17T12:54:00.000Z</published>
-    <updated>2022-02-19T09:27:45.234Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="笔记/安卓/" scheme="http://konggeyuan.github.io/categories/%E7%AC%94%E8%AE%B0-%E5%AE%89%E5%8D%93/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>测试笔记</title>
-    <link href="http://konggeyuan.github.io/2022/02/17/%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/"/>
-    <id>http://konggeyuan.github.io/2022/02/17/%E6%B5%8B%E8%AF%95%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-02-17T11:53:00.000Z</published>
-    <updated>2022-02-17T11:55:13.264Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="笔记" scheme="http://konggeyuan.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Android 黄色报错 App is not indexable by Google Search</title>
-    <link href="http://konggeyuan.github.io/2022/02/17/Android-%E9%BB%84%E8%89%B2%E6%8A%A5%E9%94%99-App-is-not-indexable-by-Google-Search/"/>
-    <id>http://konggeyuan.github.io/2022/02/17/Android-%E9%BB%84%E8%89%B2%E6%8A%A5%E9%94%99-App-is-not-indexable-by-Google-Search/</id>
-    <published>2022-02-16T16:17:00.000Z</published>
-    <updated>2022-02-17T12:01:25.499Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="IT技术/安卓/" scheme="http://konggeyuan.github.io/categories/IT%E6%8A%80%E6%9C%AF-%E5%AE%89%E5%8D%93/"/>
-    
-    
-      <category term="android" scheme="http://konggeyuan.github.io/tags/android/"/>
-    
-      <category term="安卓" scheme="http://konggeyuan.github.io/tags/%E5%AE%89%E5%8D%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android Studio里Gradle Sync 国内镜像</title>
-    <link href="http://konggeyuan.github.io/2022/02/07/Android-Studio%E9%87%8CGradleSync-%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/"/>
-    <id>http://konggeyuan.github.io/2022/02/07/Android-Studio%E9%87%8CGradleSync-%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F/</id>
-    <published>2022-02-07T12:39:00.000Z</published>
-    <updated>2022-02-17T12:40:42.561Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="IT技术/安卓/" scheme="http://konggeyuan.github.io/categories/IT%E6%8A%80%E6%9C%AF-%E5%AE%89%E5%8D%93/"/>
-    
-    
-      <category term="android配置" scheme="http://konggeyuan.github.io/tags/android%E9%85%8D%E7%BD%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android Studio 配置</title>
-    <link href="http://konggeyuan.github.io/2022/02/07/Android-Studio-%E9%85%8D%E7%BD%AE/"/>
-    <id>http://konggeyuan.github.io/2022/02/07/Android-Studio-%E9%85%8D%E7%BD%AE/</id>
-    <published>2022-02-07T08:31:00.000Z</published>
-    <updated>2022-02-17T12:40:58.950Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="IT技术/安卓/" scheme="http://konggeyuan.github.io/categories/IT%E6%8A%80%E6%9C%AF-%E5%AE%89%E5%8D%93/"/>
-    
-    
-      <category term="android配置" scheme="http://konggeyuan.github.io/tags/android%E9%85%8D%E7%BD%AE/"/>
     
   </entry>
   
