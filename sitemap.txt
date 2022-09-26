@@ -1,3 +1,5 @@
+http://konggeyuan.github.io/2022/09/26/mac-10-13-6-High-Sierra-%E4%B8%8B%E7%BC%96%E8%AF%91PHP-7-4/
+http://konggeyuan.github.io/2022/09/10/%E8%BF%91%E4%BA%A7%E5%93%81%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85/
 http://konggeyuan.github.io/2022/08/28/Laravel-env-%E5%A4%9A%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/
 http://konggeyuan.github.io/2021/08/07/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8icon/
 http://konggeyuan.github.io/2022/07/04/mac-php%E5%AE%89%E8%A3%85/
@@ -230,3 +232,4 @@ http://konggeyuan.github.io/categories/%E8%BF%90%E7%BB%B4/
 http://konggeyuan.github.io/categories/%E6%83%B3%E6%B3%95/
 http://konggeyuan.github.io/categories/%E7%AC%94%E8%AE%B0-%E8%AF%BB%E4%B9%A6/
 http://konggeyuan.github.io/categories/%E7%AC%94%E8%AE%B0/
+http://konggeyuan.github.io/categories/%E4%BA%A7%E5%93%81/

@@ -1,0 +1,317 @@
+<!DOCTYPE html><html class="theme-next pisces use-motion" lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#222"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="/css/main.css?v=7.1.1"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.1"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.1"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.1"><link rel="mask-icon" href="/images/logo.svg?v=7.1.1" color="#222"><script id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Pisces",version:"7.1.1",sidebar:{position:"left",display:"post",offset:5,onmobile:!1,dimmer:!1},back2top:!0,back2top_sidebar:!1,fancybox:!1,fastclick:!1,lazyload:!1,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><meta name="description" content="brew 漫长的时间安装扩展包后，发现竟然不支持php7.4。直接打开brew下的&amp;#112;&amp;#104;&amp;#x70;&amp;#x40;&amp;#x37;&amp;#46;&amp;#x34;&amp;#x2e;&amp;#x72;&amp;#98;的安装脚本进行获取其中的.&#x2F;configure配置，参考网上别人的配置文档，修改后，能兼容brew下的php7.4布局，手工编译也能灵活的设置配置编译模块。具体步骤123#下载php7.4.3"><meta property="og:type" content="article"><meta property="og:title" content="mac 10.13.6 High Sierra 下编译PHP 7.4&amp;8.0"><meta property="og:url" content="http://konggeyuan.github.io/2022/09/26/mac-10-13-6-High-Sierra-%E4%B8%8B%E7%BC%96%E8%AF%91PHP-7-4/index.html"><meta property="og:site_name" content="没事多喝水"><meta property="og:description" content="brew 漫长的时间安装扩展包后，发现竟然不支持php7.4。直接打开brew下的&amp;#112;&amp;#104;&amp;#x70;&amp;#x40;&amp;#x37;&amp;#46;&amp;#x34;&amp;#x2e;&amp;#x72;&amp;#98;的安装脚本进行获取其中的.&#x2F;configure配置，参考网上别人的配置文档，修改后，能兼容brew下的php7.4布局，手工编译也能灵活的设置配置编译模块。具体步骤123#下载php7.4.3"><meta property="og:locale" content="zh_CN"><meta property="article:published_time" content="2022-09-26T10:02:25.000Z"><meta property="article:modified_time" content="2022-09-26T16:27:39.384Z"><meta property="article:author" content="Space Yuan"><meta name="twitter:card" content="summary"><link rel="alternate" href="/atom.xml" title="没事多喝水" type="application/atom+xml"><link rel="canonical" href="http://konggeyuan.github.io/2022/09/26/mac-10-13-6-High-Sierra-%E4%B8%8B%E7%BC%96%E8%AF%91PHP-7-4/"><script id="page.configurations">CONFIG.page={sidebar:""}</script><title>mac 10.13.6 High Sierra 下编译PHP 7.4&8.0 | 没事多喝水</title><noscript><style>.sidebar-inner,.use-motion .brand,.use-motion .collection-title,.use-motion .comments,.use-motion .menu-item,.use-motion .motion-element,.use-motion .pagination,.use-motion .post-block,.use-motion .post-body,.use-motion .post-header{opacity:initial}.use-motion .logo,.use-motion .site-subtitle,.use-motion .site-title{opacity:initial;top:initial}.use-motion .logo-line-before i{left:initial}.use-motion .logo-line-after i{right:initial}</style></noscript><meta name="generator" content="Hexo 4.2.1"></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">没事多喝水</span> <span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle">技术笔记&记录生活点滴</p></div><div class="site-nav-toggle"><button aria-label="切换导航栏"><span class="btn-bar"></span> <span class="btn-bar"></span> <span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section">首页</a></li><li class="menu-item menu-item-读书"><a href="/books/" rel="section">读书</a></li><li class="menu-item menu-item-观影"><a href="/movies/" rel="section">观影</a></li><li class="menu-item menu-item-笔记"><a href="/categories/%E7%AC%94%E8%AE%B0/" rel="section">笔记</a></li><li class="menu-item menu-item-读书笔记"><a href="/categories/%E7%AC%94%E8%AE%B0-%E8%AF%BB%E4%B9%A6/" rel="section" class="submenu-item">读书笔记</a></li><li class="menu-item menu-item-android学习"><a href="/categories/%E7%AC%94%E8%AE%B0-%E5%AE%89%E5%8D%93/" rel="section" class="submenu-item">Android学习</a></li><li class="menu-item menu-item-生活"><a href="/categories/%E7%94%9F%E6%B4%BB/" rel="section">生活</a></li><li class="menu-item menu-item-吹口琴"><a href="/categories/%E7%94%9F%E6%B4%BB-%E5%8F%A3%E7%90%B4/" rel="section" class="submenu-item">吹口琴</a></li><li class="menu-item menu-item-爱咖啡"><a href="/categories/%E7%94%9F%E6%B4%BB-%E5%92%96%E5%95%A1/" rel="section" class="submenu-item">爱咖啡</a></li><li class="menu-item menu-item-it技术-文档"><a href="/categories/IT%E6%8A%80%E6%9C%AF/" rel="section">IT技术-文档</a></li><li class="menu-item menu-item-日常桌面"><a href="/categories/IT%E6%8A%80%E6%9C%AF-%E6%A1%8C%E9%9D%A2/" rel="section" class="submenu-item">日常桌面</a></li><li class="menu-item menu-item-数据库"><a href="/categories/IT%E6%8A%80%E6%9C%AF-%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="section" class="submenu-item">数据库</a></li><li class="menu-item menu-item-ci/cd运维"><a href="/categories/IT%E6%8A%80%E6%9C%AF-%E8%BF%90%E7%BB%B4/" rel="section" class="submenu-item">CI&#x2F;CD运维</a></li><li class="menu-item menu-item-android开发"><a href="/categories/IT%E6%8A%80%E6%9C%AF-%E5%AE%89%E5%8D%93/" rel="section" class="submenu-item">Android开发</a></li><li class="menu-item menu-item-小程序&微网页"><a href="/categories/IT%E6%8A%80%E6%9C%AF-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/" rel="section" class="submenu-item">小程序&amp;微网页</a></li><li class="menu-item menu-item-web开发"><a href="/categories/IT%E6%8A%80%E6%9C%AF-Web%E5%BC%80%E5%8F%91/" rel="section" class="submenu-item">Web开发</a></li><li class="menu-item menu-item-产品"><a href="/categories/%E4%BA%A7%E5%93%81/" rel="section">产品</a></li><li class="menu-item menu-item-教学"><a href="/categories/%E6%95%99%E5%AD%A6/" rel="section">教学</a></li><li class="menu-item menu-item-安卓"><a href="/categories/%E6%95%99%E5%AD%A6-%E5%AE%89%E5%8D%93/" rel="section" class="submenu-item">安卓</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section">关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section">标签</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger">搜索</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i> </span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"><input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="http://konggeyuan.github.io/2022/09/26/mac-10-13-6-High-Sierra-%E4%B8%8B%E7%BC%96%E8%AF%91PHP-7-4/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Space Yuan"><meta itemprop="description" content=""><meta itemprop="image" content="https://avatars1.githubusercontent.com/u/4988185??v=3&s=460"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="没事多喝水"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">mac 10.13.6 High Sierra 下编译PHP 7.4&8.0</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">发表于</span> <time title="创建时间：2022-09-26 18:02:25" itemprop="dateCreated datePublished" datetime="2022-09-26T18:02:25+08:00">2022-09-26</time> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="fa fa-calendar-check-o"></i> </span><span class="post-meta-item-text">更新于</span> <time title="修改时间：2022-09-27 00:27:39" itemprop="dateModified" datetime="2022-09-27T00:27:39+08:00">2022-09-27</time></span></div></header><div class="post-body" itemprop="articleBody"><p>brew 漫长的时间安装扩展包后，发现竟然不支持php7.4。直接打开brew下的<a href="mailto:&#112;&#104;&#x70;&#x40;&#x37;&#46;&#x34;&#x2e;&#x72;&#98;">&#112;&#104;&#x70;&#x40;&#x37;&#46;&#x34;&#x2e;&#x72;&#98;</a>的安装脚本进行获取其中的.&#x2F;configure配置，<a href="https://blog.csdn.net/ligaofeng/article/details/105819374" target="_blank" rel="noopener" title="参考编译">参考网上别人的配置文档</a>，修改后，能兼容brew下的php7.4布局，手工编译也能灵活的设置配置编译模块。</p><p>具体步骤</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#下载php7.4.30.tar.gz </span></span><br><span class="line"><span class="comment">#解压缩至/private/tmp/目录下</span></span><br><span class="line"><span class="built_in">cd</span> /private/tmp/phpA7.4-20220924-61077-kvzxga/php-7.4.30</span><br></pre></td></tr></table></figure><h1 id="配置编译选项"><a href="#配置编译选项" class="headerlink" title="配置编译选项"></a>配置编译选项</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#7.4</span></span><br><span class="line"></span><br><span class="line">./configure --prefix=/usr/<span class="built_in">local</span>/Cellar/php@7.4/7.4.30_1  \</span><br><span class="line">--localstatedir=/usr/<span class="built_in">local</span>/var \</span><br><span class="line">--sysconfdir=/usr/<span class="built_in">local</span>/etc/php/7.4 \</span><br><span class="line">--with-config-file-path=/usr/<span class="built_in">local</span>/etc/php/7.4 \</span><br><span class="line">--with-config-file-scan-dir=/usr/<span class="built_in">local</span>/etc/php/7.4/conf.d \</span><br><span class="line">--with-pear=/usr/<span class="built_in">local</span>/Cellar/php@7.4/7.4.30_1/share/php@7.4/pear \</span><br><span class="line">--<span class="built_in">enable</span>-bcmath \</span><br><span class="line">--<span class="built_in">enable</span>-calendar  \</span><br><span class="line">--<span class="built_in">enable</span>-exif \</span><br><span class="line">--<span class="built_in">enable</span>-ftp \</span><br><span class="line">--<span class="built_in">enable</span>-fpm \</span><br><span class="line">--<span class="built_in">enable</span>-gd \</span><br><span class="line">--with-mhash \</span><br><span class="line">--<span class="built_in">enable</span>-intl \</span><br><span class="line">--<span class="built_in">enable</span>-mbregex \</span><br><span class="line">--<span class="built_in">enable</span>-mbstring \</span><br><span class="line">--<span class="built_in">enable</span>-mysqlnd \</span><br><span class="line">--<span class="built_in">enable</span>-pcntl \</span><br><span class="line">--<span class="built_in">enable</span>-phpdbg \</span><br><span class="line">--<span class="built_in">enable</span>-phpdbg-readline \</span><br><span class="line">--<span class="built_in">enable</span>-phpdbg-webhelper \</span><br><span class="line">--<span class="built_in">enable</span>-maintainer-zts \</span><br><span class="line">--<span class="built_in">enable</span>-shmop \</span><br><span class="line">--<span class="built_in">enable</span>-soap \</span><br><span class="line">--<span class="built_in">enable</span>-sockets \</span><br><span class="line">--<span class="built_in">enable</span>-sysvmsg \</span><br><span class="line">--<span class="built_in">enable</span>-sysvsem \</span><br><span class="line">--<span class="built_in">enable</span>-sysvshm \</span><br><span class="line">--with-apxs2=/usr/<span class="built_in">local</span>/opt/httpd/bin/apxs \</span><br><span class="line">--with-bz2=/usr/<span class="built_in">local</span>/opt/bzip2 \</span><br><span class="line">--with-curl \</span><br><span class="line">--with-external-gd \</span><br><span class="line">--with-external-pcre \</span><br><span class="line">--with-ffi --with-fpm-user=_www \</span><br><span class="line">--with-fpm-group=_www \</span><br><span class="line">--with-gettext=/usr/<span class="built_in">local</span>/opt/gettext \</span><br><span class="line">--with-gmp=/usr/<span class="built_in">local</span>/opt/gmp \</span><br><span class="line">--with-iconv=/usr/<span class="built_in">local</span>/opt/libiconv/ \</span><br><span class="line">--with-kerberos \</span><br><span class="line">--with-layout=GNU \</span><br><span class="line">--<span class="built_in">enable</span>-inline-optimization \</span><br><span class="line">--with-ldap=/usr/<span class="built_in">local</span>/opt/openldap \</span><br><span class="line">--with-libxml --with-libedit --with-mhash=/usr \</span><br><span class="line">--with-mysql-sock=/tmp/mysql.sock --with-mysqli=shared,mysqlnd \</span><br><span class="line">--with-openssl=/usr/<span class="built_in">local</span>/Cellar/openssl@1.1/1.1.1j\</span><br><span class="line">--with-password-argon2=/usr/<span class="built_in">local</span>/opt/argon2 \</span><br><span class="line">--with-pdo-dblib=/usr/<span class="built_in">local</span>/opt/freetds \</span><br><span class="line">--with-pdo-mysql=shared,mysqlnd \</span><br><span class="line">--with-pdo-odbc=unixODBC,/usr/<span class="built_in">local</span>/opt/unixodbc \</span><br><span class="line">--with-pdo-pgsql=/usr/<span class="built_in">local</span>/opt/libpq \</span><br><span class="line">--with-pdo-sqlite \</span><br><span class="line">--with-pgsql=/usr/<span class="built_in">local</span>/opt/libpq \</span><br><span class="line">--with-pic \</span><br><span class="line">--with-pspell=/usr/<span class="built_in">local</span>/opt/aspell \</span><br><span class="line">--with-sodium \</span><br><span class="line">--with-sqlite3 \</span><br><span class="line">--with-tidy=/usr/<span class="built_in">local</span>/opt/tidy-html5 \</span><br><span class="line">--with-unixODBC \</span><br><span class="line">--with-xmlrpc \</span><br><span class="line">--with-xsl \</span><br><span class="line">--with-gettext \</span><br><span class="line">--<span class="built_in">enable</span>-session \</span><br><span class="line">--with-zip \</span><br><span class="line">--with-zlib \</span><br><span class="line">--with-ffi \</span><br><span class="line">--<span class="built_in">enable</span>-soap \</span><br><span class="line">--<span class="built_in">enable</span>-opcache \</span><br><span class="line">--<span class="built_in">enable</span>-dtrace \</span><br><span class="line">--with-gdbm=/usr/<span class="built_in">local</span>/opt/gdbm \</span><br><span class="line">--with-ldap-sasl</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 8.0</span></span><br><span class="line">./configure --prefix=/usr/<span class="built_in">local</span>/Cellar/php@8.0/8.0.23_1 \</span><br><span class="line">--localstatedir=/usr/<span class="built_in">local</span>/var \</span><br><span class="line">--sysconfdir=/usr/<span class="built_in">local</span>/etc/php/8.0 \</span><br><span class="line">--with-config-file-path=/usr/<span class="built_in">local</span>/etc/php/8.0 \</span><br><span class="line">--with-config-file-scan-dir=/usr/<span class="built_in">local</span>/etc/php/8.0/conf.d \</span><br><span class="line">--with-pear=/usr/<span class="built_in">local</span>/Cellar/php@8.0/8.0.23_1/share/php@8.0/pear \</span><br><span class="line">--<span class="built_in">enable</span>-bcmath \</span><br><span class="line">--<span class="built_in">enable</span>-calendar  \</span><br><span class="line">--<span class="built_in">enable</span>-exif \</span><br><span class="line">--<span class="built_in">enable</span>-ftp \</span><br><span class="line">--<span class="built_in">enable</span>-fpm \</span><br><span class="line">--<span class="built_in">enable</span>-gd \</span><br><span class="line">--with-mhash \</span><br><span class="line">--<span class="built_in">enable</span>-intl \</span><br><span class="line">--<span class="built_in">enable</span>-mbregex \</span><br><span class="line">--<span class="built_in">enable</span>-mbstring \</span><br><span class="line">--<span class="built_in">enable</span>-mysqlnd \</span><br><span class="line">--<span class="built_in">enable</span>-pcntl \</span><br><span class="line">--<span class="built_in">enable</span>-phpdbg \</span><br><span class="line">--<span class="built_in">enable</span>-phpdbg-readline \</span><br><span class="line">--<span class="built_in">enable</span>-phpdbg-webhelper \</span><br><span class="line">--<span class="built_in">enable</span>-maintainer-zts \</span><br><span class="line">--<span class="built_in">enable</span>-shmop \</span><br><span class="line">--<span class="built_in">enable</span>-soap \</span><br><span class="line">--<span class="built_in">enable</span>-sockets \</span><br><span class="line">--<span class="built_in">enable</span>-sysvmsg \</span><br><span class="line">--<span class="built_in">enable</span>-sysvsem \</span><br><span class="line">--<span class="built_in">enable</span>-sysvshm \</span><br><span class="line">--with-apxs2=/usr/<span class="built_in">local</span>/opt/httpd/bin/apxs \</span><br><span class="line">--with-bz2=/usr/<span class="built_in">local</span>/opt/bzip2 \</span><br><span class="line">--with-curl \</span><br><span class="line">--with-external-gd \</span><br><span class="line">--with-external-pcre \</span><br><span class="line">--with-ffi --with-fpm-user=_www \</span><br><span class="line">--with-fpm-group=_www \</span><br><span class="line">--with-gettext=/usr/<span class="built_in">local</span>/opt/gettext \</span><br><span class="line">--with-gmp=/usr/<span class="built_in">local</span>/opt/gmp \</span><br><span class="line">--with-iconv=/usr/<span class="built_in">local</span>/opt/libiconv/ \</span><br><span class="line">--with-kerberos \</span><br><span class="line">--with-layout=GNU \</span><br><span class="line">--<span class="built_in">enable</span>-inline-optimization \</span><br><span class="line">--with-ldap=/usr/<span class="built_in">local</span>/opt/openldap \</span><br><span class="line">--with-libxml --with-libedit --with-mhash=/usr \</span><br><span class="line">--with-mysql-sock=/tmp/mysql.sock --with-mysqli=shared,mysqlnd \</span><br><span class="line">--with-openssl=/usr/<span class="built_in">local</span>/Cellar/openssl@1.1/1.1.1j\</span><br><span class="line">--with-password-argon2=/usr/<span class="built_in">local</span>/opt/argon2 \</span><br><span class="line">--with-pdo-dblib=/usr/<span class="built_in">local</span>/opt/freetds \</span><br><span class="line">--with-pdo-mysql=shared,mysqlnd \</span><br><span class="line">--with-pdo-odbc=unixODBC,/usr/<span class="built_in">local</span>/opt/unixodbc \</span><br><span class="line">--with-pdo-pgsql=/usr/<span class="built_in">local</span>/opt/libpq \</span><br><span class="line">--with-pdo-sqlite \</span><br><span class="line">--with-pgsql=/usr/<span class="built_in">local</span>/opt/libpq \</span><br><span class="line">--with-pic \</span><br><span class="line">--with-pspell=/usr/<span class="built_in">local</span>/opt/aspell \</span><br><span class="line">--with-sodium \</span><br><span class="line">--with-sqlite3 \</span><br><span class="line">--with-tidy=/usr/<span class="built_in">local</span>/opt/tidy-html5 \</span><br><span class="line">--with-unixODBC \</span><br><span class="line">--with-xmlrpc \</span><br><span class="line">--with-xsl \</span><br><span class="line">--with-gettext \</span><br><span class="line">--<span class="built_in">enable</span>-session \</span><br><span class="line">--with-zip \</span><br><span class="line">--with-zlib \</span><br><span class="line">--with-ffi \</span><br><span class="line">--<span class="built_in">enable</span>-soap \</span><br><span class="line">--<span class="built_in">enable</span>-opcache \</span><br><span class="line">--<span class="built_in">enable</span>-dtrace \</span><br><span class="line">--with-gdbm=/usr/<span class="built_in">local</span>/opt/gdbm \</span><br><span class="line">--with-ldap-sasl</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">./configure --prefix=/usr/<span class="built_in">local</span>/Cellar/php@7.4/7.4.30_1 \</span><br><span class="line">--with-mcrypt \</span><br><span class="line">--with-mhash \</span><br><span class="line">--with-mysqli=shared,mysqlnd \</span><br><span class="line">--with-pdo-mysql=shared,mysqlnd \</span><br><span class="line">--with-gd \</span><br><span class="line">--with-openssl \</span><br><span class="line">--with-iconv \</span><br><span class="line">--with-zlib \</span><br><span class="line">--<span class="built_in">enable</span>-zip \</span><br><span class="line">--<span class="built_in">enable</span>-inline-optimization \</span><br><span class="line">--<span class="built_in">disable</span>-debug \</span><br><span class="line">--<span class="built_in">disable</span>-rpath \</span><br><span class="line">--<span class="built_in">enable</span>-shared \</span><br><span class="line">--<span class="built_in">enable</span>-xml \</span><br><span class="line">--<span class="built_in">enable</span>-bcmath \</span><br><span class="line">--<span class="built_in">enable</span>-shmop \</span><br><span class="line">--<span class="built_in">enable</span>-sysvsem \</span><br><span class="line">--<span class="built_in">enable</span>-mbregex \</span><br><span class="line">--<span class="built_in">enable</span>-mbstring \</span><br><span class="line">--<span class="built_in">enable</span>-ftp \</span><br><span class="line">--<span class="built_in">enable</span>-gd-native-ttf \</span><br><span class="line">--<span class="built_in">enable</span>-pcntl \</span><br><span class="line">--<span class="built_in">enable</span>-sockets \</span><br><span class="line">--with-xmlrpc \</span><br><span class="line">--<span class="built_in">enable</span>-soap \</span><br><span class="line">--without-pear \</span><br><span class="line">--with-gettext \</span><br><span class="line">--<span class="built_in">enable</span>-session \</span><br><span class="line">--with-curl \</span><br><span class="line">--with-jpeg-dir \</span><br><span class="line">--with-freetype-dir \</span><br><span class="line">--<span class="built_in">enable</span>-opcache \</span><br><span class="line">--<span class="built_in">enable</span>-fpm \</span><br><span class="line">--with-ffi \</span><br><span class="line">--without-gdbm \</span><br><span class="line">--<span class="built_in">enable</span>-fast-install \</span><br><span class="line">--<span class="built_in">disable</span>-fileinfo</span><br></pre></td></tr></table></figure><h1 id="编译配置选项说明"><a href="#编译配置选项说明" class="headerlink" title="编译配置选项说明"></a>编译配置选项说明</h1><h2 id="openssl"><a href="#openssl" class="headerlink" title="openssl"></a>openssl</h2><p>需要注意用brew安装，或者手工编译，这里指定了编译所需要的openssl的库地址</p><h2 id="bzip2"><a href="#bzip2" class="headerlink" title="bzip2"></a>bzip2</h2><p>需要安装bzip2</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install bzip2</span><br></pre></td></tr></table></figure><p>在配置中指定bzip2的类库</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">--with-bz2&#x3D;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;bzip2</span><br></pre></td></tr></table></figure><h2 id="libffi"><a href="#libffi" class="headerlink" title="libffi"></a>libffi</h2><p>安装</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install libffi</span><br></pre></td></tr></table></figure><p>在环境变量中增加libffi的库地址</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export LDFLAGS&#x3D;&quot;$LDFLAGS -L&#x2F;usr&#x2F;local&#x2F;opt&#x2F;libffi&#x2F;lib&quot;</span><br><span class="line">export CPPFLAGS&#x3D;&quot;$CPPFLAGS -I&#x2F;usr&#x2F;local&#x2F;opt&#x2F;libffi&#x2F;include&quot;</span><br><span class="line">export PKG_CONFIG_PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;libffi&#x2F;lib&#x2F;pkgconfig:$PKG_CONFIG_PATH&quot;</span><br></pre></td></tr></table></figure><p>PKG_CONFIG_PATH 变量很重要，php7.4开始，很多扩展库的编译都需要通过此环境变量</p><h2 id="icu4c"><a href="#icu4c" class="headerlink" title="icu4c"></a>icu4c</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install icu4c</span><br></pre></td></tr></table></figure><p>增加编译环境变量配置</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">export LDFLAGS&#x3D;&quot;$LDFLAGS -L&#x2F;usr&#x2F;local&#x2F;opt&#x2F;icu4c&#x2F;lib&quot;</span><br><span class="line">export CPPFLAGS&#x3D;&quot;$CPPFLAGS -I&#x2F;usr&#x2F;local&#x2F;opt&#x2F;icu4c&#x2F;include&quot;</span><br><span class="line">export PKG_CONFIG_PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;icu4c&#x2F;lib&#x2F;pkgconfig:$PKG_CONFIG_PATH&quot;</span><br><span class="line">export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;icu4c&#x2F;bin:$PATH&quot;</span><br></pre></td></tr></table></figure><h2 id="sasl"><a href="#sasl" class="headerlink" title="sasl"></a>sasl</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">brew install cyrus-sasl</span><br><span class="line"></span><br><span class="line">export PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;cyrus-sasl&#x2F;sbin:$PATH&quot;</span><br><span class="line">export LDFLAGS&#x3D;&quot;$LDFLAGS -L&#x2F;usr&#x2F;local&#x2F;opt&#x2F;cyrus-sasl&#x2F;lib&quot;</span><br><span class="line">export CPPFLAGS&#x3D;&quot;$CPPFLAGS -I&#x2F;usr&#x2F;local&#x2F;opt&#x2F;cyrus-sasl&#x2F;include&quot;</span><br><span class="line">export PKG_CONFIG_PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;cyrus-sasl&#x2F;lib&#x2F;pkgconfig:$PKG_CONFIG_PATH&quot;</span><br></pre></td></tr></table></figure><h2 id="libxml2"><a href="#libxml2" class="headerlink" title="libxml2"></a>libxml2</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">brew install libxml2</span><br><span class="line"></span><br><span class="line">export LDFLAGS&#x3D;&quot;$LDFLAGS -L&#x2F;usr&#x2F;local&#x2F;opt&#x2F;libxml2&#x2F;lib&quot;</span><br><span class="line">export CPPFLAGS&#x3D;&quot;$CPPFLAGS -I&#x2F;usr&#x2F;local&#x2F;opt&#x2F;libxml2&#x2F;include&quot;</span><br><span class="line">export PKG_CONFIG_PATH&#x3D;&quot;&#x2F;usr&#x2F;local&#x2F;opt&#x2F;libxml2&#x2F;lib&#x2F;pkgconfig:$PKG_CONFIG_PATH&quot;</span><br></pre></td></tr></table></figure><h1 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make -j2 &amp;&amp; make install</span><br></pre></td></tr></table></figure><h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>编译的配置中默认已经指定了配置文件的位置,配置中的这两句就定义</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">--with-config-file-path&#x3D;&#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.4 \</span><br><span class="line">--with-config-file-scan-dir&#x3D;&#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.4&#x2F;conf.d \</span><br></pre></td></tr></table></figure><p>复制配置文件php-fpm、php.ini的配置文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo cp &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.4&#x2F;php-fpm.conf.default &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.4&#x2F;php-fpm.conf</span><br><span class="line">sudo cp &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.4&#x2F;php-fpm.d&#x2F;www.conf.default &#x2F;usr&#x2F;local&#x2F;etc&#x2F;php&#x2F;7.4&#x2F;php-fpm.d&#x2F;www.conf</span><br></pre></td></tr></table></figure><p>测试配置</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;usr&#x2F;local&#x2F;opt&#x2F;php@7.4&#x2F;sbin&#x2F;php-fpm --test</span><br></pre></td></tr></table></figure><p>php.ini 中修改的配置</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">upload_max_filesize &#x3D; 128M</span><br><span class="line">post_max_size &#x3D; 128M</span><br><span class="line">date.timezone &#x3D; PRC</span><br></pre></td></tr></table></figure><h1 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;usr&#x2F;local&#x2F;sbin&#x2F;php74-fpm -D</span><br></pre></td></tr></table></figure></div><footer class="post-footer"><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/2022/09/10/%E8%BF%91%E4%BA%A7%E5%93%81%E5%81%9A%E7%9A%84%E4%BA%8B%E6%83%85/" rel="next" title="最近产品做的事情"><i class="fa fa-chevron-left"></i> 最近产品做的事情</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"></div></div></footer></div></article></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span> <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span> <span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">文章目录</li><li class="sidebar-nav-overview" data-target="site-overview-wrap">站点概览</li></ul><div class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="site-author-image" itemprop="image" src="https://avatars1.githubusercontent.com/u/4988185??v=3&s=460" alt="Space Yuan"><p class="site-author-name" itemprop="name">Space Yuan</p><div class="site-description motion-element" itemprop="description"></div></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"><a href="/archives"><span class="site-state-item-count">125</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"><a href="/categories/"><span class="site-state-item-count">25</span> <span class="site-state-item-name">分类</span></a></div><div class="site-state-item site-state-tags"><a href="/tags/%20%7C%7C%20tags"><span class="site-state-item-count">71</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/konggeyuan" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;konggeyuan" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-github&quot;&gt;&lt;&#x2F;i&gt;GitHub</a> </span><span class="links-of-author-item"><a href="mailto:konggeyuan@gmail.com" title="E-Mail &amp;rarr; mailto:konggeyuan@gmail.com" rel="noopener" target="_blank">&lt;i class&#x3D;&quot;fa fa-fw fa-envelope&quot;&gt;&lt;&#x2F;i&gt;E-Mail</a></span></div></div></div><div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#配置编译选项"><span class="nav-number">1.</span> <span class="nav-text">配置编译选项</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#编译配置选项说明"><span class="nav-number">2.</span> <span class="nav-text">编译配置选项说明</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#openssl"><span class="nav-number">2.1.</span> <span class="nav-text">openssl</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bzip2"><span class="nav-number">2.2.</span> <span class="nav-text">bzip2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#libffi"><span class="nav-number">2.3.</span> <span class="nav-text">libffi</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#icu4c"><span class="nav-number">2.4.</span> <span class="nav-text">icu4c</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sasl"><span class="nav-number">2.5.</span> <span class="nav-text">sasl</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#libxml2"><span class="nav-number">2.6.</span> <span class="nav-text">libxml2</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#编译安装"><span class="nav-number">3.</span> <span class="nav-text">编译安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置"><span class="nav-number">4.</span> <span class="nav-text">配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#启动"><span class="nav-number">5.</span> <span class="nav-text">启动</span></a></li></ol></div></div></div></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; 2018 – <span itemprop="copyrightYear">2022</span> <span class="with-love" id="animate"><i class="fa fa-user"></i> </span><span class="author" itemprop="copyrightHolder">Space Yuan</span></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i></div></div><script>"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script src="//apps.bdimg.com/libs/jquery/2.1.3/jquery.min.js"></script><script src="//cdn.bootcss.com/velocity/1.2.1/velocity.min.js"></script><script src="//cdn.bootcss.com/velocity/1.2.1/velocity.ui.min.js"></script><script src="/js/utils.js?v=7.1.1"></script><script src="/js/motion.js?v=7.1.1"></script><script src="/js/affix.js?v=7.1.1"></script><script src="/js/schemes/pisces.js?v=7.1.1"></script><script src="/js/scrollspy.js?v=7.1.1"></script><script src="/js/post-details.js?v=7.1.1"></script><script src="/js/next-boot.js?v=7.1.1"></script><script>// Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });</script><script>$(".highlight").not(".gist .highlight").each(function(t,e){var n=$("<div>").addClass("highlight-wrap");$(e).after(n),n.append($("<button>").addClass("copy-btn").append("复制").on("click",function(t){var e=$(this).parent().find(".code").find(".line").map(function(t,e){return $(e).text()}).toArray().join("\n"),n=document.createElement("textarea"),o=window.pageYOffset||document.documentElement.scrollTop;n.style.top=o+"px",n.style.position="absolute",n.style.opacity="0",n.readOnly=!0,n.value=e,document.body.appendChild(n),n.select(),n.setSelectionRange(0,e.length),n.readOnly=!1;document.execCommand("copy");n.blur(),$(this).blur()})).on("mouseleave",function(t){var e=$(this).find(".copy-btn");setTimeout(function(){e.text("复制")},300)}).append(e)})</script></body></html>
