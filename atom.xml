@@ -6,7 +6,7 @@
   <link href="http://konggeyuan.github.io/atom.xml" rel="self"/>
   
   <link href="http://konggeyuan.github.io/"/>
-  <updated>2022-09-30T09:00:44.146Z</updated>
+  <updated>2022-11-05T04:08:30.468Z</updated>
   <id>http://konggeyuan.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小程序scroll-view的滚动开发</title>
+    <link href="http://konggeyuan.github.io/2022/11/04/%E5%B0%8F%E7%A8%8B%E5%BA%8Fscroll-view%E7%9A%84%E6%BB%9A%E5%8A%A8%E5%BC%80%E5%8F%91/"/>
+    <id>http://konggeyuan.github.io/2022/11/04/%E5%B0%8F%E7%A8%8B%E5%BA%8Fscroll-view%E7%9A%84%E6%BB%9A%E5%8A%A8%E5%BC%80%E5%8F%91/</id>
+    <published>2022-11-04T02:49:00.000Z</published>
+    <updated>2022-11-05T04:08:30.468Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="IT技术-微信小程序" scheme="http://konggeyuan.github.io/categories/IT%E6%8A%80%E6%9C%AF-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+    
+    <category term="scroll-view" scheme="http://konggeyuan.github.io/tags/scroll-view/"/>
+    
+  </entry>
   
   <entry>
     <title>mac 10.13.6 High Sierra 下编译PHP</title>
@@ -495,29 +520,6 @@
     
     
     <category term="笔记/安卓/" scheme="http://konggeyuan.github.io/categories/%E7%AC%94%E8%AE%B0-%E5%AE%89%E5%8D%93/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>好多年前的所谓技能书</title>
-    <link href="http://konggeyuan.github.io/2022/02/21/%E5%A5%BD%E5%A4%9A%E5%B9%B4%E5%89%8D%E7%9A%84%E6%89%80%E8%B0%93%E6%8A%80%E8%83%BD%E4%B9%A6/"/>
-    <id>http://konggeyuan.github.io/2022/02/21/%E5%A5%BD%E5%A4%9A%E5%B9%B4%E5%89%8D%E7%9A%84%E6%89%80%E8%B0%93%E6%8A%80%E8%83%BD%E4%B9%A6/</id>
-    <published>2022-02-21T07:44:00.000Z</published>
-    <updated>2022-02-23T07:57:21.000Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="IT技术/Web开发/" scheme="http://konggeyuan.github.io/categories/IT%E6%8A%80%E6%9C%AF-Web%E5%BC%80%E5%8F%91/"/>
     
     
   </entry>
